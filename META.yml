@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.22
+version: 0.23
 license: perl
 distribution_type: module
 requires:
@@ -11,8 +11,8 @@ build_requires: {}
 conflicts: {}
 provides:
   DateTime::TimeZone:
-    file: lib/DateTime/TimeZoneCatalog.pm
-    version: ~
+    file: lib/DateTime/TimeZone.pm
+    version: 0.23
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
     version: ~
@@ -1125,4 +1125,4 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.18
+generated_by: Module::Build version 0.18_04
