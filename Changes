@@ -1,3 +1,9 @@
+0.07     2003-02-19
+
+- Skip tests unless DateTime.pm 0.06 is installed.  Otherwise we have
+a bootstrapping problem since DateTime 0.06 needs DateTime::TimeZone
+0.06+.
+
 0.06     2003-02-16
 
 - Changes to work with DateTime.pm 0.06.
@@ -11,6 +17,7 @@ rules.  The symptom would be the error "Invalid local time for date
 - Time zone data is now stored in a simple array, and searched using a
 binary search algorithm.  This eliminates the need to install
 Tree::RedBlack, and makes looking up time zone data quicker.
+Suggested by Jonathan Peacock.
 
 0.05     2003-02-13
 
