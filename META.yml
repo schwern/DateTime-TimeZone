@@ -1,11 +1,1128 @@
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         DateTime-TimeZone
-version:      0.18
-version_from: lib/DateTime/TimeZone.pm
-installdirs:  site
-requires:
-    Class::Singleton:              1.03
-    Params::Validate:              0
-
+--- #YAML:1.0
+name: DateTime-TimeZone
+version: 0.21
+license: perl
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.10_04
+requires:
+  Class::Singleton: 1.03
+  Params::Validate: 0
+recommends: {}
+build_requires: {}
+conflicts: {}
+provides:
+  DateTime::TimeZone:
+    file: lib/DateTime/TimeZoneCatalog.pm
+    version: ~
+  DateTime::TimeZone::Africa::Abidjan:
+    file: lib/DateTime/TimeZone/Africa/Abidjan.pm
+    version: ~
+  DateTime::TimeZone::Africa::Accra:
+    file: lib/DateTime/TimeZone/Africa/Accra.pm
+    version: ~
+  DateTime::TimeZone::Africa::Addis_Ababa:
+    file: lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
+    version: ~
+  DateTime::TimeZone::Africa::Algiers:
+    file: lib/DateTime/TimeZone/Africa/Algiers.pm
+    version: ~
+  DateTime::TimeZone::Africa::Asmera:
+    file: lib/DateTime/TimeZone/Africa/Asmera.pm
+    version: ~
+  DateTime::TimeZone::Africa::Bamako:
+    file: lib/DateTime/TimeZone/Africa/Bamako.pm
+    version: ~
+  DateTime::TimeZone::Africa::Bangui:
+    file: lib/DateTime/TimeZone/Africa/Bangui.pm
+    version: ~
+  DateTime::TimeZone::Africa::Banjul:
+    file: lib/DateTime/TimeZone/Africa/Banjul.pm
+    version: ~
+  DateTime::TimeZone::Africa::Bissau:
+    file: lib/DateTime/TimeZone/Africa/Bissau.pm
+    version: ~
+  DateTime::TimeZone::Africa::Blantyre:
+    file: lib/DateTime/TimeZone/Africa/Blantyre.pm
+    version: ~
+  DateTime::TimeZone::Africa::Brazzaville:
+    file: lib/DateTime/TimeZone/Africa/Brazzaville.pm
+    version: ~
+  DateTime::TimeZone::Africa::Bujumbura:
+    file: lib/DateTime/TimeZone/Africa/Bujumbura.pm
+    version: ~
+  DateTime::TimeZone::Africa::Cairo:
+    file: lib/DateTime/TimeZone/Africa/Cairo.pm
+    version: ~
+  DateTime::TimeZone::Africa::Casablanca:
+    file: lib/DateTime/TimeZone/Africa/Casablanca.pm
+    version: ~
+  DateTime::TimeZone::Africa::Ceuta:
+    file: lib/DateTime/TimeZone/Africa/Ceuta.pm
+    version: ~
+  DateTime::TimeZone::Africa::Conakry:
+    file: lib/DateTime/TimeZone/Africa/Conakry.pm
+    version: ~
+  DateTime::TimeZone::Africa::Dakar:
+    file: lib/DateTime/TimeZone/Africa/Dakar.pm
+    version: ~
+  DateTime::TimeZone::Africa::Dar_es_Salaam:
+    file: lib/DateTime/TimeZone/Africa/Dar_es_Salaam.pm
+    version: ~
+  DateTime::TimeZone::Africa::Djibouti:
+    file: lib/DateTime/TimeZone/Africa/Djibouti.pm
+    version: ~
+  DateTime::TimeZone::Africa::Douala:
+    file: lib/DateTime/TimeZone/Africa/Douala.pm
+    version: ~
+  DateTime::TimeZone::Africa::El_Aaiun:
+    file: lib/DateTime/TimeZone/Africa/El_Aaiun.pm
+    version: ~
+  DateTime::TimeZone::Africa::Freetown:
+    file: lib/DateTime/TimeZone/Africa/Freetown.pm
+    version: ~
+  DateTime::TimeZone::Africa::Gaborone:
+    file: lib/DateTime/TimeZone/Africa/Gaborone.pm
+    version: ~
+  DateTime::TimeZone::Africa::Harare:
+    file: lib/DateTime/TimeZone/Africa/Harare.pm
+    version: ~
+  DateTime::TimeZone::Africa::Johannesburg:
+    file: lib/DateTime/TimeZone/Africa/Johannesburg.pm
+    version: ~
+  DateTime::TimeZone::Africa::Kampala:
+    file: lib/DateTime/TimeZone/Africa/Kampala.pm
+    version: ~
+  DateTime::TimeZone::Africa::Khartoum:
+    file: lib/DateTime/TimeZone/Africa/Khartoum.pm
+    version: ~
+  DateTime::TimeZone::Africa::Kigali:
+    file: lib/DateTime/TimeZone/Africa/Kigali.pm
+    version: ~
+  DateTime::TimeZone::Africa::Kinshasa:
+    file: lib/DateTime/TimeZone/Africa/Kinshasa.pm
+    version: ~
+  DateTime::TimeZone::Africa::Lagos:
+    file: lib/DateTime/TimeZone/Africa/Lagos.pm
+    version: ~
+  DateTime::TimeZone::Africa::Libreville:
+    file: lib/DateTime/TimeZone/Africa/Libreville.pm
+    version: ~
+  DateTime::TimeZone::Africa::Lome:
+    file: lib/DateTime/TimeZone/Africa/Lome.pm
+    version: ~
+  DateTime::TimeZone::Africa::Luanda:
+    file: lib/DateTime/TimeZone/Africa/Luanda.pm
+    version: ~
+  DateTime::TimeZone::Africa::Lubumbashi:
+    file: lib/DateTime/TimeZone/Africa/Lubumbashi.pm
+    version: ~
+  DateTime::TimeZone::Africa::Lusaka:
+    file: lib/DateTime/TimeZone/Africa/Lusaka.pm
+    version: ~
+  DateTime::TimeZone::Africa::Malabo:
+    file: lib/DateTime/TimeZone/Africa/Malabo.pm
+    version: ~
+  DateTime::TimeZone::Africa::Maputo:
+    file: lib/DateTime/TimeZone/Africa/Maputo.pm
+    version: ~
+  DateTime::TimeZone::Africa::Maseru:
+    file: lib/DateTime/TimeZone/Africa/Maseru.pm
+    version: ~
+  DateTime::TimeZone::Africa::Mbabane:
+    file: lib/DateTime/TimeZone/Africa/Mbabane.pm
+    version: ~
+  DateTime::TimeZone::Africa::Mogadishu:
+    file: lib/DateTime/TimeZone/Africa/Mogadishu.pm
+    version: ~
+  DateTime::TimeZone::Africa::Monrovia:
+    file: lib/DateTime/TimeZone/Africa/Monrovia.pm
+    version: ~
+  DateTime::TimeZone::Africa::Nairobi:
+    file: lib/DateTime/TimeZone/Africa/Nairobi.pm
+    version: ~
+  DateTime::TimeZone::Africa::Ndjamena:
+    file: lib/DateTime/TimeZone/Africa/Ndjamena.pm
+    version: ~
+  DateTime::TimeZone::Africa::Niamey:
+    file: lib/DateTime/TimeZone/Africa/Niamey.pm
+    version: ~
+  DateTime::TimeZone::Africa::Nouakchott:
+    file: lib/DateTime/TimeZone/Africa/Nouakchott.pm
+    version: ~
+  DateTime::TimeZone::Africa::Ouagadougou:
+    file: lib/DateTime/TimeZone/Africa/Ouagadougou.pm
+    version: ~
+  DateTime::TimeZone::Africa::Porto_Novo:
+    file: lib/DateTime/TimeZone/Africa/Porto_Novo.pm
+    version: ~
+  DateTime::TimeZone::Africa::Sao_Tome:
+    file: lib/DateTime/TimeZone/Africa/Sao_Tome.pm
+    version: ~
+  DateTime::TimeZone::Africa::Timbuktu:
+    file: lib/DateTime/TimeZone/Africa/Timbuktu.pm
+    version: ~
+  DateTime::TimeZone::Africa::Tripoli:
+    file: lib/DateTime/TimeZone/Africa/Tripoli.pm
+    version: ~
+  DateTime::TimeZone::Africa::Tunis:
+    file: lib/DateTime/TimeZone/Africa/Tunis.pm
+    version: ~
+  DateTime::TimeZone::Africa::Windhoek:
+    file: lib/DateTime/TimeZone/Africa/Windhoek.pm
+    version: ~
+  DateTime::TimeZone::America::Adak:
+    file: lib/DateTime/TimeZone/America/Adak.pm
+    version: ~
+  DateTime::TimeZone::America::Anchorage:
+    file: lib/DateTime/TimeZone/America/Anchorage.pm
+    version: ~
+  DateTime::TimeZone::America::Anguilla:
+    file: lib/DateTime/TimeZone/America/Anguilla.pm
+    version: ~
+  DateTime::TimeZone::America::Antigua:
+    file: lib/DateTime/TimeZone/America/Antigua.pm
+    version: ~
+  DateTime::TimeZone::America::Araguaina:
+    file: lib/DateTime/TimeZone/America/Araguaina.pm
+    version: ~
+  DateTime::TimeZone::America::Aruba:
+    file: lib/DateTime/TimeZone/America/Aruba.pm
+    version: ~
+  DateTime::TimeZone::America::Asuncion:
+    file: lib/DateTime/TimeZone/America/Asuncion.pm
+    version: ~
+  DateTime::TimeZone::America::Barbados:
+    file: lib/DateTime/TimeZone/America/Barbados.pm
+    version: ~
+  DateTime::TimeZone::America::Belem:
+    file: lib/DateTime/TimeZone/America/Belem.pm
+    version: ~
+  DateTime::TimeZone::America::Belize:
+    file: lib/DateTime/TimeZone/America/Belize.pm
+    version: ~
+  DateTime::TimeZone::America::Boa_Vista:
+    file: lib/DateTime/TimeZone/America/Boa_Vista.pm
+    version: ~
+  DateTime::TimeZone::America::Bogota:
+    file: lib/DateTime/TimeZone/America/Bogota.pm
+    version: ~
+  DateTime::TimeZone::America::Boise:
+    file: lib/DateTime/TimeZone/America/Boise.pm
+    version: ~
+  DateTime::TimeZone::America::Buenos_Aires:
+    file: lib/DateTime/TimeZone/America/Buenos_Aires.pm
+    version: ~
+  DateTime::TimeZone::America::Cambridge_Bay:
+    file: lib/DateTime/TimeZone/America/Cambridge_Bay.pm
+    version: ~
+  DateTime::TimeZone::America::Cancun:
+    file: lib/DateTime/TimeZone/America/Cancun.pm
+    version: ~
+  DateTime::TimeZone::America::Caracas:
+    file: lib/DateTime/TimeZone/America/Caracas.pm
+    version: ~
+  DateTime::TimeZone::America::Catamarca:
+    file: lib/DateTime/TimeZone/America/Catamarca.pm
+    version: ~
+  DateTime::TimeZone::America::Cayenne:
+    file: lib/DateTime/TimeZone/America/Cayenne.pm
+    version: ~
+  DateTime::TimeZone::America::Cayman:
+    file: lib/DateTime/TimeZone/America/Cayman.pm
+    version: ~
+  DateTime::TimeZone::America::Chicago:
+    file: lib/DateTime/TimeZone/America/Chicago.pm
+    version: ~
+  DateTime::TimeZone::America::Chihuahua:
+    file: lib/DateTime/TimeZone/America/Chihuahua.pm
+    version: ~
+  DateTime::TimeZone::America::Cordoba:
+    file: lib/DateTime/TimeZone/America/Cordoba.pm
+    version: ~
+  DateTime::TimeZone::America::Costa_Rica:
+    file: lib/DateTime/TimeZone/America/Costa_Rica.pm
+    version: ~
+  DateTime::TimeZone::America::Cuiaba:
+    file: lib/DateTime/TimeZone/America/Cuiaba.pm
+    version: ~
+  DateTime::TimeZone::America::Curacao:
+    file: lib/DateTime/TimeZone/America/Curacao.pm
+    version: ~
+  DateTime::TimeZone::America::Danmarkshavn:
+    file: lib/DateTime/TimeZone/America/Danmarkshavn.pm
+    version: ~
+  DateTime::TimeZone::America::Dawson:
+    file: lib/DateTime/TimeZone/America/Dawson.pm
+    version: ~
+  DateTime::TimeZone::America::Dawson_Creek:
+    file: lib/DateTime/TimeZone/America/Dawson_Creek.pm
+    version: ~
+  DateTime::TimeZone::America::Denver:
+    file: lib/DateTime/TimeZone/America/Denver.pm
+    version: ~
+  DateTime::TimeZone::America::Detroit:
+    file: lib/DateTime/TimeZone/America/Detroit.pm
+    version: ~
+  DateTime::TimeZone::America::Dominica:
+    file: lib/DateTime/TimeZone/America/Dominica.pm
+    version: ~
+  DateTime::TimeZone::America::Edmonton:
+    file: lib/DateTime/TimeZone/America/Edmonton.pm
+    version: ~
+  DateTime::TimeZone::America::Eirunepe:
+    file: lib/DateTime/TimeZone/America/Eirunepe.pm
+    version: ~
+  DateTime::TimeZone::America::El_Salvador:
+    file: lib/DateTime/TimeZone/America/El_Salvador.pm
+    version: ~
+  DateTime::TimeZone::America::Fortaleza:
+    file: lib/DateTime/TimeZone/America/Fortaleza.pm
+    version: ~
+  DateTime::TimeZone::America::Glace_Bay:
+    file: lib/DateTime/TimeZone/America/Glace_Bay.pm
+    version: ~
+  DateTime::TimeZone::America::Godthab:
+    file: lib/DateTime/TimeZone/America/Godthab.pm
+    version: ~
+  DateTime::TimeZone::America::Goose_Bay:
+    file: lib/DateTime/TimeZone/America/Goose_Bay.pm
+    version: ~
+  DateTime::TimeZone::America::Grand_Turk:
+    file: lib/DateTime/TimeZone/America/Grand_Turk.pm
+    version: ~
+  DateTime::TimeZone::America::Grenada:
+    file: lib/DateTime/TimeZone/America/Grenada.pm
+    version: ~
+  DateTime::TimeZone::America::Guadeloupe:
+    file: lib/DateTime/TimeZone/America/Guadeloupe.pm
+    version: ~
+  DateTime::TimeZone::America::Guatemala:
+    file: lib/DateTime/TimeZone/America/Guatemala.pm
+    version: ~
+  DateTime::TimeZone::America::Guayaquil:
+    file: lib/DateTime/TimeZone/America/Guayaquil.pm
+    version: ~
+  DateTime::TimeZone::America::Guyana:
+    file: lib/DateTime/TimeZone/America/Guyana.pm
+    version: ~
+  DateTime::TimeZone::America::Halifax:
+    file: lib/DateTime/TimeZone/America/Halifax.pm
+    version: ~
+  DateTime::TimeZone::America::Havana:
+    file: lib/DateTime/TimeZone/America/Havana.pm
+    version: ~
+  DateTime::TimeZone::America::Hermosillo:
+    file: lib/DateTime/TimeZone/America/Hermosillo.pm
+    version: ~
+  DateTime::TimeZone::America::Indiana::Knox:
+    file: lib/DateTime/TimeZone/America/Indiana/Knox.pm
+    version: ~
+  DateTime::TimeZone::America::Indiana::Marengo:
+    file: lib/DateTime/TimeZone/America/Indiana/Marengo.pm
+    version: ~
+  DateTime::TimeZone::America::Indiana::Vevay:
+    file: lib/DateTime/TimeZone/America/Indiana/Vevay.pm
+    version: ~
+  DateTime::TimeZone::America::Indianapolis:
+    file: lib/DateTime/TimeZone/America/Indianapolis.pm
+    version: ~
+  DateTime::TimeZone::America::Inuvik:
+    file: lib/DateTime/TimeZone/America/Inuvik.pm
+    version: ~
+  DateTime::TimeZone::America::Iqaluit:
+    file: lib/DateTime/TimeZone/America/Iqaluit.pm
+    version: ~
+  DateTime::TimeZone::America::Jamaica:
+    file: lib/DateTime/TimeZone/America/Jamaica.pm
+    version: ~
+  DateTime::TimeZone::America::Jujuy:
+    file: lib/DateTime/TimeZone/America/Jujuy.pm
+    version: ~
+  DateTime::TimeZone::America::Juneau:
+    file: lib/DateTime/TimeZone/America/Juneau.pm
+    version: ~
+  DateTime::TimeZone::America::Kentucky::Monticello:
+    file: |-
+      lib/DateTime/TimeZone/America/Kentucky/Monticello.pm
+    version: ~
+  DateTime::TimeZone::America::La_Paz:
+    file: lib/DateTime/TimeZone/America/La_Paz.pm
+    version: ~
+  DateTime::TimeZone::America::Lima:
+    file: lib/DateTime/TimeZone/America/Lima.pm
+    version: ~
+  DateTime::TimeZone::America::Los_Angeles:
+    file: lib/DateTime/TimeZone/America/Los_Angeles.pm
+    version: ~
+  DateTime::TimeZone::America::Louisville:
+    file: lib/DateTime/TimeZone/America/Louisville.pm
+    version: ~
+  DateTime::TimeZone::America::Maceio:
+    file: lib/DateTime/TimeZone/America/Maceio.pm
+    version: ~
+  DateTime::TimeZone::America::Managua:
+    file: lib/DateTime/TimeZone/America/Managua.pm
+    version: ~
+  DateTime::TimeZone::America::Manaus:
+    file: lib/DateTime/TimeZone/America/Manaus.pm
+    version: ~
+  DateTime::TimeZone::America::Martinique:
+    file: lib/DateTime/TimeZone/America/Martinique.pm
+    version: ~
+  DateTime::TimeZone::America::Mazatlan:
+    file: lib/DateTime/TimeZone/America/Mazatlan.pm
+    version: ~
+  DateTime::TimeZone::America::Mendoza:
+    file: lib/DateTime/TimeZone/America/Mendoza.pm
+    version: ~
+  DateTime::TimeZone::America::Menominee:
+    file: lib/DateTime/TimeZone/America/Menominee.pm
+    version: ~
+  DateTime::TimeZone::America::Merida:
+    file: lib/DateTime/TimeZone/America/Merida.pm
+    version: ~
+  DateTime::TimeZone::America::Mexico_City:
+    file: lib/DateTime/TimeZone/America/Mexico_City.pm
+    version: ~
+  DateTime::TimeZone::America::Miquelon:
+    file: lib/DateTime/TimeZone/America/Miquelon.pm
+    version: ~
+  DateTime::TimeZone::America::Monterrey:
+    file: lib/DateTime/TimeZone/America/Monterrey.pm
+    version: ~
+  DateTime::TimeZone::America::Montevideo:
+    file: lib/DateTime/TimeZone/America/Montevideo.pm
+    version: ~
+  DateTime::TimeZone::America::Montreal:
+    file: lib/DateTime/TimeZone/America/Montreal.pm
+    version: ~
+  DateTime::TimeZone::America::Montserrat:
+    file: lib/DateTime/TimeZone/America/Montserrat.pm
+    version: ~
+  DateTime::TimeZone::America::Nassau:
+    file: lib/DateTime/TimeZone/America/Nassau.pm
+    version: ~
+  DateTime::TimeZone::America::New_York:
+    file: lib/DateTime/TimeZone/America/New_York.pm
+    version: ~
+  DateTime::TimeZone::America::Nipigon:
+    file: lib/DateTime/TimeZone/America/Nipigon.pm
+    version: ~
+  DateTime::TimeZone::America::Nome:
+    file: lib/DateTime/TimeZone/America/Nome.pm
+    version: ~
+  DateTime::TimeZone::America::Noronha:
+    file: lib/DateTime/TimeZone/America/Noronha.pm
+    version: ~
+  DateTime::TimeZone::America::North_Dakota::Center:
+    file: |-
+      lib/DateTime/TimeZone/America/North_Dakota/Center.pm
+    version: ~
+  DateTime::TimeZone::America::Panama:
+    file: lib/DateTime/TimeZone/America/Panama.pm
+    version: ~
+  DateTime::TimeZone::America::Pangnirtung:
+    file: lib/DateTime/TimeZone/America/Pangnirtung.pm
+    version: ~
+  DateTime::TimeZone::America::Paramaribo:
+    file: lib/DateTime/TimeZone/America/Paramaribo.pm
+    version: ~
+  DateTime::TimeZone::America::Phoenix:
+    file: lib/DateTime/TimeZone/America/Phoenix.pm
+    version: ~
+  DateTime::TimeZone::America::Port_au_Prince:
+    file: lib/DateTime/TimeZone/America/Port_au_Prince.pm
+    version: ~
+  DateTime::TimeZone::America::Port_of_Spain:
+    file: lib/DateTime/TimeZone/America/Port_of_Spain.pm
+    version: ~
+  DateTime::TimeZone::America::Porto_Velho:
+    file: lib/DateTime/TimeZone/America/Porto_Velho.pm
+    version: ~
+  DateTime::TimeZone::America::Puerto_Rico:
+    file: lib/DateTime/TimeZone/America/Puerto_Rico.pm
+    version: ~
+  DateTime::TimeZone::America::Rainy_River:
+    file: lib/DateTime/TimeZone/America/Rainy_River.pm
+    version: ~
+  DateTime::TimeZone::America::Rankin_Inlet:
+    file: lib/DateTime/TimeZone/America/Rankin_Inlet.pm
+    version: ~
+  DateTime::TimeZone::America::Recife:
+    file: lib/DateTime/TimeZone/America/Recife.pm
+    version: ~
+  DateTime::TimeZone::America::Regina:
+    file: lib/DateTime/TimeZone/America/Regina.pm
+    version: ~
+  DateTime::TimeZone::America::Rio_Branco:
+    file: lib/DateTime/TimeZone/America/Rio_Branco.pm
+    version: ~
+  DateTime::TimeZone::America::Santiago:
+    file: lib/DateTime/TimeZone/America/Santiago.pm
+    version: ~
+  DateTime::TimeZone::America::Santo_Domingo:
+    file: lib/DateTime/TimeZone/America/Santo_Domingo.pm
+    version: ~
+  DateTime::TimeZone::America::Sao_Paulo:
+    file: lib/DateTime/TimeZone/America/Sao_Paulo.pm
+    version: ~
+  DateTime::TimeZone::America::Scoresbysund:
+    file: lib/DateTime/TimeZone/America/Scoresbysund.pm
+    version: ~
+  DateTime::TimeZone::America::St_Johns:
+    file: lib/DateTime/TimeZone/America/St_Johns.pm
+    version: ~
+  DateTime::TimeZone::America::St_Kitts:
+    file: lib/DateTime/TimeZone/America/St_Kitts.pm
+    version: ~
+  DateTime::TimeZone::America::St_Lucia:
+    file: lib/DateTime/TimeZone/America/St_Lucia.pm
+    version: ~
+  DateTime::TimeZone::America::St_Thomas:
+    file: lib/DateTime/TimeZone/America/St_Thomas.pm
+    version: ~
+  DateTime::TimeZone::America::St_Vincent:
+    file: lib/DateTime/TimeZone/America/St_Vincent.pm
+    version: ~
+  DateTime::TimeZone::America::Swift_Current:
+    file: lib/DateTime/TimeZone/America/Swift_Current.pm
+    version: ~
+  DateTime::TimeZone::America::Tegucigalpa:
+    file: lib/DateTime/TimeZone/America/Tegucigalpa.pm
+    version: ~
+  DateTime::TimeZone::America::Thule:
+    file: lib/DateTime/TimeZone/America/Thule.pm
+    version: ~
+  DateTime::TimeZone::America::Thunder_Bay:
+    file: lib/DateTime/TimeZone/America/Thunder_Bay.pm
+    version: ~
+  DateTime::TimeZone::America::Tijuana:
+    file: lib/DateTime/TimeZone/America/Tijuana.pm
+    version: ~
+  DateTime::TimeZone::America::Tortola:
+    file: lib/DateTime/TimeZone/America/Tortola.pm
+    version: ~
+  DateTime::TimeZone::America::Vancouver:
+    file: lib/DateTime/TimeZone/America/Vancouver.pm
+    version: ~
+  DateTime::TimeZone::America::Whitehorse:
+    file: lib/DateTime/TimeZone/America/Whitehorse.pm
+    version: ~
+  DateTime::TimeZone::America::Winnipeg:
+    file: lib/DateTime/TimeZone/America/Winnipeg.pm
+    version: ~
+  DateTime::TimeZone::America::Yakutat:
+    file: lib/DateTime/TimeZone/America/Yakutat.pm
+    version: ~
+  DateTime::TimeZone::America::Yellowknife:
+    file: lib/DateTime/TimeZone/America/Yellowknife.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Casey:
+    file: lib/DateTime/TimeZone/Antarctica/Casey.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Davis:
+    file: lib/DateTime/TimeZone/Antarctica/Davis.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::DumontDUrville:
+    file: lib/DateTime/TimeZone/Antarctica/DumontDUrville.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Mawson:
+    file: lib/DateTime/TimeZone/Antarctica/Mawson.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::McMurdo:
+    file: lib/DateTime/TimeZone/Antarctica/McMurdo.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Palmer:
+    file: lib/DateTime/TimeZone/Antarctica/Palmer.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Rothera:
+    file: lib/DateTime/TimeZone/Antarctica/Rothera.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Syowa:
+    file: lib/DateTime/TimeZone/Antarctica/Syowa.pm
+    version: ~
+  DateTime::TimeZone::Antarctica::Vostok:
+    file: lib/DateTime/TimeZone/Antarctica/Vostok.pm
+    version: ~
+  DateTime::TimeZone::Asia::Aden:
+    file: lib/DateTime/TimeZone/Asia/Aden.pm
+    version: ~
+  DateTime::TimeZone::Asia::Almaty:
+    file: lib/DateTime/TimeZone/Asia/Almaty.pm
+    version: ~
+  DateTime::TimeZone::Asia::Amman:
+    file: lib/DateTime/TimeZone/Asia/Amman.pm
+    version: ~
+  DateTime::TimeZone::Asia::Anadyr:
+    file: lib/DateTime/TimeZone/Asia/Anadyr.pm
+    version: ~
+  DateTime::TimeZone::Asia::Aqtau:
+    file: lib/DateTime/TimeZone/Asia/Aqtau.pm
+    version: ~
+  DateTime::TimeZone::Asia::Aqtobe:
+    file: lib/DateTime/TimeZone/Asia/Aqtobe.pm
+    version: ~
+  DateTime::TimeZone::Asia::Ashgabat:
+    file: lib/DateTime/TimeZone/Asia/Ashgabat.pm
+    version: ~
+  DateTime::TimeZone::Asia::Baghdad:
+    file: lib/DateTime/TimeZone/Asia/Baghdad.pm
+    version: ~
+  DateTime::TimeZone::Asia::Bahrain:
+    file: lib/DateTime/TimeZone/Asia/Bahrain.pm
+    version: ~
+  DateTime::TimeZone::Asia::Baku:
+    file: lib/DateTime/TimeZone/Asia/Baku.pm
+    version: ~
+  DateTime::TimeZone::Asia::Bangkok:
+    file: lib/DateTime/TimeZone/Asia/Bangkok.pm
+    version: ~
+  DateTime::TimeZone::Asia::Beirut:
+    file: lib/DateTime/TimeZone/Asia/Beirut.pm
+    version: ~
+  DateTime::TimeZone::Asia::Bishkek:
+    file: lib/DateTime/TimeZone/Asia/Bishkek.pm
+    version: ~
+  DateTime::TimeZone::Asia::Brunei:
+    file: lib/DateTime/TimeZone/Asia/Brunei.pm
+    version: ~
+  DateTime::TimeZone::Asia::Calcutta:
+    file: lib/DateTime/TimeZone/Asia/Calcutta.pm
+    version: ~
+  DateTime::TimeZone::Asia::Choibalsan:
+    file: lib/DateTime/TimeZone/Asia/Choibalsan.pm
+    version: ~
+  DateTime::TimeZone::Asia::Chongqing:
+    file: lib/DateTime/TimeZone/Asia/Chongqing.pm
+    version: ~
+  DateTime::TimeZone::Asia::Colombo:
+    file: lib/DateTime/TimeZone/Asia/Colombo.pm
+    version: ~
+  DateTime::TimeZone::Asia::Damascus:
+    file: lib/DateTime/TimeZone/Asia/Damascus.pm
+    version: ~
+  DateTime::TimeZone::Asia::Dhaka:
+    file: lib/DateTime/TimeZone/Asia/Dhaka.pm
+    version: ~
+  DateTime::TimeZone::Asia::Dili:
+    file: lib/DateTime/TimeZone/Asia/Dili.pm
+    version: ~
+  DateTime::TimeZone::Asia::Dubai:
+    file: lib/DateTime/TimeZone/Asia/Dubai.pm
+    version: ~
+  DateTime::TimeZone::Asia::Dushanbe:
+    file: lib/DateTime/TimeZone/Asia/Dushanbe.pm
+    version: ~
+  DateTime::TimeZone::Asia::Gaza:
+    file: lib/DateTime/TimeZone/Asia/Gaza.pm
+    version: ~
+  DateTime::TimeZone::Asia::Harbin:
+    file: lib/DateTime/TimeZone/Asia/Harbin.pm
+    version: ~
+  DateTime::TimeZone::Asia::Hong_Kong:
+    file: lib/DateTime/TimeZone/Asia/Hong_Kong.pm
+    version: ~
+  DateTime::TimeZone::Asia::Hovd:
+    file: lib/DateTime/TimeZone/Asia/Hovd.pm
+    version: ~
+  DateTime::TimeZone::Asia::Irkutsk:
+    file: lib/DateTime/TimeZone/Asia/Irkutsk.pm
+    version: ~
+  DateTime::TimeZone::Asia::Jakarta:
+    file: lib/DateTime/TimeZone/Asia/Jakarta.pm
+    version: ~
+  DateTime::TimeZone::Asia::Jayapura:
+    file: lib/DateTime/TimeZone/Asia/Jayapura.pm
+    version: ~
+  DateTime::TimeZone::Asia::Jerusalem:
+    file: lib/DateTime/TimeZone/Asia/Jerusalem.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kabul:
+    file: lib/DateTime/TimeZone/Asia/Kabul.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kamchatka:
+    file: lib/DateTime/TimeZone/Asia/Kamchatka.pm
+    version: ~
+  DateTime::TimeZone::Asia::Karachi:
+    file: lib/DateTime/TimeZone/Asia/Karachi.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kashgar:
+    file: lib/DateTime/TimeZone/Asia/Kashgar.pm
+    version: ~
+  DateTime::TimeZone::Asia::Katmandu:
+    file: lib/DateTime/TimeZone/Asia/Katmandu.pm
+    version: ~
+  DateTime::TimeZone::Asia::Krasnoyarsk:
+    file: lib/DateTime/TimeZone/Asia/Krasnoyarsk.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kuala_Lumpur:
+    file: lib/DateTime/TimeZone/Asia/Kuala_Lumpur.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kuching:
+    file: lib/DateTime/TimeZone/Asia/Kuching.pm
+    version: ~
+  DateTime::TimeZone::Asia::Kuwait:
+    file: lib/DateTime/TimeZone/Asia/Kuwait.pm
+    version: ~
+  DateTime::TimeZone::Asia::Macau:
+    file: lib/DateTime/TimeZone/Asia/Macau.pm
+    version: ~
+  DateTime::TimeZone::Asia::Magadan:
+    file: lib/DateTime/TimeZone/Asia/Magadan.pm
+    version: ~
+  DateTime::TimeZone::Asia::Makassar:
+    file: lib/DateTime/TimeZone/Asia/Makassar.pm
+    version: ~
+  DateTime::TimeZone::Asia::Manila:
+    file: lib/DateTime/TimeZone/Asia/Manila.pm
+    version: ~
+  DateTime::TimeZone::Asia::Muscat:
+    file: lib/DateTime/TimeZone/Asia/Muscat.pm
+    version: ~
+  DateTime::TimeZone::Asia::Nicosia:
+    file: lib/DateTime/TimeZone/Asia/Nicosia.pm
+    version: ~
+  DateTime::TimeZone::Asia::Novosibirsk:
+    file: lib/DateTime/TimeZone/Asia/Novosibirsk.pm
+    version: ~
+  DateTime::TimeZone::Asia::Omsk:
+    file: lib/DateTime/TimeZone/Asia/Omsk.pm
+    version: ~
+  DateTime::TimeZone::Asia::Oral:
+    file: lib/DateTime/TimeZone/Asia/Oral.pm
+    version: ~
+  DateTime::TimeZone::Asia::Phnom_Penh:
+    file: lib/DateTime/TimeZone/Asia/Phnom_Penh.pm
+    version: ~
+  DateTime::TimeZone::Asia::Pontianak:
+    file: lib/DateTime/TimeZone/Asia/Pontianak.pm
+    version: ~
+  DateTime::TimeZone::Asia::Pyongyang:
+    file: lib/DateTime/TimeZone/Asia/Pyongyang.pm
+    version: ~
+  DateTime::TimeZone::Asia::Qatar:
+    file: lib/DateTime/TimeZone/Asia/Qatar.pm
+    version: ~
+  DateTime::TimeZone::Asia::Qyzylorda:
+    file: lib/DateTime/TimeZone/Asia/Qyzylorda.pm
+    version: ~
+  DateTime::TimeZone::Asia::Rangoon:
+    file: lib/DateTime/TimeZone/Asia/Rangoon.pm
+    version: ~
+  DateTime::TimeZone::Asia::Riyadh:
+    file: lib/DateTime/TimeZone/Asia/Riyadh.pm
+    version: ~
+  DateTime::TimeZone::Asia::Saigon:
+    file: lib/DateTime/TimeZone/Asia/Saigon.pm
+    version: ~
+  DateTime::TimeZone::Asia::Sakhalin:
+    file: lib/DateTime/TimeZone/Asia/Sakhalin.pm
+    version: ~
+  DateTime::TimeZone::Asia::Samarkand:
+    file: lib/DateTime/TimeZone/Asia/Samarkand.pm
+    version: ~
+  DateTime::TimeZone::Asia::Seoul:
+    file: lib/DateTime/TimeZone/Asia/Seoul.pm
+    version: ~
+  DateTime::TimeZone::Asia::Shanghai:
+    file: lib/DateTime/TimeZone/Asia/Shanghai.pm
+    version: ~
+  DateTime::TimeZone::Asia::Singapore:
+    file: lib/DateTime/TimeZone/Asia/Singapore.pm
+    version: ~
+  DateTime::TimeZone::Asia::Taipei:
+    file: lib/DateTime/TimeZone/Asia/Taipei.pm
+    version: ~
+  DateTime::TimeZone::Asia::Tashkent:
+    file: lib/DateTime/TimeZone/Asia/Tashkent.pm
+    version: ~
+  DateTime::TimeZone::Asia::Tbilisi:
+    file: lib/DateTime/TimeZone/Asia/Tbilisi.pm
+    version: ~
+  DateTime::TimeZone::Asia::Tehran:
+    file: lib/DateTime/TimeZone/Asia/Tehran.pm
+    version: ~
+  DateTime::TimeZone::Asia::Thimphu:
+    file: lib/DateTime/TimeZone/Asia/Thimphu.pm
+    version: ~
+  DateTime::TimeZone::Asia::Tokyo:
+    file: lib/DateTime/TimeZone/Asia/Tokyo.pm
+    version: ~
+  DateTime::TimeZone::Asia::Ulaanbaatar:
+    file: lib/DateTime/TimeZone/Asia/Ulaanbaatar.pm
+    version: ~
+  DateTime::TimeZone::Asia::Urumqi:
+    file: lib/DateTime/TimeZone/Asia/Urumqi.pm
+    version: ~
+  DateTime::TimeZone::Asia::Vientiane:
+    file: lib/DateTime/TimeZone/Asia/Vientiane.pm
+    version: ~
+  DateTime::TimeZone::Asia::Vladivostok:
+    file: lib/DateTime/TimeZone/Asia/Vladivostok.pm
+    version: ~
+  DateTime::TimeZone::Asia::Yakutsk:
+    file: lib/DateTime/TimeZone/Asia/Yakutsk.pm
+    version: ~
+  DateTime::TimeZone::Asia::Yekaterinburg:
+    file: lib/DateTime/TimeZone/Asia/Yekaterinburg.pm
+    version: ~
+  DateTime::TimeZone::Asia::Yerevan:
+    file: lib/DateTime/TimeZone/Asia/Yerevan.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Azores:
+    file: lib/DateTime/TimeZone/Atlantic/Azores.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Bermuda:
+    file: lib/DateTime/TimeZone/Atlantic/Bermuda.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Canary:
+    file: lib/DateTime/TimeZone/Atlantic/Canary.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Cape_Verde:
+    file: lib/DateTime/TimeZone/Atlantic/Cape_Verde.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Faeroe:
+    file: lib/DateTime/TimeZone/Atlantic/Faeroe.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Madeira:
+    file: lib/DateTime/TimeZone/Atlantic/Madeira.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Reykjavik:
+    file: lib/DateTime/TimeZone/Atlantic/Reykjavik.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::South_Georgia:
+    file: lib/DateTime/TimeZone/Atlantic/South_Georgia.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::St_Helena:
+    file: lib/DateTime/TimeZone/Atlantic/St_Helena.pm
+    version: ~
+  DateTime::TimeZone::Atlantic::Stanley:
+    file: lib/DateTime/TimeZone/Atlantic/Stanley.pm
+    version: ~
+  DateTime::TimeZone::Australia::Adelaide:
+    file: lib/DateTime/TimeZone/Australia/Adelaide.pm
+    version: ~
+  DateTime::TimeZone::Australia::Brisbane:
+    file: lib/DateTime/TimeZone/Australia/Brisbane.pm
+    version: ~
+  DateTime::TimeZone::Australia::Broken_Hill:
+    file: lib/DateTime/TimeZone/Australia/Broken_Hill.pm
+    version: ~
+  DateTime::TimeZone::Australia::Darwin:
+    file: lib/DateTime/TimeZone/Australia/Darwin.pm
+    version: ~
+  DateTime::TimeZone::Australia::Hobart:
+    file: lib/DateTime/TimeZone/Australia/Hobart.pm
+    version: ~
+  DateTime::TimeZone::Australia::Lindeman:
+    file: lib/DateTime/TimeZone/Australia/Lindeman.pm
+    version: ~
+  DateTime::TimeZone::Australia::Lord_Howe:
+    file: lib/DateTime/TimeZone/Australia/Lord_Howe.pm
+    version: ~
+  DateTime::TimeZone::Australia::Melbourne:
+    file: lib/DateTime/TimeZone/Australia/Melbourne.pm
+    version: ~
+  DateTime::TimeZone::Australia::Perth:
+    file: lib/DateTime/TimeZone/Australia/Perth.pm
+    version: ~
+  DateTime::TimeZone::Australia::Sydney:
+    file: lib/DateTime/TimeZone/Australia/Sydney.pm
+    version: ~
+  DateTime::TimeZone::Europe::Amsterdam:
+    file: lib/DateTime/TimeZone/Europe/Amsterdam.pm
+    version: ~
+  DateTime::TimeZone::Europe::Andorra:
+    file: lib/DateTime/TimeZone/Europe/Andorra.pm
+    version: ~
+  DateTime::TimeZone::Europe::Athens:
+    file: lib/DateTime/TimeZone/Europe/Athens.pm
+    version: ~
+  DateTime::TimeZone::Europe::Belfast:
+    file: lib/DateTime/TimeZone/Europe/Belfast.pm
+    version: ~
+  DateTime::TimeZone::Europe::Belgrade:
+    file: lib/DateTime/TimeZone/Europe/Belgrade.pm
+    version: ~
+  DateTime::TimeZone::Europe::Berlin:
+    file: lib/DateTime/TimeZone/Europe/Berlin.pm
+    version: ~
+  DateTime::TimeZone::Europe::Brussels:
+    file: lib/DateTime/TimeZone/Europe/Brussels.pm
+    version: ~
+  DateTime::TimeZone::Europe::Bucharest:
+    file: lib/DateTime/TimeZone/Europe/Bucharest.pm
+    version: ~
+  DateTime::TimeZone::Europe::Budapest:
+    file: lib/DateTime/TimeZone/Europe/Budapest.pm
+    version: ~
+  DateTime::TimeZone::Europe::Chisinau:
+    file: lib/DateTime/TimeZone/Europe/Chisinau.pm
+    version: ~
+  DateTime::TimeZone::Europe::Copenhagen:
+    file: lib/DateTime/TimeZone/Europe/Copenhagen.pm
+    version: ~
+  DateTime::TimeZone::Europe::Dublin:
+    file: lib/DateTime/TimeZone/Europe/Dublin.pm
+    version: ~
+  DateTime::TimeZone::Europe::Gibraltar:
+    file: lib/DateTime/TimeZone/Europe/Gibraltar.pm
+    version: ~
+  DateTime::TimeZone::Europe::Helsinki:
+    file: lib/DateTime/TimeZone/Europe/Helsinki.pm
+    version: ~
+  DateTime::TimeZone::Europe::Istanbul:
+    file: lib/DateTime/TimeZone/Europe/Istanbul.pm
+    version: ~
+  DateTime::TimeZone::Europe::Kaliningrad:
+    file: lib/DateTime/TimeZone/Europe/Kaliningrad.pm
+    version: ~
+  DateTime::TimeZone::Europe::Kiev:
+    file: lib/DateTime/TimeZone/Europe/Kiev.pm
+    version: ~
+  DateTime::TimeZone::Europe::Lisbon:
+    file: lib/DateTime/TimeZone/Europe/Lisbon.pm
+    version: ~
+  DateTime::TimeZone::Europe::London:
+    file: lib/DateTime/TimeZone/Europe/London.pm
+    version: ~
+  DateTime::TimeZone::Europe::Luxembourg:
+    file: lib/DateTime/TimeZone/Europe/Luxembourg.pm
+    version: ~
+  DateTime::TimeZone::Europe::Madrid:
+    file: lib/DateTime/TimeZone/Europe/Madrid.pm
+    version: ~
+  DateTime::TimeZone::Europe::Malta:
+    file: lib/DateTime/TimeZone/Europe/Malta.pm
+    version: ~
+  DateTime::TimeZone::Europe::Minsk:
+    file: lib/DateTime/TimeZone/Europe/Minsk.pm
+    version: ~
+  DateTime::TimeZone::Europe::Monaco:
+    file: lib/DateTime/TimeZone/Europe/Monaco.pm
+    version: ~
+  DateTime::TimeZone::Europe::Moscow:
+    file: lib/DateTime/TimeZone/Europe/Moscow.pm
+    version: ~
+  DateTime::TimeZone::Europe::Oslo:
+    file: lib/DateTime/TimeZone/Europe/Oslo.pm
+    version: ~
+  DateTime::TimeZone::Europe::Paris:
+    file: lib/DateTime/TimeZone/Europe/Paris.pm
+    version: ~
+  DateTime::TimeZone::Europe::Prague:
+    file: lib/DateTime/TimeZone/Europe/Prague.pm
+    version: ~
+  DateTime::TimeZone::Europe::Riga:
+    file: lib/DateTime/TimeZone/Europe/Riga.pm
+    version: ~
+  DateTime::TimeZone::Europe::Rome:
+    file: lib/DateTime/TimeZone/Europe/Rome.pm
+    version: ~
+  DateTime::TimeZone::Europe::Samara:
+    file: lib/DateTime/TimeZone/Europe/Samara.pm
+    version: ~
+  DateTime::TimeZone::Europe::Simferopol:
+    file: lib/DateTime/TimeZone/Europe/Simferopol.pm
+    version: ~
+  DateTime::TimeZone::Europe::Sofia:
+    file: lib/DateTime/TimeZone/Europe/Sofia.pm
+    version: ~
+  DateTime::TimeZone::Europe::Stockholm:
+    file: lib/DateTime/TimeZone/Europe/Stockholm.pm
+    version: ~
+  DateTime::TimeZone::Europe::Tallinn:
+    file: lib/DateTime/TimeZone/Europe/Tallinn.pm
+    version: ~
+  DateTime::TimeZone::Europe::Tirane:
+    file: lib/DateTime/TimeZone/Europe/Tirane.pm
+    version: ~
+  DateTime::TimeZone::Europe::Uzhgorod:
+    file: lib/DateTime/TimeZone/Europe/Uzhgorod.pm
+    version: ~
+  DateTime::TimeZone::Europe::Vaduz:
+    file: lib/DateTime/TimeZone/Europe/Vaduz.pm
+    version: ~
+  DateTime::TimeZone::Europe::Vienna:
+    file: lib/DateTime/TimeZone/Europe/Vienna.pm
+    version: ~
+  DateTime::TimeZone::Europe::Vilnius:
+    file: lib/DateTime/TimeZone/Europe/Vilnius.pm
+    version: ~
+  DateTime::TimeZone::Europe::Warsaw:
+    file: lib/DateTime/TimeZone/Europe/Warsaw.pm
+    version: ~
+  DateTime::TimeZone::Europe::Zaporozhye:
+    file: lib/DateTime/TimeZone/Europe/Zaporozhye.pm
+    version: ~
+  DateTime::TimeZone::Europe::Zurich:
+    file: lib/DateTime/TimeZone/Europe/Zurich.pm
+    version: ~
+  DateTime::TimeZone::Floating:
+    file: lib/DateTime/TimeZone/Floating.pm
+    version: 0.01
+  DateTime::TimeZone::Indian::Antananarivo:
+    file: lib/DateTime/TimeZone/Indian/Antananarivo.pm
+    version: ~
+  DateTime::TimeZone::Indian::Chagos:
+    file: lib/DateTime/TimeZone/Indian/Chagos.pm
+    version: ~
+  DateTime::TimeZone::Indian::Christmas:
+    file: lib/DateTime/TimeZone/Indian/Christmas.pm
+    version: ~
+  DateTime::TimeZone::Indian::Cocos:
+    file: lib/DateTime/TimeZone/Indian/Cocos.pm
+    version: ~
+  DateTime::TimeZone::Indian::Comoro:
+    file: lib/DateTime/TimeZone/Indian/Comoro.pm
+    version: ~
+  DateTime::TimeZone::Indian::Kerguelen:
+    file: lib/DateTime/TimeZone/Indian/Kerguelen.pm
+    version: ~
+  DateTime::TimeZone::Indian::Mahe:
+    file: lib/DateTime/TimeZone/Indian/Mahe.pm
+    version: ~
+  DateTime::TimeZone::Indian::Maldives:
+    file: lib/DateTime/TimeZone/Indian/Maldives.pm
+    version: ~
+  DateTime::TimeZone::Indian::Mauritius:
+    file: lib/DateTime/TimeZone/Indian/Mauritius.pm
+    version: ~
+  DateTime::TimeZone::Indian::Mayotte:
+    file: lib/DateTime/TimeZone/Indian/Mayotte.pm
+    version: ~
+  DateTime::TimeZone::Indian::Reunion:
+    file: lib/DateTime/TimeZone/Indian/Reunion.pm
+    version: ~
+  DateTime::TimeZone::Local:
+    file: lib/DateTime/TimeZone/Local.pm
+    version: ~
+  DateTime::TimeZone::OffsetOnly:
+    file: lib/DateTime/TimeZone/OffsetOnly.pm
+    version: 0.01
+  DateTime::TimeZone::OlsonDB:
+    file: lib/DateTime/TimeZone/OlsonDB.pm
+    version: ~
+  DateTime::TimeZone::OlsonDB::Change:
+    file: lib/DateTime/TimeZone/OlsonDB.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Apia:
+    file: lib/DateTime/TimeZone/Pacific/Apia.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Auckland:
+    file: lib/DateTime/TimeZone/Pacific/Auckland.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Chatham:
+    file: lib/DateTime/TimeZone/Pacific/Chatham.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Easter:
+    file: lib/DateTime/TimeZone/Pacific/Easter.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Efate:
+    file: lib/DateTime/TimeZone/Pacific/Efate.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Enderbury:
+    file: lib/DateTime/TimeZone/Pacific/Enderbury.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Fakaofo:
+    file: lib/DateTime/TimeZone/Pacific/Fakaofo.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Fiji:
+    file: lib/DateTime/TimeZone/Pacific/Fiji.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Funafuti:
+    file: lib/DateTime/TimeZone/Pacific/Funafuti.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Galapagos:
+    file: lib/DateTime/TimeZone/Pacific/Galapagos.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Gambier:
+    file: lib/DateTime/TimeZone/Pacific/Gambier.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Guadalcanal:
+    file: lib/DateTime/TimeZone/Pacific/Guadalcanal.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Guam:
+    file: lib/DateTime/TimeZone/Pacific/Guam.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Honolulu:
+    file: lib/DateTime/TimeZone/Pacific/Honolulu.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Johnston:
+    file: lib/DateTime/TimeZone/Pacific/Johnston.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Kiritimati:
+    file: lib/DateTime/TimeZone/Pacific/Kiritimati.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Kosrae:
+    file: lib/DateTime/TimeZone/Pacific/Kosrae.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Kwajalein:
+    file: lib/DateTime/TimeZone/Pacific/Kwajalein.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Majuro:
+    file: lib/DateTime/TimeZone/Pacific/Majuro.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Marquesas:
+    file: lib/DateTime/TimeZone/Pacific/Marquesas.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Midway:
+    file: lib/DateTime/TimeZone/Pacific/Midway.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Nauru:
+    file: lib/DateTime/TimeZone/Pacific/Nauru.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Niue:
+    file: lib/DateTime/TimeZone/Pacific/Niue.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Norfolk:
+    file: lib/DateTime/TimeZone/Pacific/Norfolk.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Noumea:
+    file: lib/DateTime/TimeZone/Pacific/Noumea.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Pago_Pago:
+    file: lib/DateTime/TimeZone/Pacific/Pago_Pago.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Palau:
+    file: lib/DateTime/TimeZone/Pacific/Palau.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Pitcairn:
+    file: lib/DateTime/TimeZone/Pacific/Pitcairn.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Ponape:
+    file: lib/DateTime/TimeZone/Pacific/Ponape.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Port_Moresby:
+    file: lib/DateTime/TimeZone/Pacific/Port_Moresby.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Rarotonga:
+    file: lib/DateTime/TimeZone/Pacific/Rarotonga.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Saipan:
+    file: lib/DateTime/TimeZone/Pacific/Saipan.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Tahiti:
+    file: lib/DateTime/TimeZone/Pacific/Tahiti.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Tarawa:
+    file: lib/DateTime/TimeZone/Pacific/Tarawa.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Tongatapu:
+    file: lib/DateTime/TimeZone/Pacific/Tongatapu.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Truk:
+    file: lib/DateTime/TimeZone/Pacific/Truk.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Wake:
+    file: lib/DateTime/TimeZone/Pacific/Wake.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Wallis:
+    file: lib/DateTime/TimeZone/Pacific/Wallis.pm
+    version: ~
+  DateTime::TimeZone::Pacific::Yap:
+    file: lib/DateTime/TimeZone/Pacific/Yap.pm
+    version: ~
+  DateTime::TimeZone::UTC:
+    file: lib/DateTime/TimeZone/UTC.pm
+    version: 0.01
+generated_by: Module::Build version 0.18
