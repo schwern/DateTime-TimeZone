@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.15';
+$VERSION = '0.16';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -66,7 +66,10 @@ sub _local_timezone
 {
     my $class = shift;
 
-    if ( defined $ENV{TZ} && $ENV{TZ} ne 'local' )
+    if ( defined $ENV{TZ} && $ENV{TZ} ne 'local' &&
+         # don't bother if the variable contains something that
+         # couldn't be a valid time zone name
+         $ENV{TZ} =~ m,^[\w/]+$, )
     {
         my $tz;
         eval { $tz = $class->new( name => $ENV{TZ} ) };
@@ -102,7 +105,7 @@ sub _local_timezone
 
     die "Cannot determine local time zone\n";
 }
-sub DateTime::TimeZone::readlink { CORE::readlink(@_) }
+sub DateTime::TimeZone::readlink { CORE::readlink($_[0]) }
 
 sub _init
 {
@@ -356,6 +359,14 @@ useful for calendaring applications, which may need to specify that a
 given event happens at the same I<local> time, regardless of where it
 occurs.  See RFC 2445 for more details.
 
+If the "name" parameter is "UTC", then a C<DateTime::TimeZone::UTC>
+object is returned.
+
+If the "name" is an offset string, it is converted to a number, and a
+C<DateTime::TimeZone::OffsetOnly> object is returned.
+
+=head3 The "local" time zone
+
 If the "name" parameter is "local", then the module attempts to
 determine the local time zone for the system.
 
@@ -371,13 +382,12 @@ example, if this file is linked to F</usr/share/zoneinfo/US/Central>,
 it will end up trying "US/Central", which will then be converted to
 "America/Chicago" internally.
 
+Some systems just copy the relevant file to F</etc/localtime> instead
+of making a symlink.  Unfortunately, these files don't contain their
+own name!  This means that there is no way to look at a copy and
+figure out what time zone it represents.
+
 If neither of these methods work, it gives up and dies.
-
-If the "name" parameter is "UTC", then a C<DateTime::TimeZone::UTC>
-object is returned.
-
-Finally, if the "name" is an offset string, it is converted to a
-number, and a C<DateTime::TimeZone::OffsetOnly> object is returned.
 
 =item * offset_for_datetime( $datetime )
 
