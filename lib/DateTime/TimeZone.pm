@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.2507';
+$VERSION = '0.26';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -62,7 +62,7 @@ sub new
 
     my $subclass = $p{name};
     $subclass =~ s/-/_/g;
-    $subclass =~ s/\//::/g;
+    $subclass =~ s{/}{::}g;
     my $real_class = "DateTime::TimeZone::$subclass";
 
     unless ( $real_class->can('instance') )
@@ -351,6 +351,45 @@ sub is_utc { 0 }
 sub name      { $_[0]->{name} }
 sub category  { (split /\//, $_[0]->{name}, 2)[0] }
 
+sub is_valid_name
+{
+    my $tz = eval { $_[0]->new( name => $_[1] ) };
+
+    return $tz && UNIVERSAL::isa( $tz, 'DateTime::TimeZone') ? 1 : 0
+}
+
+sub STORABLE_freeze
+{
+    my $self = shift;
+
+    return $self->name;
+}
+
+sub STORABLE_thaw
+{
+    my $self = shift;
+    my $cloning = shift;
+    my $serialized = shift;
+
+    my $class = ref $self || $self;
+
+    my $obj;
+    if ( $class->isa(__PACKAGE__) )
+    {
+        $obj = __PACKAGE__->new( name => $serialized );
+    }
+    else
+    {
+        $obj = $class->new( name => $serialized );
+    }
+
+    # This breaks the "singleton-ness" of timezone objects, but
+    # there's no way to tell Storable to simply use an existing
+    # object.  This shouldn't matter since we copy the underlying
+    # structures by reference here, so span generation in one object
+    # will be visible in another also in memory.
+    %$self = %$obj;
+}
 
 #
 # Functions
@@ -569,6 +608,30 @@ Returns the part of the time zone name before the first slash.  For
 example, the "America/Chicago" time zone would return "America".
 
 =back
+
+=head2 Class Methods
+
+This class provides one class method:
+
+=over 4
+
+=item * is_valid_name ($name)
+
+Given a string, this method returns a boolean value indicating whether
+or not the string is a valid time zone name.  If you are using
+C<DateTime::TimeZone::Alias>, any aliases you've created will be valid.
+
+=back
+
+=head2 Storable Hooks
+
+This module provides freeze and thaw hooks for C<Storable> so that the
+huge data structures for Olson time zones are not actually stored in
+the serialized structure.
+
+If you subclass C<DateTime::TimeZone>, you will inherit its hooks,
+which may not work for your module, so please test the interaction of
+your module with Storable.
 
 =head2 Functions
 
