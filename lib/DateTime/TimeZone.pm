@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION $INFINITY $NEG_INFINITY );
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -139,8 +139,14 @@ sub _span_for_datetime
 
         # This means someone gave a local time that doesn't exist
         # (like during a transition into savings time)
-        die "Invalid local time for date " . $dt->iso8601
-            unless defined $span;
+        unless ( defined $span )
+        {
+            my $err = 'Invalid local time for date';
+            $err .= ' ' . $dt->iso8601 if $type eq 'utc';
+            $err .= "\n";
+
+            die $err;
+        }
 
         return $span;
     }
@@ -248,8 +254,10 @@ sub offset_as_string
 
     my $sign = $offset < 0 ? '-' : '+';
 
+    $offset = abs($offset);
+
     my $hours = $offset / ( 60 * 60 );
-    $hours = abs($hours) % 24;
+    $hours = $hours % 24;
 
     my $mins = ( $offset % ( 60 * 60 ) ) / 60;
 
