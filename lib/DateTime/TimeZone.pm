@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION $INFINITY $NEG_INFINITY );
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -22,6 +22,11 @@ sub new
     my %p = validate( @_,
                       { name => { type => SCALAR } },
                     );
+
+    if ( exists $DateTime::TimeZone::Links{ $p{name} } )
+    {
+        $p{name} = $DateTime::TimeZone::Links{ $p{name} };
+    }
 
     unless ( $p{name} =~ m,/, )
     {
@@ -49,26 +54,12 @@ sub new
                     ( offset => $gm - $local );
         }
 
-        if ( $p{name} eq 'UTC' )
+        if ( $p{name} eq 'UTC' || $p{name} eq 'Z' )
         {
             return DateTime::TimeZone::UTC->new;
         }
 
-        my $offset;
-        if ( $offset = offset_as_seconds( $p{name} ) )
-        {
-            return DateTime::TimeZone::OffsetOnly->new( offset => $offset );
-        }
-
-        if ( ( defined $offset && $offset == 0 ) || $p{name} eq '0' )
-        {
-            return DateTime::TimeZone::UTC->new;
-        }
-    }
-
-    if ( exists $DateTime::TimeZone::Links{ $p{name} } )
-    {
-        $p{name} = $DateTime::TimeZone::Links{ $p{name} };
+        return DateTime::TimeZone::OffsetOnly->new( offset => $p{name} );
     }
 
     my $subclass = $p{name};
@@ -228,9 +219,6 @@ sub offset_as_seconds
 
     return undef unless defined $offset;
 
-    # if it's just a number assume it's seconds
-    return $offset if $offset =~ /^-?\d+$/;
-
     return undef unless $offset =~ /^([\+\-])?(\d\d?):?(\d\d)(?::?(\d\d))?$/;
 
     my ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $3, $4 );
@@ -249,12 +237,10 @@ sub offset_as_string
 
     return undef unless defined $offset;
 
-    return $offset if $offset =~ /^[\+\-]\d\d\d\d(?:\d\d)?$/;
-
     my $sign = $offset < 0 ? '-' : '+';
 
     my $hours = $offset / ( 60 * 60 );
-    $hours %= 24;
+    $hours = abs($hours) % 24;
 
     my $mins = ( $offset % ( 60 * 60 ) ) / 60;
 
@@ -328,9 +314,8 @@ C<DateTime::TimeZone::OffsetOnly> object.
 If the "name" parameter is "UTC", then a C<DateTime::TimeZone::UTC>
 object is returned.
 
-Finally, if the "name" is a number or an offset string, that is
-converted to a number and a C<DateTime::TimeZone::OffsetOnly> object
-is returned.
+Finally, if the "name" is an offset string, it is converted to a
+number, and a C<DateTime::TimeZone::OffsetOnly> object is returned.
 
 =item * offset_for_datetime( $datetime )
 
@@ -409,13 +394,12 @@ an array reference, while in list context it returns an array.
 
 =item * offset_as_seconds( $offset )
 
-Given an offset as a string or number, this returns the number of
-seconds represented by the offset as a positive or negative number.
+Given an offset as a string, this returns the number of seconds
+represented by the offset as a positive or negative number.
 
 =item * offset_as_string( $offset )
 
-Given an offset as a string or number, this returns the offset as
-string.
+Given an offset as a number, this returns the offset as a string.
 
 =back
 
