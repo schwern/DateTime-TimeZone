@@ -21,7 +21,7 @@ my $spans =
   {
     'short_name' => 'CHAT',
     'utc_end' => '62790904800',
-    'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
+    'utc_start' => DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '62790950700',
     'is_dst' => 0,
     'offset' => 45900,
@@ -453,17 +453,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'Sun>=15',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1991',
-    'in' => 'Mar',
-    'at' => '2:45s',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'D',
     'on' => 'Sun>=1',
     'save' => '1:00',
@@ -473,6 +462,17 @@ my $rules = [
     'at' => '2:45s',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'Sun>=15',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1991',
+    'in' => 'Mar',
+    'at' => '2:45s',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

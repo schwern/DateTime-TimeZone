@@ -20,8 +20,8 @@ my $spans =
 [
   {
     'short_name' => 'HST',
-    'utc_end' => $DateTime::TimeZone::INFINITY,
-    'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
+    'utc_end' => DateTime::TimeZone::INFINITY,
+    'utc_start' => DateTime::TimeZone::NEG_INFINITY,
     'offset' => -36000
   }
 ]

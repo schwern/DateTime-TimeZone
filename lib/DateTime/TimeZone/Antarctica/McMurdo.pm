@@ -21,7 +21,7 @@ my $spans =
   {
     'short_name' => 'zzz',
     'utc_end' => '61693833600',
-    'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
+    'utc_start' => DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '61693833600',
     'is_dst' => 0,
     'offset' => 0,

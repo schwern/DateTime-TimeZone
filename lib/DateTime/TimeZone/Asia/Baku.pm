@@ -21,7 +21,7 @@ my $spans =
   {
     'short_name' => 'LMT',
     'utc_end' => '60694519236',
-    'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
+    'utc_start' => DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '60694531200',
     'is_dst' => 0,
     'offset' => 11964,
@@ -628,9 +628,9 @@ my $rules = [
     'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
-    'from' => '1997',
+    'from' => '1996',
     'in' => 'Oct',
-    'at' => '1:00',
+    'at' => '2:00s',
     'type' => undef,
     'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
@@ -644,17 +644,6 @@ my $rules = [
     'at' => '1:00u',
     'type' => undef,
     'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'letter' => 'S',
-    'on' => 'lastSun',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1993',
-    'in' => 'Mar',
-    'at' => '2:00s',
-    'type' => undef,
-    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => 'S',
@@ -683,11 +672,22 @@ my $rules = [
     'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
-    'from' => '1996',
+    'from' => '1997',
     'in' => 'Oct',
-    'at' => '2:00s',
+    'at' => '1:00',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'lastSun',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1993',
+    'in' => 'Mar',
+    'at' => '2:00s',
+    'type' => undef,
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

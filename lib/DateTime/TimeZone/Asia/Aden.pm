@@ -21,7 +21,7 @@ my $spans =
   {
     'short_name' => 'LMT',
     'utc_end' => '61504520352',
-    'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
+    'utc_start' => DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '61504531200',
     'is_dst' => 0,
     'offset' => 10848,
@@ -29,7 +29,7 @@ my $spans =
   },
   {
     'short_name' => 'AST',
-    'utc_end' => $DateTime::TimeZone::INFINITY,
+    'utc_end' => DateTime::TimeZone::INFINITY,
     'utc_start' => '61504520352',
     'offset' => 10800
   }
