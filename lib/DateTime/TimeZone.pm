@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.2502';
+$VERSION = '0.2503';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -346,9 +346,19 @@ sub offset_as_seconds
 
     return 0 if $offset eq '0';
 
-    return undef unless $offset =~ /^([\+\-])?(\d\d)(:?)(\d\d)(?:\3(\d\d))?$/;
-
-    my ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $4, $5 );
+    my ( $sign, $hours, $minutes, $seconds );
+    if ( $offset =~ /^([\+\-])?(\d\d?):(\d\d)(?::(\d\d))?$/ )
+    {
+        ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $3, $4 );
+    }
+    elsif ( $offset =~ /^([\+\-])?(\d\d)(\d\d)(\d\d)?$/ )
+    {
+        ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $3, $4 );
+    }
+    else
+    {
+        return undef;
+    }
 
     $sign = '+' unless defined $sign;
     return undef unless $hours >= 0 && $hours <= 99;
@@ -438,6 +448,8 @@ object is returned.
 If the "name" is an offset string, it is converted to a number, and a
 C<DateTime::TimeZone::OffsetOnly> object is returned.
 
+=back
+
 =head3 The "local" time zone
 
 If the "name" parameter is "local", then the module attempts to
@@ -471,8 +483,6 @@ C</ZONE="([^"]+)"/>.  If this line exists, it tries the value as a
 time zone name.
 
 If none of these methods work, it gives up and dies.
-
-=back
 
 =head2 Object Methods
 
@@ -573,8 +583,16 @@ an array reference, while in list context it returns an array.
 =item * offset_as_seconds( $offset )
 
 Given an offset as a string, this returns the number of seconds
-represented by the offset as a positive or negative number.
-Returns C<undef> if $offset is not in the range C<-99:59:59> to C<+99:59:59>.
+represented by the offset as a positive or negative number.  Returns
+C<undef> if $offset is not in the range C<-99:59:59> to C<+99:59:59>.
+
+The offset is expected to match either
+C</^([\+\-])?(\d\d?):(\d\d)(?::(\d\d))?$/> or
+C</^([\+\-])?(\d\d)(\d\d)(\d\d)?$/>.  If it doesn't match either of
+these, C<undef> will be returned.
+
+This means that if you want to specify hours as a single digit, then
+each element of the offset must be separated by a colon (:).
 
 =item * offset_as_string( $offset )
 
