@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION $INFINITY $NEG_INFINITY );
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -34,19 +34,19 @@ sub new
         {
             if ( defined $ENV{TZ} && $ENV{TZ} ne 'local' )
             {
-                return $class->new( name => $ENV{TZ} );
+                my $tz;
+                eval { $tz = $class->new( name => $ENV{TZ} ) };
+                return $tz if $tz && ! $@;
             }
-            else
-            {
-                my @t = gmtime;
 
-                my $local = Time::Local::timelocal(@t);
-                my $gm    = Time::Local::timegm(@t);
+            my @t = gmtime;
 
-                return
-                    DateTime::TimeZone::OffsetOnly->new
-                        ( offset => $gm - $local );
-            }
+            my $local = Time::Local::timelocal(@t);
+            my $gm    = Time::Local::timegm(@t);
+
+            return
+                DateTime::TimeZone::OffsetOnly->new
+                    ( offset => $gm - $local );
         }
 
         if ( $p{name} eq 'UTC' )
@@ -76,7 +76,7 @@ sub new
     $subclass =~ s/\//::/g;
     my $real_class = "DateTime::TimeZone::$subclass";
 
-    eval "require $real_class";warn $@ if $@;
+    eval "require $real_class";
     die "Invalid time zone name: $p{name}" if $@;
 
     return $real_class->instance( name => $p{name} );
@@ -134,8 +134,8 @@ sub _is_in_span
     elsif ( ref $i1 eq 'HASH' )
     {
 
-        return -1 if $i2->[1] <  $i1->{ $i2->[0] }[0];
-        return  1 if $i2->[1] >= $i1->{ $i2->[0] }[1];
+        return  1 if $i2->[1] <  $i1->{ $i2->[0] }[0];
+        return -1 if $i2->[1] >= $i1->{ $i2->[0] }[1];
 
         return  0;
     }
@@ -316,8 +316,12 @@ occurs.  See RFC 2445 for more details.
 If the "name" parameter is "local", then the local time zone of the
 current system is used.  If C<$ENV{TZ}> is defined, and it is not the
 string 'local', then it is treated as any other valid name (including
-"floating").  Otherwise, the local offset is calculated by comparing
-the difference between the C<Time::Local> module's C<timegm()> and
+"floating"), and the constructor tries to create a time zone based on
+that name.
+
+If C<$ENV{TZ}> is not defined, or it does not contain a valid time
+zone name, then the local offset is calculated by comparing the
+difference between the C<Time::Local> module's C<timegm()> and
 C<timelocal()> functions.  This offset is then used to create a
 C<DateTime::TimeZone::OffsetOnly> object.
 
