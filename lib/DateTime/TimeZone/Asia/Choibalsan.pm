@@ -276,20 +276,3 @@ sub _new_instance
 
 1;
 
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Asia::Choibalsan - Time zone data for Asia/Choibalsan
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Asia/Choibalsan' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
-

@@ -892,17 +892,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'lastFri',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1995',
-    'in' => 'Apr',
-    'at' => '0:00s',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => '',
     'on' => 'lastThu',
     'save' => '0',
@@ -912,6 +901,17 @@ my $rules = [
     'at' => '23:00s',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'lastFri',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1995',
+    'in' => 'Apr',
+    'at' => '0:00s',
+    'type' => undef,
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
@@ -1064,21 +1064,4 @@ sub _generate_spans_until_match
 
 
 1;
-
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Africa::Cairo - Time zone data for Africa/Cairo
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Africa/Cairo' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
 

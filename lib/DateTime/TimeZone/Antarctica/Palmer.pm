@@ -660,17 +660,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => '',
-    'on' => 'Sun>=9',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '2000',
-    'in' => 'Mar',
-    'at' => '0:00',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'S',
     'on' => 'Sun>=9',
     'save' => '1:00',
@@ -680,6 +669,17 @@ my $rules = [
     'at' => '0:00',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'Sun>=9',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '2000',
+    'in' => 'Mar',
+    'at' => '0:00',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
@@ -832,21 +832,4 @@ sub _generate_spans_until_match
 
 
 1;
-
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Antarctica::Palmer - Time zone data for Antarctica/Palmer
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Antarctica/Palmer' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
 

@@ -671,17 +671,6 @@ my $rules = [
     'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
-    'letter' => '',
-    'on' => 'lastSun',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1996',
-    'in' => 'Oct',
-    'at' => '2:00s',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'S',
     'on' => 'lastSun',
     'save' => '1:00',
@@ -691,6 +680,17 @@ my $rules = [
     'at' => '2:00s',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'lastSun',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1996',
+    'in' => 'Oct',
+    'at' => '2:00s',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => 'S',
@@ -854,21 +854,4 @@ sub _generate_spans_until_match
 
 
 1;
-
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Europe::Kaliningrad - Time zone data for Europe/Kaliningrad
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Europe/Kaliningrad' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
 

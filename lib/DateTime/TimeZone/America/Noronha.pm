@@ -300,17 +300,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'Sun>=8',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '2003',
-    'in' => 'Oct',
-    'at' => '0:00',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => '',
     'on' => 'Sun>=15',
     'save' => '0',
@@ -320,6 +309,17 @@ my $rules = [
     'at' => '0:00',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'Sun>=8',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '2003',
+    'in' => 'Oct',
+    'at' => '0:00',
+    'type' => undef,
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
@@ -472,21 +472,4 @@ sub _generate_spans_until_match
 
 
 1;
-
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::America::Noronha - Time zone data for America/Noronha
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'America/Noronha' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
 

@@ -814,13 +814,13 @@ my $rules = [
   bless( {
     'letter' => '',
     'on' => 'lastSun',
-    'save' => '1:00',
+    'save' => '0',
     'to' => 'max',
-    'from' => '2001',
-    'in' => 'Oct',
+    'from' => '1995',
+    'in' => 'Mar',
     'at' => '2:00s',
     'type' => undef,
-    'offset' => 3600
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => '',
@@ -836,20 +836,20 @@ my $rules = [
   bless( {
     'letter' => '',
     'on' => 'lastSun',
-    'save' => '0',
+    'save' => '1:00',
     'to' => 'max',
-    'from' => '1995',
-    'in' => 'Mar',
+    'from' => '1987',
+    'in' => 'Oct',
     'at' => '2:00s',
     'type' => undef,
-    'offset' => 0
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => '',
     'on' => 'lastSun',
     'save' => '1:00',
     'to' => 'max',
-    'from' => '1987',
+    'from' => '2001',
     'in' => 'Oct',
     'at' => '2:00s',
     'type' => undef,
@@ -1006,21 +1006,4 @@ sub _generate_spans_until_match
 
 
 1;
-
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Australia::Broken_Hill - Time zone data for Australia/Broken_Hill
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Australia/Broken_Hill' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
 

@@ -761,20 +761,3 @@ sub _generate_spans_until_match
 
 1;
 
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Atlantic::Canary - Time zone data for Atlantic/Canary
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Atlantic/Canary' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
-

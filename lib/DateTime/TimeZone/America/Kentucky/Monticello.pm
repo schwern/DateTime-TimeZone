@@ -1025,20 +1025,3 @@ sub _generate_spans_until_match
 
 1;
 
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::America::Kentucky::Monticello - Time zone data for America/Kentucky/Monticello
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'America/Kentucky/Monticello' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
-

@@ -52,20 +52,3 @@ sub _new_instance
 
 1;
 
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Africa::Sao_Tome - Time zone data for Africa/Sao_Tome
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Africa/Sao_Tome' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
-

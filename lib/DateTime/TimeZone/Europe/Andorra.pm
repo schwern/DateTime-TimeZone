@@ -681,20 +681,3 @@ sub _generate_spans_until_match
 
 1;
 
-__END__
-
-=head1 NAME
-
-DateTime::TimeZone::Europe::Andorra - Time zone data for Europe/Andorra
-
-=head1 SYNOPSIS
-
-  my $timezone = DateTime::TimeZone->new( name => 'Europe/Andorra' );
-
-=head1 DESCRIPTION
-
-This module is an internal timezone definition data file used by
-DateTime::TimeZone.  You do not need to use this module directly.
-
-=cut
-
