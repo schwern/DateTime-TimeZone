@@ -15,7 +15,7 @@ use Getopt::Long;
 $Data::Dumper::Indent = 1;
 $Data::Dumper::Terse = 1;
 
-my $VERSION = "0.02";
+my $VERSION = "0.03";
 
 my $INFINITY  = 10 ** 10 ** 10;
 
@@ -39,13 +39,13 @@ available time zone names.
 
 By default, it looks for files named africa, antarctica, asia,
 australasia, europe, northamerica, pacificnew, southamerica, and
-ignores any others.
+backward.  All other files are ignored.
 
 It takes the following arguments:
 
   --dir   A directory containing Olson db files.
 
-  --old   Also look for files named backward, etcetera, factory, and systemv
+  --old   Also look for files named etcetera, factory, and systemv
 
   --help  What you are reading
 
@@ -56,16 +56,17 @@ EOF
 
 my @files = qw( africa antarctica asia australasia
                 europe northamerica pacificnew
-                southamerica
+                southamerica backward
               );
 
-push @files, qw( backward etcetera factory systemv )
+push @files, qw( etcetera factory systemv )
     if $opts{old};
 
 copy( 'MANIFEST.base', 'MANIFEST' );
-open MAN, ">>MANIFEST";
+open MAN, ">>MANIFEST" or die "Cannot write to MANIFEST: $!";
 
-my ( @zones, %categories, @links );
+my ( @zones, %categories, %links );
+
 foreach my $f (@files)
 {
     my $file = File::Spec->catfile( $opts{dir}, $f );
@@ -78,7 +79,7 @@ foreach my $f (@files)
 
     $odb->parse_file($file);
 
-    push @links, $odb->links;
+    %links = ( %links, $odb->links );
 
     foreach my $zone_name ( $odb->zone_names )
     {
@@ -88,7 +89,7 @@ foreach my $f (@files)
         push @{ $categories{$category} }, $name;
 
         (my $dir = $category) =~ tr/-/_/;
-        (my $file = $name) =~ tr/-/_/;
+        (my $outfile1 = $name) =~ tr/-/_/;
 
         (my $mod_name = $zone_name) =~ s/\//::/g;
         $mod_name =~ tr/-/_/;
@@ -142,7 +143,7 @@ $generator
 
 EOF
 
-        my @name_pieces = split /\//, $file;
+        my @name_pieces = split /\//, $outfile1;
         my $filename = (pop @name_pieces) . '.pm';
 
         my $outdir = File::Spec->catdir( qw( lib DateTime TimeZone ),
@@ -150,20 +151,37 @@ EOF
 
         mkpath( $outdir, 1, 0755 );
 
-        my $outfile = File::Spec->catfile( $outdir, $filename );
+        my $outfile2 = File::Spec->catfile( $outdir, $filename );
 
-        open OUT,">$outfile" or die "Cannot write to $outfile: $!";
-        print OUT $body;
-        close (OUT);
+        open OUT,">$outfile2" or die "Cannot write to $outfile2: $!";
+        print OUT $body or die "Cannot write to $outfile2: $!";
+        close (OUT) or die "Cannot write to $outfile2: $!";
 
-        print MAN "$outfile\n";
+        print MAN "$outfile2\n" or die "Cannot write to MANIFEST: $!";
     }
 }
 
-my $links = Dumper { @links };
+# override some links and add others
+%links =
+    ( %links,
+      'Etc/GMT+0'   => 'UTC',
+      'Etc/Universal' => 'UTC',
+      'Etc/Zulu'    => 'UTC',
+      'Etc/UCT'     => 'UTC',
+      'GMT0'        => 'UTC',
+      'GMT'         => 'UTC',
+    );
+
+delete $links{UTC};
+
+# This links to America/Indiana in the "backward" file
+delete $links{EST};
+# And this one is for America/Phoenix
+delete $links{MST};
+
+my $links = Dumper \%links;
 $links =~ s/{/(/;
 $links =~ s/}/)/;
-
 
 my $zones = join "\n", map { "  $_" } sort @zones;
 my $cat_names = join "\n", map { "  $_" } sort keys %categories;
@@ -199,12 +217,13 @@ $cat_names
 $cat
 );
 
-\%DateTime::TimeZone::Links =
+\%DateTime::TimeZone::LINKS =
 $links
 ;
 
 sub all_names { wantarray ? \@DateTime::TimeZone::ALL : \\\@DateTime::TimeZone::ALL }
 sub categories { wantarray ? \@DateTime::TimeZone::CATEGORY_NAMES : \\\@DateTime::TimeZone::CATEGORY_NAMES }
+sub links { wantarray ? %DateTime::TimeZone::LINKS : \\%DateTime::TimeZone::LINKS }
 
 sub names_in_category
 {
@@ -235,8 +254,8 @@ so that applications can easily present a list of timezones.
 EOF
 
 open OUT2, ">lib/DateTime/TimeZoneCatalog.pm" or die $!;
-print OUT2 $zonecatalog;
-close OUT2;
+print OUT2 $zonecatalog or die $!;
+close OUT2 or die $!;
 
 sub zone_as_data
 {
