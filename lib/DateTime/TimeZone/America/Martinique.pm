@@ -51,7 +51,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62459514000,
 62474630400,
 -10800,
-0,
+1,
 'ADT'
     ],
     [

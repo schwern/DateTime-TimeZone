@@ -42,7 +42,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61262614800,
 61370272800,
 -10800,
-0,
+1,
 'AWT'
     ],
     [

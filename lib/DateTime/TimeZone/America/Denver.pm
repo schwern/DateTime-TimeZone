@@ -124,21 +124,21 @@ DateTime::TimeZone::NEG_INFINITY,
 61255447200,
 -25200,
 0,
-'MT'
+'MST'
     ],
     [
 61255472400,
-61366309200,
-61255450800,
 61366287600,
+61255450800,
+61366266000,
 -21600,
 1,
 'MWT'
     ],
     [
-61366309200,
-61370294400,
 61366287600,
+61370294400,
+61366266000,
 61370272800,
 -21600,
 1,
@@ -160,7 +160,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61987773600,
 -25200,
 0,
-'MT'
+'MST'
     ],
     [
 61987798800,
@@ -205,7 +205,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62051277600,
 -25200,
 0,
-'MT'
+'MST'
     ],
     [
 62051302800,
@@ -308,35 +308,62 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62224876800,
-62256330000,
+62240605200,
 62224851600,
-62256304800,
+62240580000,
 -25200,
 0,
 'MST'
     ],
     [
-62256330000,
-62287779600,
+62240605200,
+62256326400,
+62240583600,
 62256304800,
-62287754400,
+-21600,
+1,
+'MDT'
+    ],
+    [
+62256326400,
+62262378000,
+62256301200,
+62262352800,
 -25200,
 0,
 'MST'
     ],
     [
-62287779600,
-62319229200,
+62262378000,
+62287776000,
+62262356400,
 62287754400,
+-21600,
+1,
+'MDT'
+    ],
+    [
+62287776000,
+62298061200,
+62287750800,
+62298036000,
+-25200,
+0,
+'MST'
+    ],
+    [
+62298061200,
+62319225600,
+62298039600,
 62319204000,
--25200,
-0,
-'MST'
+-21600,
+1,
+'MDT'
     ],
     [
-62319229200,
+62319225600,
 62334954000,
-62319204000,
+62319200400,
 62334928800,
 -25200,
 0,
@@ -515,17 +542,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62634931200,
-62666384400,
+62650659600,
 62634906000,
-62666359200,
+62650634400,
 -25200,
 0,
 'MST'
     ],
     [
-62666384400,
-62680294800,
+62650659600,
+62666380800,
+62650638000,
 62666359200,
+-21600,
+1,
+'MDT'
+    ],
+    [
+62666380800,
+62680294800,
+62666355600,
 62680269600,
 -25200,
 0,
@@ -1008,6 +1044,24 @@ DateTime::TimeZone::NEG_INFINITY,
 1,
 'MDT'
     ],
+    [
+63518544000,
+63532458000,
+63518518800,
+63532432800,
+-25200,
+0,
+'MST'
+    ],
+    [
+63532458000,
+63549993600,
+63532436400,
+63549972000,
+-21600,
+1,
+'MDT'
+    ],
 ];
 
 sub _max_year { 2013 }
@@ -1020,31 +1074,34 @@ sub _new_instance
 sub _last_offset { -25200 }
 
 my $last_observance = bless( {
-  'until' => undef,
-  'format' => 'M%sT',
+  'offset_from_std' => 0,
+  'offset_from_utc' => -25200,
+  'utc_start_datetime' => bless( {
+    'local_rd_secs' => 25200,
+    'local_rd_days' => 718067,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
+    'rd_nanosecs' => 0,
+    'utc_year' => 1968,
+    'utc_rd_days' => 718067,
+    'utc_rd_secs' => 25200
+  }, 'DateTime' ),
+  'until' => [],
   'gmtoff' => '-7:00',
-  'rules' => 'US',
-  'offset' => -25200,
-  'start' => bless( {
+  'format' => 'M%sT',
+  'local_start_datetime' => bless( {
     'local_rd_secs' => 0,
     'local_rd_days' => 718067,
-    'utc_year' => 1968,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
     'rd_nanosecs' => 0,
-    'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
-    'local_c' => {
-      'hour' => 0,
-      'second' => 0,
-      'month' => 1,
-      'quarter' => 1,
-      'day_of_year' => 1,
-      'day_of_quarter' => 1,
-      'minute' => 0,
-      'day' => 1,
-      'day_of_week' => 7,
-      'year' => 1967
-    },
-    'utc_rd_secs' => 0,
-    'utc_rd_days' => 718067
+    'utc_year' => 1968,
+    'utc_rd_days' => 718067,
+    'utc_rd_secs' => 0
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -1052,26 +1109,28 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
-    'letter' => 'D',
-    'on' => 'Sun>=1',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1987',
-    'in' => 'Apr',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
+    'offset_from_std' => 0,
     'letter' => 'S',
+    'name' => 'US',
     'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
     'from' => '1967',
     'in' => 'Oct',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 0
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'offset_from_std' => 3600,
+    'letter' => 'D',
+    'name' => 'US',
+    'on' => 'Sun>=1',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1987',
+    'in' => 'Apr',
+    'at' => '2:00',
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

@@ -106,7 +106,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62964525600,
 -25200,
 0,
-'MT'
+'MST'
     ],
     [
 62964550800,

@@ -425,17 +425,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62634924000,
-62666377200,
+62650652400,
 62634906000,
-62666359200,
+62650634400,
 -18000,
 0,
 'EST'
     ],
     [
-62666377200,
-62680287600,
+62650652400,
+62666373600,
+62650638000,
 62666359200,
+-14400,
+1,
+'EDT'
+    ],
+    [
+62666373600,
+62680287600,
+62666355600,
 62680269600,
 -18000,
 0,
@@ -918,6 +927,24 @@ DateTime::TimeZone::NEG_INFINITY,
 1,
 'EDT'
     ],
+    [
+63518536800,
+63532450800,
+63518518800,
+63532432800,
+-18000,
+0,
+'EST'
+    ],
+    [
+63532450800,
+63549986400,
+63532436400,
+63549972000,
+-14400,
+1,
+'EDT'
+    ],
 ];
 
 sub _max_year { 2013 }
@@ -930,31 +957,34 @@ sub _new_instance
 sub _last_offset { -18000 }
 
 my $last_observance = bless( {
-  'until' => undef,
-  'format' => 'E%sT',
-  'gmtoff' => '-5:00',
-  'rules' => 'Bahamas',
-  'offset' => -18000,
-  'start' => bless( {
-    'local_rd_secs' => 0,
+  'offset_from_std' => 0,
+  'offset_from_utc' => -18000,
+  'utc_start_datetime' => bless( {
+    'local_rd_secs' => 18564,
     'local_rd_days' => 698039,
-    'utc_year' => 1913,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
     'rd_nanosecs' => 0,
-    'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
-    'local_c' => {
-      'hour' => 0,
-      'second' => 0,
-      'month' => 3,
-      'quarter' => 1,
-      'day_of_year' => 62,
-      'day_of_quarter' => 62,
-      'minute' => 0,
-      'day' => 2,
-      'day_of_week' => 6,
-      'year' => 1912
-    },
-    'utc_rd_secs' => 0,
-    'utc_rd_days' => 698039
+    'utc_year' => 1913,
+    'utc_rd_days' => 698039,
+    'utc_rd_secs' => 18564
+  }, 'DateTime' ),
+  'until' => [],
+  'gmtoff' => '-5:00',
+  'format' => 'E%sT',
+  'local_start_datetime' => bless( {
+    'local_rd_secs' => 564,
+    'local_rd_days' => 698039,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
+    'rd_nanosecs' => 0,
+    'utc_year' => 1913,
+    'utc_rd_days' => 698039,
+    'utc_rd_secs' => 564
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -962,26 +992,28 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
+    'offset_from_std' => 0,
     'letter' => 'S',
+    'name' => 'Bahamas',
     'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
     'from' => '1964',
     'in' => 'Oct',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 0
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
+    'offset_from_std' => 3600,
     'letter' => 'D',
+    'name' => 'Bahamas',
     'on' => 'Sun>=1',
     'save' => '1:00',
     'to' => 'max',
     'from' => '1987',
     'in' => 'Apr',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

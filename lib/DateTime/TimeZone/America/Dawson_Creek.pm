@@ -79,7 +79,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61419866400,
 -28800,
 0,
-'PT'
+'PST'
     ],
     [
 61419895200,

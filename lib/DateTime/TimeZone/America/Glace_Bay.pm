@@ -79,7 +79,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61609168800,
 -14400,
 0,
-'AT'
+'AST'
     ],
     [
 61609183200,
@@ -115,7 +115,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62209130400,
 -14400,
 0,
-'AT'
+'AST'
     ],
     [
 62209144800,
@@ -362,17 +362,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62634920400,
-62666373600,
+62650648800,
 62634906000,
-62666359200,
+62650634400,
 -14400,
 0,
 'AST'
     ],
     [
-62666373600,
-62680284000,
+62650648800,
+62666370000,
+62650638000,
 62666359200,
+-10800,
+1,
+'ADT'
+    ],
+    [
+62666370000,
+62680284000,
+62666355600,
 62680269600,
 -14400,
 0,
@@ -855,6 +864,24 @@ DateTime::TimeZone::NEG_INFINITY,
 1,
 'ADT'
     ],
+    [
+63518533200,
+63532447200,
+63518518800,
+63532432800,
+-14400,
+0,
+'AST'
+    ],
+    [
+63532447200,
+63549982800,
+63532436400,
+63549972000,
+-10800,
+1,
+'ADT'
+    ],
 ];
 
 sub _max_year { 2013 }
@@ -867,31 +894,34 @@ sub _new_instance
 sub _last_offset { -14400 }
 
 my $last_observance = bless( {
-  'until' => undef,
-  'format' => 'A%sT',
+  'offset_from_std' => 0,
+  'offset_from_utc' => -14400,
+  'utc_start_datetime' => bless( {
+    'local_rd_secs' => 14400,
+    'local_rd_days' => 719893,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
+    'rd_nanosecs' => 0,
+    'utc_year' => 1973,
+    'utc_rd_days' => 719893,
+    'utc_rd_secs' => 14400
+  }, 'DateTime' ),
+  'until' => [],
   'gmtoff' => '-4:00',
-  'rules' => 'Halifax',
-  'offset' => -14400,
-  'start' => bless( {
+  'format' => 'A%sT',
+  'local_start_datetime' => bless( {
     'local_rd_secs' => 0,
     'local_rd_days' => 719893,
-    'utc_year' => 1973,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
     'rd_nanosecs' => 0,
-    'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
-    'local_c' => {
-      'hour' => 0,
-      'second' => 0,
-      'month' => 1,
-      'quarter' => 1,
-      'day_of_year' => 1,
-      'day_of_quarter' => 1,
-      'minute' => 0,
-      'day' => 1,
-      'day_of_week' => 6,
-      'year' => 1972
-    },
-    'utc_rd_secs' => 0,
-    'utc_rd_days' => 719893
+    'utc_year' => 1973,
+    'utc_rd_days' => 719893,
+    'utc_rd_secs' => 0
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -899,26 +929,28 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'lastSun',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1962',
-    'in' => 'Oct',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
+    'offset_from_std' => 3600,
     'letter' => 'D',
+    'name' => 'Halifax',
     'on' => 'Sun>=1',
     'save' => '1:00',
     'to' => 'max',
     'from' => '1987',
     'in' => 'Apr',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'offset_from_std' => 0,
+    'letter' => 'S',
+    'name' => 'Halifax',
+    'on' => 'lastSun',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1962',
+    'in' => 'Oct',
+    'at' => '2:00',
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

@@ -60,7 +60,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61273069200,
 61371561600,
 23400,
-0,
+1,
 'IST'
     ],
     [

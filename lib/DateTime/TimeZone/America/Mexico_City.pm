@@ -268,7 +268,7 @@ DateTime::TimeZone::NEG_INFINITY,
 63153828000,
 -21600,
 0,
-'CT'
+'CST'
     ],
     [
 63153849600,
@@ -477,6 +477,24 @@ DateTime::TimeZone::NEG_INFINITY,
 1,
 'CDT'
     ],
+    [
+63518540400,
+63532454400,
+63518518800,
+63532432800,
+-21600,
+0,
+'CST'
+    ],
+    [
+63532454400,
+63549990000,
+63532436400,
+63549972000,
+-18000,
+1,
+'CDT'
+    ],
 ];
 
 sub _max_year { 2013 }
@@ -489,31 +507,34 @@ sub _new_instance
 sub _last_offset { -21600 }
 
 my $last_observance = bless( {
-  'until' => undef,
-  'format' => 'C%sT',
+  'offset_from_std' => 0,
+  'offset_from_utc' => -21600,
+  'utc_start_datetime' => bless( {
+    'local_rd_secs' => 21600,
+    'local_rd_days' => 730901,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
+    'rd_nanosecs' => 0,
+    'utc_year' => 2003,
+    'utc_rd_days' => 730901,
+    'utc_rd_secs' => 21600
+  }, 'DateTime' ),
+  'until' => [],
   'gmtoff' => '-6:00',
-  'rules' => 'Mexico',
-  'offset' => -21600,
-  'start' => bless( {
+  'format' => 'C%sT',
+  'local_start_datetime' => bless( {
     'local_rd_secs' => 0,
     'local_rd_days' => 730901,
-    'utc_year' => 2003,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
     'rd_nanosecs' => 0,
-    'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
-    'local_c' => {
-      'hour' => 0,
-      'second' => 0,
-      'month' => 2,
-      'quarter' => 1,
-      'day_of_year' => 51,
-      'day_of_quarter' => 51,
-      'minute' => 0,
-      'day' => 20,
-      'day_of_week' => 3,
-      'year' => 2002
-    },
-    'utc_rd_secs' => 0,
-    'utc_rd_days' => 730901
+    'utc_year' => 2003,
+    'utc_rd_days' => 730901,
+    'utc_rd_secs' => 0
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -521,26 +542,28 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
+    'offset_from_std' => 3600,
     'letter' => 'D',
+    'name' => 'Mexico',
     'on' => 'Sun>=1',
     'save' => '1:00',
     'to' => 'max',
     'from' => '2002',
     'in' => 'Apr',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
+    'offset_from_std' => 0,
     'letter' => 'S',
+    'name' => 'Mexico',
     'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
     'from' => '2002',
     'in' => 'Oct',
     'at' => '2:00',
-    'type' => undef,
-    'offset' => 0
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

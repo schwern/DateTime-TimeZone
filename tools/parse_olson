@@ -299,11 +299,19 @@ sub zone_as_spans
 
     for ( my $x = 1; $x < @changes; $x++ )
     {
-        my $last_offset = $x > 1 ? $changes[ $x - 2 ]->offset : undef;
+        my $last_total_offset = $x > 1 ? $changes[ $x - 2 ]->total_offset : undef;
 
-        push @spans,
+        my $span =
             DateTime::TimeZone::OlsonDB::Change::two_changes_as_span
-                ( @changes[ $x - 1, $x ], $last_offset );
+                ( @changes[ $x - 1, $x ], $last_total_offset );
+
+        push @spans, $span;
+
+        if (@spans > 2)
+        {
+            die "Gap in UTC end/start datetime for " . $zone->name
+                unless $spans[-2]{utc_end} == $spans[-1]{utc_start};
+        }
     }
 
     unless ( $zone->infinite_rules )
@@ -315,10 +323,10 @@ sub zone_as_spans
 
         push @spans, { utc_start   => $utc_start,
                        utc_end     => $INFINITY,
-                       local_start => $utc_start - $last_observance->offset,
+                       local_start => $utc_start - $last_observance->total_offset,
                        local_end   => $INFINITY,
                        short_name  => sprintf( $last_observance->format, '' ),
-                       offset      => $last_observance->offset,
+                       offset      => $last_observance->total_offset,
                        is_dst      => 0,
                      };
     }
@@ -369,18 +377,33 @@ EOF
     my $last_observance = ($zone->sorted_changes)[-1]->observance;
 
     # hack to trim size of dumped object
-    delete $last_observance->{start}{language};
+    delete $last_observance->{utc_start_datetime}{locale};
+    delete $last_observance->{local_start_datetime}{locale};
+    delete $last_observance->{utc_start_datetime}{local_c};
+    delete $last_observance->{local_start_datetime}{local_c};
+    delete $last_observance->{rules};
+    delete $last_observance->{first_rule};
 
     # This assumes that there is only one observance from end of
     # changes til end of time, which should be guaranteed by code in
     # OlsonDB module.
-    my $offset = $last_observance->offset;
+    my $offset = $last_observance->total_offset;
 
     my @rules = $zone->infinite_rules;
 
     # This is cleaner than making the above a double-quoted string
     $generator =~ s/!RULES/Dumper \@rules/eg;
     $generator =~ s/!LAST_OBSERVANCE/Dumper $last_observance/eg;
+    $generator =~
+        s/\$VAR1->{'local_start_datetime'}{'tz'}/bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' )/;
+    $generator =~
+        s/\$VAR1->{'utc_start_datetime'}{'tz'}/bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' )/;
     $generator =~ s/!OFFSET/$offset/g;
     $generator =~ s/!OFFSET/$offset/g;
 

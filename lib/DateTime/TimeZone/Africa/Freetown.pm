@@ -196,7 +196,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61738502400,
 0,
 0,
-''
+'WAT'
     ],
     [
 61738502400,
@@ -281,8 +281,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 61872678000,
-DateTime::TimeZone::INFINITY,
+61896268800,
 61872678000,
+61896268800,
+0,
+0,
+'GMT'
+    ],
+    [
+61896268800,
+61904214000,
+61896272400,
+61904217600,
+3600,
+1,
+'SLST'
+    ],
+    [
+61904214000,
+DateTime::TimeZone::INFINITY,
+61904214000,
 DateTime::TimeZone::INFINITY,
 0,
 0,

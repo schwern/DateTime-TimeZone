@@ -15,7 +15,7 @@ my @names = DateTime::TimeZone::all_names;
 
 my $is_maintainer = -d './CVS' ? 1 : 0;
 
-my $tests_per_zone = $is_maintainer ? 7 : 4;
+my $tests_per_zone = $is_maintainer ? 9 : 4;
 plan tests => 29 + ( $tests_per_zone * scalar @names );
 
 foreach my $name (@names)
@@ -36,9 +36,13 @@ foreach my $name (@names)
         eval { $dt = DateTime->now( time_zone => $name ) };
         is( $@, '', "Can call DateTime->now with $name" );
         eval { $dt->add( years => 50 ) };
-        is( $@, '', "Can add 200 years with $name" );
+        is( $@, '', "Can add 50 years with $name" );
         eval { $dt->subtract( years => 400 ) };
         is( $@, '', "Can subtract 400 years with $name" );
+        eval { $dt = DateTime->new( year => 2000, month => 6, hour => 1, time_zone => $name ) };
+        is( $dt->hour, 1, 'make sure that local time is always respected' );
+        eval { $dt = DateTime->new( year => 2000, month => 12, hour => 1, time_zone => $name ) };
+        is( $dt->hour, 1, 'make sure that local time is always respected' );
     }
 }
 

@@ -42,7 +42,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62444394000,
 62457004800,
 7200,
-0,
+1,
 'WAST'
     ],
     [

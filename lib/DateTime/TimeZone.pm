@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.23';
+$VERSION = '0.24';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -218,9 +218,10 @@ sub _spans_binary_search
             {
                 my $next = $self->{spans}[$i + 1];
 
-                if ( $next->[$start] <= $seconds &&
-                     $seconds        >= $next->[$end] &&
-                     ! $next->[IS_DST] )
+                if ( ( ! $next->[IS_DST] )
+                     && $next->[$start] <= $seconds
+                     && $seconds        <= $next->[$end]
+                   )
                 {
                     return $next;
                 }
@@ -239,18 +240,46 @@ sub _generate_spans_until_match
     my $type = shift;
 
     my @changes;
-    foreach my $rule (@{$self->_rules})
+    my @rules = @{ $self->_rules };
+    foreach my $year ( $self->{max_year} .. $generate_until_year )
     {
-        foreach my $year ( $self->{max_year} .. $generate_until_year )
+        for ( my $x = 0; $x < @rules; $x++ )
         {
-            my $next = $rule->date_for_year( $year, $self->{last_offset} );
+            my $last_offset_from_std;
+
+            if ( @rules == 2 )
+            {
+                $last_offset_from_std =
+                    $x ? $rules[0]->offset_from_std : $rules[1]->offset_from_std;
+            }
+            elsif ( @rules == 1 )
+            {
+                $last_offset_from_std = $rules[0]->offset_from_std;
+            }
+            else
+            {
+                my $count = scalar @rules;
+                die "Cannot generate future changes for zone with $count infinite rules\n";
+            }
+
+            my $rule = $rules[$x];
+
+            my $next =
+                $rule->utc_start_datetime_for_year
+                    ( $year, $self->{last_offset}, $last_offset_from_std );
 
             # don't bother with changes we've seen already
-            next if $next->{utc}->utc_rd_as_seconds < $self->max_span->[UTC_END];
+            next if $next->utc_rd_as_seconds < $self->max_span->[UTC_END];
 
             push @changes,
                 DateTime::TimeZone::OlsonDB::Change->new
-                    ( start_date => $next->{local},
+                    ( type => 'rule',
+                      utc_start_datetime   => $next,
+                      local_start_datetime =>
+                      $next +
+                      DateTime::Duration->new
+                          ( seconds => $self->{last_observance}->total_offset +
+                                       $rule->offset_from_std ),
                       short_name =>
                       sprintf( $self->{last_observance}->format, $rule->letter ),
                       observance => $self->{last_observance},
@@ -261,19 +290,19 @@ sub _generate_spans_until_match
 
     $self->{max_year} = $generate_until_year;
 
-    my @sorted = sort { $a->start_date <=> $b->start_date } @changes;
+    my @sorted = sort { $a->utc_start_datetime <=> $b->utc_start_datetime } @changes;
 
     my ( $start, $end ) = _keys_for_type($type);
 
     my $match;
     for ( my $x = 1; $x < @sorted; $x++ )
     {
-        my $last_offset =
-            $x == 1 ? $self->max_span->[OFFSET] : $sorted[ $x - 2 ]->offset;
+        my $last_total_offset =
+            $x == 1 ? $self->max_span->[OFFSET] : $sorted[ $x - 2 ]->total_offset;
 
         my $span =
             DateTime::TimeZone::OlsonDB::Change::two_changes_as_span
-                ( @sorted[ $x - 1, $x ], $last_offset );
+                ( @sorted[ $x - 1, $x ], $last_total_offset );
 
         $span = _span_as_array($span);
 
@@ -575,5 +604,10 @@ with this module.
 datetime@perl.org mailing list
 
 http://datetime.perl.org/
+
+The tools directory of the DateTime::TimeZone distribution includes
+two scripts that may be of interest to some people.  They are
+parse_olson and tests_from_zdump.  Please run them with the --help
+flag to see what they can be used for.
 
 =cut

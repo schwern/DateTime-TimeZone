@@ -42,7 +42,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61273069200,
 61371561600,
 -3600,
-0,
+1,
 'CVST'
     ],
     [

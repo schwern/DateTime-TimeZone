@@ -276,7 +276,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62995798800,
 63011606400,
 7200,
-0,
+1,
 'CEST'
     ],
     [

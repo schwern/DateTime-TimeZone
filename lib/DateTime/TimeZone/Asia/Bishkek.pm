@@ -101,17 +101,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62585287200,
-62601015600,
+62601019200,
 62585312400,
-62601040800,
+62601044400,
 25200,
 1,
 'FRUST'
     ],
     [
-62601015600,
+62601019200,
 62616744000,
-62601037200,
+62601040800,
 62616765600,
 21600,
 0,
@@ -119,17 +119,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62616744000,
-62632465200,
+62632468800,
 62616769200,
-62632490400,
+62632494000,
 25200,
 1,
 'FRUST'
     ],
     [
-62632465200,
+62632468800,
 62648193600,
-62632486800,
+62632490400,
 62648215200,
 21600,
 0,
@@ -137,17 +137,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62648193600,
-62663914800,
+62663918400,
 62648218800,
-62663940000,
+62663943600,
 25200,
 1,
 'FRUST'
     ],
     [
-62663914800,
+62663918400,
 62679643200,
-62663936400,
+62663940000,
 62679664800,
 21600,
 0,
@@ -155,17 +155,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62679643200,
-62695364400,
+62695368000,
 62679668400,
-62695389600,
+62695393200,
 25200,
 1,
 'FRUST'
     ],
     [
-62695364400,
+62695368000,
 62711092800,
-62695386000,
+62695389600,
 62711114400,
 21600,
 0,
@@ -173,17 +173,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62711092800,
-62726814000,
+62726817600,
 62711118000,
-62726839200,
+62726842800,
 25200,
 1,
 'FRUST'
     ],
     [
-62726814000,
+62726817600,
 62742542400,
-62726835600,
+62726839200,
 62742564000,
 21600,
 0,
@@ -191,17 +191,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62742542400,
-62758263600,
+62758267200,
 62742567600,
-62758288800,
+62758292400,
 25200,
 1,
 'FRUST'
     ],
     [
-62758263600,
+62758267200,
 62773992000,
-62758285200,
+62758288800,
 62774013600,
 21600,
 0,
@@ -209,17 +209,17 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62773992000,
-62790318000,
+62790321600,
 62774017200,
-62790343200,
+62790346800,
 25200,
 1,
 'FRUST'
     ],
     [
-62790318000,
+62790321600,
 62806046400,
-62790339600,
+62790343200,
 62806068000,
 21600,
 0,
@@ -231,7 +231,7 @@ DateTime::TimeZone::NEG_INFINITY,
 62806068000,
 62819287200,
 21600,
-0,
+1,
 'FRUST'
     ],
     [
@@ -308,8 +308,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 62947562400,
-62995354200,
+62964500400,
 62947580400,
+62964518400,
+18000,
+0,
+'KGT'
+    ],
+    [
+62964500400,
+62979616800,
+62964522000,
+62979638400,
+21600,
+1,
+'KGST'
+    ],
+    [
+62979616800,
+62995354200,
+62979634800,
 62995372200,
 18000,
 0,
@@ -612,6 +630,24 @@ DateTime::TimeZone::NEG_INFINITY,
 1,
 'KGST'
     ],
+    [
+63518502600,
+63531811800,
+63518520600,
+63531829800,
+18000,
+0,
+'KGT'
+    ],
+    [
+63531811800,
+63549952200,
+63531833400,
+63549973800,
+21600,
+1,
+'KGST'
+    ],
 ];
 
 sub _max_year { 2013 }
@@ -624,31 +660,34 @@ sub _new_instance
 sub _last_offset { 18000 }
 
 my $last_observance = bless( {
-  'until' => undef,
-  'format' => 'KG%sT',
-  'gmtoff' => '5:00',
-  'rules' => 'Kirgiz',
-  'offset' => 18000,
-  'start' => bless( {
-    'local_rd_secs' => 7200,
-    'local_rd_days' => 727075,
-    'utc_year' => 1992,
+  'offset_from_std' => 0,
+  'offset_from_utc' => 18000,
+  'utc_start_datetime' => bless( {
+    'local_rd_secs' => 72000,
+    'local_rd_days' => 727074,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
     'rd_nanosecs' => 0,
-    'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
-    'local_c' => {
-      'hour' => 2,
-      'second' => 0,
-      'month' => 8,
-      'quarter' => 3,
-      'day_of_year' => 243,
-      'day_of_quarter' => 62,
-      'minute' => 0,
-      'day' => 31,
-      'day_of_week' => 6,
-      'year' => 1991
-    },
-    'utc_rd_secs' => 7200,
-    'utc_rd_days' => 727075
+    'utc_year' => 1992,
+    'utc_rd_days' => 727074,
+    'utc_rd_secs' => 72000
+  }, 'DateTime' ),
+  'until' => [],
+  'gmtoff' => '5:00',
+  'format' => 'KG%sT',
+  'local_start_datetime' => bless( {
+    'local_rd_secs' => 3600,
+    'local_rd_days' => 727075,
+    'tz' => bless( {
+      'name' => 'floating',
+      'offset' => 0
+    }, 'DateTime::TimeZone::Floating' ),
+    'rd_nanosecs' => 0,
+    'utc_year' => 1992,
+    'utc_rd_days' => 727075,
+    'utc_rd_secs' => 3600
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -656,6 +695,20 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
+    'offset_from_std' => 3600,
+    'letter' => 'S',
+    'name' => 'Kirgiz',
+    'on' => 'lastSun',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1997',
+    'in' => 'Mar',
+    'at' => '2:30',
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'offset_from_std' => 0,
+    'name' => 'Kirgiz',
     'letter' => '',
     'on' => 'lastSun',
     'save' => '0',
@@ -663,19 +716,7 @@ my $rules = [
     'from' => '1997',
     'in' => 'Oct',
     'at' => '2:30',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'letter' => 'S',
-    'on' => 'lastSun',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1997',
-    'in' => 'Mar',
-    'at' => '2:30',
-    'type' => undef,
-    'offset' => 3600
+    'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

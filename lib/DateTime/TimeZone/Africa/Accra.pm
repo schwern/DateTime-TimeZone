@@ -137,8 +137,26 @@ DateTime::TimeZone::NEG_INFINITY,
     ],
     [
 61251982800,
-DateTime::TimeZone::INFINITY,
+61273065600,
 61251982800,
+61273065600,
+0,
+0,
+'GMT'
+    ],
+    [
+61273065600,
+61283518800,
+61273066800,
+61283520000,
+1200,
+1,
+'GHST'
+    ],
+    [
+61283518800,
+DateTime::TimeZone::INFINITY,
+61283518800,
 DateTime::TimeZone::INFINITY,
 0,
 0,

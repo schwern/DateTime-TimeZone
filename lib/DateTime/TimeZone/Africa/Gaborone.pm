@@ -42,7 +42,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61306167600,
 61321888800,
 10800,
-0,
+1,
 'CAST'
     ],
     [

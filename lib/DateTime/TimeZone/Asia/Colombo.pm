@@ -51,7 +51,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61252417800,
 61273065600,
 21600,
-0,
+1,
 'IHST'
     ],
     [
@@ -60,7 +60,7 @@ DateTime::TimeZone::NEG_INFINITY,
 61273067400,
 61371655200,
 23400,
-0,
+1,
 'IST'
     ],
     [
