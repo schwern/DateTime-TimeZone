@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION $INFINITY $NEG_INFINITY );
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -50,7 +50,7 @@ sub new
 
             return
                 DateTime::TimeZone::OffsetOnly->new
-                    ( offset => $gm - $local );
+                    ( offset => offset_as_string( $gm - $local ) );
         }
 
         if ( $p{name} eq 'UTC' || $p{name} eq 'Z' )
