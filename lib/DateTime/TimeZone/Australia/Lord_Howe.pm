@@ -563,17 +563,6 @@ my $rules = [
   bless( {
     'letter' => '',
     'on' => 'lastSun',
-    'save' => '0:30',
-    'to' => 'max',
-    'from' => '2001',
-    'in' => 'Oct',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 1800
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'letter' => '',
-    'on' => 'lastSun',
     'save' => '0',
     'to' => 'max',
     'from' => '1996',
@@ -581,6 +570,17 @@ my $rules = [
     'at' => '2:00',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'lastSun',
+    'save' => '0:30',
+    'to' => 'max',
+    'from' => '2001',
+    'in' => 'Oct',
+    'at' => '2:00',
+    'type' => undef,
+    'offset' => 1800
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

@@ -1,6 +1,6 @@
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         DateTime-TimeZone
-version:      0.16
+version:      0.17
 version_from: lib/DateTime/TimeZone.pm
 installdirs:  site
 requires:
