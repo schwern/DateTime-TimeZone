@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.2501';
+$VERSION = '0.2502';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -346,12 +346,16 @@ sub offset_as_seconds
 
     return 0 if $offset eq '0';
 
-    return undef unless $offset =~ /^([\+\-])?(\d\d?):?(\d\d)(?::?(\d\d))?$/;
+    return undef unless $offset =~ /^([\+\-])?(\d\d)(:?)(\d\d)(?:\3(\d\d))?$/;
 
-    my ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $3, $4 );
+    my ( $sign, $hours, $minutes, $seconds ) = ( $1, $2, $4, $5 );
+
     $sign = '+' unless defined $sign;
+    return undef unless $hours >= 0 && $hours <= 99;
+    return undef unless $minutes >= 0 && $minutes <= 59;
+    return undef unless ! defined( $seconds ) || ( $seconds >= 0 && $seconds <= 59 );
 
-    my $total =  ($hours * 60 * 60) + ($minutes * 60);
+    my $total =  $hours * 3600 + $minutes * 60;
     $total += $seconds if $seconds;
     $total *= -1 if $sign eq '-';
 
@@ -363,17 +367,17 @@ sub offset_as_string
     my $offset = shift;
 
     return undef unless defined $offset;
+    return undef unless $offset >= -359999 && $offset <= 359999;
 
     my $sign = $offset < 0 ? '-' : '+';
 
     $offset = abs($offset);
 
-    my $hours = $offset / ( 60 * 60 );
-    $hours = $hours % 24;
-
-    my $mins = ( $offset % ( 60 * 60 ) ) / 60;
-
-    my $secs = $offset % 60;
+    my $hours = int( $offset / 3600 );
+    $offset %= 3600;
+    my $mins = int( $offset / 60 );
+    $offset %= 60;
+    my $secs = int( $offset );
 
     return ( $secs ?
              sprintf( '%s%02d%02d%02d', $sign, $hours, $mins, $secs ) :
@@ -439,10 +443,11 @@ C<DateTime::TimeZone::OffsetOnly> object is returned.
 If the "name" parameter is "local", then the module attempts to
 determine the local time zone for the system.
 
-First it checks C<$ENV{TZ}>.  If this is defined, and it is not the
-string "local", then it is treated as any other valid name (including
-"floating"), and the constructor tries to create a time zone based on
-that name.
+First it checks C<$ENV> for keys named "TZ", "SYS$TIMEZONE_RULE",
+"SYS$TIMEZONE_NAME", "UCX$TZ", or "TCPIP$TZC" (the last 4 are for
+VMS).  If this is defined, and it is not the string "local", then it
+is treated as any other valid name (including "floating"), and the
+constructor tries to create a time zone based on that name.
 
 Next, it checks for the existence of a symlink at F</etc/localtime>.
 It follows this link to the real file and figures out what the file's
@@ -456,9 +461,9 @@ of making a symlink.  Unfortunately, these files don't contain their
 own name!  This means that there is no way to look at a copy and
 figure out what time zone it represents.
 
-Then it checks for a file called F</etc/timezone>.  If this exists, it
-is read and it tries to create a time zone with the name contained in
-the file.
+Then it checks for a file called F</etc/timezone> or F</etc/TIMEZONE>.
+If one of these exists, it is read and it tries to create a time zone
+with the name contained in the file.
 
 Finally, it checks for a file called F</etc/sysconfig/clock>.  If this
 file exists, it looks for a line inside the file matching
@@ -469,7 +474,7 @@ If none of these methods work, it gives up and dies.
 
 =back
 
-=head3 Object Methods
+=head2 Object Methods
 
 C<DateTime::TimeZone> objects provide the following methods:
 
@@ -569,10 +574,12 @@ an array reference, while in list context it returns an array.
 
 Given an offset as a string, this returns the number of seconds
 represented by the offset as a positive or negative number.
+Returns C<undef> if $offset is not in the range C<-99:59:59> to C<+99:59:59>.
 
 =item * offset_as_string( $offset )
 
 Given an offset as a number, this returns the offset as a string.
+Returns C<undef> if $offset is not in the range C<-359999> to C<359999>.
 
 =back
 

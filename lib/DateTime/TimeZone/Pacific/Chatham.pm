@@ -484,18 +484,6 @@ sub _last_observance { $last_observance }
 
 my $rules = [
   bless( {
-    'offset_from_std' => 0,
-    'letter' => 'S',
-    'name' => 'Chatham',
-    'on' => 'Sun>=15',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1991',
-    'in' => 'Mar',
-    'at' => '2:45s',
-    'type' => undef
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'offset_from_std' => 3600,
     'letter' => 'D',
     'name' => 'Chatham',
@@ -504,6 +492,18 @@ my $rules = [
     'to' => 'max',
     'from' => '1990',
     'in' => 'Oct',
+    'at' => '2:45s',
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'offset_from_std' => 0,
+    'letter' => 'S',
+    'name' => 'Chatham',
+    'on' => 'Sun>=15',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1991',
+    'in' => 'Mar',
     'at' => '2:45s',
     'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )

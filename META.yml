@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.2501
+version: 0.2502
 license: perl
 distribution_type: module
 requires:
@@ -12,7 +12,7 @@ conflicts: {}
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.2501
+    version: 0.2502
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -672,7 +672,7 @@ provides:
     file: lib/DateTime/TimeZone/Local.pm
   DateTime::TimeZone::OffsetOnly:
     file: lib/DateTime/TimeZone/OffsetOnly.pm
-    version: 0.01
+    version: 0.02
   DateTime::TimeZone::OlsonDB:
     file: lib/DateTime/TimeZone/OlsonDB.pm
   DateTime::TimeZone::OlsonDB::Change:
@@ -764,4 +764,4 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.19_04
+generated_by: Module::Build version 0.20_01
