@@ -24,7 +24,7 @@ sub new
 
     return DateTime::TimeZone::UTC->new unless $offset;
 
-    my $self = { offset => $offset };
+    my $self = { name => $p{offset}, offset => $offset };
 
     return bless $self, $class;
 }
@@ -36,8 +36,7 @@ sub offset_for_local_datetime { $_[0]->{offset} }
 
 sub is_utc { 0 }
 
-sub name { DateTime::TimeZone::offset_as_string( $_[0]->{offset} ) }
-*short_name_for_datetime = \&name;
+sub short_name_for_datetime { $_[0]->name }
 
 sub category { undef }
 
@@ -51,7 +50,7 @@ DateTime::TimeZone::OffsetOnly - A DateTime::TimeZone object that just contains 
 
 =head1 SYNOPSIS
 
-  my $offset_tz = DateTime::TimeZone::OffsetOnly->new( offset => '-0300' );
+  my $offset_tz = DateTime::TimeZone->new( name => '-0300' );
 
 =head1 DESCRIPTION
 

@@ -3,14 +3,13 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.18';
+$VERSION = '0.19';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
 use DateTime::TimeZone::Local;
 use DateTime::TimeZone::OffsetOnly;
 use DateTime::TimeZone::UTC;
-use File::Spec;
 use Params::Validate qw( validate validate_pos SCALAR ARRAYREF );
 
 use constant INFINITY     =>       100 ** 100 ** 100 ;
@@ -456,7 +455,8 @@ Saving Time rules.
 
 =item * name
 
-Returns the name of the time zone, as given in the Olson database.
+Returns the name of the time zone.  If this value is passed to the
+C<new()> method, it is guaranteed to create the same object.
 
 =item * short_name_for_datetime( $datetime )
 
