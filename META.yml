@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.27
+version: 0.28
 author:
   - |-
     Dave Rolsky <autarch@urth.org>, inspired by Jesse Vincent's work on
@@ -14,7 +14,7 @@ requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.27
+    version: 0.28
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -129,6 +129,40 @@ provides:
     file: lib/DateTime/TimeZone/America/Antigua.pm
   DateTime::TimeZone::America::Araguaina:
     file: lib/DateTime/TimeZone/America/Araguaina.pm
+  ? |-
+    DateTime::TimeZone::America::Argentina::Buenos_Aires
+:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
+  DateTime::TimeZone::America::Argentina::Catamarca:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/Catamarca.pm
+  ? |-
+    DateTime::TimeZone::America::Argentina::ComodRivadavia
+:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/ComodRivadavia.pm
+  DateTime::TimeZone::America::Argentina::Cordoba:
+    file: lib/DateTime/TimeZone/America/Argentina/Cordoba.pm
+  DateTime::TimeZone::America::Argentina::Jujuy:
+    file: lib/DateTime/TimeZone/America/Argentina/Jujuy.pm
+  DateTime::TimeZone::America::Argentina::La_Rioja:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
+  DateTime::TimeZone::America::Argentina::Mendoza:
+    file: lib/DateTime/TimeZone/America/Argentina/Mendoza.pm
+  ? |-
+    DateTime::TimeZone::America::Argentina::Rio_Gallegos
+:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
+  DateTime::TimeZone::America::Argentina::San_Juan:
+    file: |-
+      lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
+  DateTime::TimeZone::America::Argentina::Tucuman:
+    file: lib/DateTime/TimeZone/America/Argentina/Tucuman.pm
+  DateTime::TimeZone::America::Argentina::Ushuaia:
+    file: lib/DateTime/TimeZone/America/Argentina/Ushuaia.pm
   DateTime::TimeZone::America::Aruba:
     file: lib/DateTime/TimeZone/America/Aruba.pm
   DateTime::TimeZone::America::Asuncion:
@@ -147,8 +181,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Bogota.pm
   DateTime::TimeZone::America::Boise:
     file: lib/DateTime/TimeZone/America/Boise.pm
-  DateTime::TimeZone::America::Buenos_Aires:
-    file: lib/DateTime/TimeZone/America/Buenos_Aires.pm
   DateTime::TimeZone::America::Cambridge_Bay:
     file: lib/DateTime/TimeZone/America/Cambridge_Bay.pm
   DateTime::TimeZone::America::Campo_Grande:
@@ -157,8 +189,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Cancun.pm
   DateTime::TimeZone::America::Caracas:
     file: lib/DateTime/TimeZone/America/Caracas.pm
-  DateTime::TimeZone::America::Catamarca:
-    file: lib/DateTime/TimeZone/America/Catamarca.pm
   DateTime::TimeZone::America::Cayenne:
     file: lib/DateTime/TimeZone/America/Cayenne.pm
   DateTime::TimeZone::America::Cayman:
@@ -167,8 +197,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Chicago.pm
   DateTime::TimeZone::America::Chihuahua:
     file: lib/DateTime/TimeZone/America/Chihuahua.pm
-  DateTime::TimeZone::America::Cordoba:
-    file: lib/DateTime/TimeZone/America/Cordoba.pm
   DateTime::TimeZone::America::Costa_Rica:
     file: lib/DateTime/TimeZone/America/Costa_Rica.pm
   DateTime::TimeZone::America::Cuiaba:
@@ -233,8 +261,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Iqaluit.pm
   DateTime::TimeZone::America::Jamaica:
     file: lib/DateTime/TimeZone/America/Jamaica.pm
-  DateTime::TimeZone::America::Jujuy:
-    file: lib/DateTime/TimeZone/America/Jujuy.pm
   DateTime::TimeZone::America::Juneau:
     file: lib/DateTime/TimeZone/America/Juneau.pm
   DateTime::TimeZone::America::Kentucky::Monticello:
@@ -258,8 +284,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Martinique.pm
   DateTime::TimeZone::America::Mazatlan:
     file: lib/DateTime/TimeZone/America/Mazatlan.pm
-  DateTime::TimeZone::America::Mendoza:
-    file: lib/DateTime/TimeZone/America/Mendoza.pm
   DateTime::TimeZone::America::Menominee:
     file: lib/DateTime/TimeZone/America/Menominee.pm
   DateTime::TimeZone::America::Merida:
