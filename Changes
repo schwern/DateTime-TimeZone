@@ -1,10 +1,24 @@
+0.06     2003-02-16
+
+- Changes to work with DateTime.pm 0.06.
+
+- DateTime::TimeZone::offset_as_seconds handles '0' properly.
+
+- Fix a bug in handling future times for time zones with recurring
+rules.  The symptom would be the error "Invalid local time for date
+..."
+
+- Time zone data is now stored in a simple array, and searched using a
+binary search algorithm.  This eliminates the need to install
+Tree::RedBlack, and makes looking up time zone data quicker.
+
 0.05     2003-02-13
 
 - The offset_as_string function did not handle negative offsets
-properly.  Patch from Kellan.
+properly.  Patch from Kellan Elliott-McCrea.
 
 - Allow 'Z' as an offset name, equivalent to 'UTC'.  Patch from
-Kellan.
+Kellan Elliott-McCrea.
 
 - Make sure DT::TZ subclasses which need to override
 is_dst_for_datetime do so.

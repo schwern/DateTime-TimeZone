@@ -336,23 +336,14 @@ my $spans =
 ]
 ;
 
+my $max_year = 2013;
+
 sub _new_instance
 {
     return shift->_init( @_, spans => $spans );
 }
 
 my $rules = [
-  bless( {
-    'letter' => '',
-    'on' => 'lastSun',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1996',
-    'in' => 'Oct',
-    'at' => '1:00u',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => 'S',
     'on' => 'lastSun',
@@ -363,6 +354,17 @@ my $rules = [
     'at' => '1:00u',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'lastSun',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1996',
+    'in' => 'Oct',
+    'at' => '1:00u',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
@@ -374,16 +376,6 @@ my $last_observance = bless( {
   'offset' => 0,
   'start' => bless( {
     'local_rd_secs' => 0,
-    'c' => {
-      'hour' => 0,
-      'minute' => 0,
-      'second' => 0,
-      'month' => 1,
-      'day_of_year' => 1,
-      'day_of_week' => 1,
-      'day' => 1,
-      'year' => 1996
-    },
     'local_rd_days' => 728659,
     'language' => bless( {
       'month_numbers' => {},
@@ -442,7 +434,17 @@ my $last_observance = bless( {
     }, 'DateTime::Language::English' ),
     'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
     'utc_rd_secs' => 0,
-    'utc_rd_days' => 728659
+    'utc_rd_days' => 728659,
+    'local_c' => {
+      'hour' => 0,
+      'minute' => 0,
+      'second' => 0,
+      'month' => 1,
+      'day_of_year' => 1,
+      'day_of_week' => 1,
+      'day' => 1,
+      'year' => 1996
+    }
   }, 'DateTime' )
 }, 'DateTime::TimeZone::OlsonDB::Observance' )
 ;
@@ -452,39 +454,30 @@ sub _generate_spans_until_match
     my $self = shift;
     my $dt = shift;
 
+    my $generate_until_year = $dt->utc_year + 1;
+
     my @changes;
     foreach my $rule (@$rules)
     {
-        my $year = $dt->year;
+        foreach my $year ( $max_year .. $generate_until_year )
+        {
+            my $next = $rule->date_for_year( $year, 0 );
 
-        my $next = $rule->date_for_year( $year, 0 );
+            # don't bother with changes we've seen already
+            next if $next->{utc}->utc_rd_as_seconds < $self->{max_span}{utc_end};
 
-        # don't bother with changes we've seen already
-        next if $next->{utc}->utc_rd_as_seconds < $self->{max_span}{utc_end};
-
-        push @changes,
-            DateTime::TimeZone::OlsonDB::Change->new
-                ( start_date => $next->{local},
-                  short_name =>
-                  sprintf( $last_observance->format, $rule->letter ),
-                  observance => $last_observance,
-                  rule       => $rule,
-                );
-
-        next unless $next->{utc} < $dt;
-
-        $next = $rule->date_for_year( $year + 1, 0 );
-
-        push @changes,
-            DateTime::TimeZone::OlsonDB::Change->new
-                ( start_date => $next->{local},
-                  short_name =>
-                  sprintf( $last_observance->format, $rule->letter ),
-                  observance => $last_observance,
-                  rule       => $rule,
-                );
+            push @changes,
+                DateTime::TimeZone::OlsonDB::Change->new
+                    ( start_date => $next->{local},
+                      short_name =>
+                      sprintf( $last_observance->format, $rule->letter ),
+                      observance => $last_observance,
+                      rule       => $rule,
+                    );
+        }
     }
 
+    $max_year = $generate_until_year;
     my @sorted = sort { $a->start_date <=> $b->start_date } @changes;
 
     my $seconds = $dt->utc_rd_as_seconds;
@@ -499,16 +492,11 @@ sub _generate_spans_until_match
             DateTime::TimeZone::OlsonDB::Change::two_changes_as_span
                 ( @sorted[ $x - 1, $x ], $last_offset );
 
-        $self->{tree}->insert( { utc   => [ $span->{utc_start},   $span->{utc_end} ],
-                                 local => [ $span->{local_start}, $span->{local_end} ],
-                               },
-                               $span );
+        push @{ $self->{spans} }, $span;
 
         $match = $span
             if $seconds >= $span->{utc_start} && $seconds < $span->{utc_end};
     }
-
-    $self->{max_span} = $self->{tree}->max->val;
 
     return $match;
 }

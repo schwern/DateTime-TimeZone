@@ -24,7 +24,7 @@ my $spans =
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '61409836800',
     'is_dst' => 0,
-    'offset' => '0',
+    'offset' => 0,
     'local_start' => '-inf'
   },
   {
@@ -42,7 +42,7 @@ my $spans =
     'utc_start' => '61568690400',
     'local_end' => '61720185600',
     'is_dst' => 0,
-    'offset' => '0',
+    'offset' => 0,
     'local_start' => '61568690400'
   },
   {
@@ -53,6 +53,8 @@ my $spans =
   }
 ]
 ;
+
+my $max_year = 2013;
 
 sub _new_instance
 {

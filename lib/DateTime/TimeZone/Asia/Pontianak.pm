@@ -99,6 +99,8 @@ my $spans =
 ]
 ;
 
+my $max_year = 2013;
+
 sub _new_instance
 {
     return shift->_init( @_, spans => $spans );
