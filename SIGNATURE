@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 f883229a3a206d4211757a32ab76a2172db9eea3 Build.PL
-SHA1 fe21561507a7c5e2cdb0881b457afc2e6b08a4eb Changes
+SHA1 ede558ed56aa548b879e3abeb171cc40d4edacab Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 84f623e7b26120d6630d97beb030002b36647cfc MANIFEST
 SHA1 39c35ff3b7dd3858f91813c49b6112017a0be65c MANIFEST.base
-SHA1 a77a0d5751bbfc5a40c14ad64ed51ee75c02a7d9 META.yml
+SHA1 cd0bf5f4f81993ea794c1bc00865cd22e2655f17 META.yml
 SHA1 1c3b245e8b8966b346d731f7e3a758f79fd2a77b Makefile.PL
 SHA1 9f4a45b15ef67f41df953fc807ad63696a284076 README
-SHA1 b8bdcffcc55134c9904b6ee6fc2884c960ce8185 lib/DateTime/TimeZone.pm
+SHA1 5ba8a57c42cdaebefd63ea9a7d78a5c4857663b7 lib/DateTime/TimeZone.pm
 SHA1 de45091e1c2c82f221b8e888bc6868a26b963188 lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 3fcb8ef929c615a55fb8780655c1fd41a8c4104c lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 8ec7a6bcd0f9899db4b4d88063c5c2ffd20e2ebd lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -352,7 +352,7 @@ SHA1 83cd08dd5812cfb01535ca19362494ea06f9b476 lib/DateTime/TimeZone/Indian/Maldi
 SHA1 241695bd061ad3148ad5581595517cc64a977b7e lib/DateTime/TimeZone/Indian/Mauritius.pm
 SHA1 2ea81b929c4b377733af44033108ae2d87ebaeb1 lib/DateTime/TimeZone/Indian/Mayotte.pm
 SHA1 99227ab01d26a984194aa98e509e63590340514c lib/DateTime/TimeZone/Indian/Reunion.pm
-SHA1 bf8b436c83e35138ed1d1b3343ce824b14585a98 lib/DateTime/TimeZone/Local.pm
+SHA1 ef0a8befdad7709b3a5027238fcae728457be5a8 lib/DateTime/TimeZone/Local.pm
 SHA1 1af8721dfa2c95d5f697bf88243e7a346bca5b73 lib/DateTime/TimeZone/OffsetOnly.pm
 SHA1 13f28456d7e56b05f7d32aa0f2d2658e28789fef lib/DateTime/TimeZone/OlsonDB.pm
 SHA1 49c19f07697932faa34a0f46af14c43d6d8478f9 lib/DateTime/TimeZone/Pacific/Apia.pm
@@ -409,11 +409,11 @@ SHA1 21614428d3676ed4041bacf960ba943de42c3909 t/10invalid.t
 SHA1 77232b92127c5f3069f8b6d349aa5ef49ca1b9d4 t/99-pod.t
 SHA1 fccce09170fa00943498efd477ccbf52d9df94f5 t/check_datetime_version.pl
 SHA1 7fca9f1c01431185d7a8b504b2e6b2b9e248f9dc tools/parse_olson
-SHA1 0941e6cffd5fc336079328ce3beb49c7496272ff tools/tests_from_zdump
+SHA1 8186fa7356683cd5686c0405187a008ee1a74414 tools/tests_from_zdump
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.3 (GNU/Linux)
 
-iD8DBQE/mqsl+4tbS/niBUoRAqAgAJ45PDcine+3g1bLoayh4Z+yvRX7rgCcDuMA
-dfod0DTK+Vqzg1xmYi69J98=
-=wR6b
+iD8DBQE/naE0+4tbS/niBUoRAk06AKCnpTjg+PatkoMl4V138LviBW2HZACeIbHJ
+fGUzIqCa671fIhgiJNl2hEw=
+=u+GW
 -----END PGP SIGNATURE-----
