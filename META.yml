@@ -1,6 +1,6 @@
---- #YAML:1.0
+---
 name: DateTime-TimeZone
-version: 0.32
+version: 0.33
 author:
   - |-
     Dave Rolsky <autarch@urth.org>, inspired by Jesse Vincent's work on
@@ -14,7 +14,7 @@ requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.32
+    version: 0.33
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -129,36 +129,24 @@ provides:
     file: lib/DateTime/TimeZone/America/Antigua.pm
   DateTime::TimeZone::America::Araguaina:
     file: lib/DateTime/TimeZone/America/Araguaina.pm
-  ? |-
-    DateTime::TimeZone::America::Argentina::Buenos_Aires
-:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
+  DateTime::TimeZone::America::Argentina::Buenos_Aires:
+    file: lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
   DateTime::TimeZone::America::Argentina::Catamarca:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/Catamarca.pm
-  ? |-
-    DateTime::TimeZone::America::Argentina::ComodRivadavia
-:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/ComodRivadavia.pm
+    file: lib/DateTime/TimeZone/America/Argentina/Catamarca.pm
+  DateTime::TimeZone::America::Argentina::ComodRivadavia:
+    file: lib/DateTime/TimeZone/America/Argentina/ComodRivadavia.pm
   DateTime::TimeZone::America::Argentina::Cordoba:
     file: lib/DateTime/TimeZone/America/Argentina/Cordoba.pm
   DateTime::TimeZone::America::Argentina::Jujuy:
     file: lib/DateTime/TimeZone/America/Argentina/Jujuy.pm
   DateTime::TimeZone::America::Argentina::La_Rioja:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
+    file: lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
   DateTime::TimeZone::America::Argentina::Mendoza:
     file: lib/DateTime/TimeZone/America/Argentina/Mendoza.pm
-  ? |-
-    DateTime::TimeZone::America::Argentina::Rio_Gallegos
-:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
+  DateTime::TimeZone::America::Argentina::Rio_Gallegos:
+    file: lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
   DateTime::TimeZone::America::Argentina::San_Juan:
-    file: |-
-      lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
+    file: lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
   DateTime::TimeZone::America::Argentina::Tucuman:
     file: lib/DateTime/TimeZone/America/Argentina/Tucuman.pm
   DateTime::TimeZone::America::Argentina::Ushuaia:
@@ -264,8 +252,7 @@ provides:
   DateTime::TimeZone::America::Juneau:
     file: lib/DateTime/TimeZone/America/Juneau.pm
   DateTime::TimeZone::America::Kentucky::Monticello:
-    file: |-
-      lib/DateTime/TimeZone/America/Kentucky/Monticello.pm
+    file: lib/DateTime/TimeZone/America/Kentucky/Monticello.pm
   DateTime::TimeZone::America::La_Paz:
     file: lib/DateTime/TimeZone/America/La_Paz.pm
   DateTime::TimeZone::America::Lima:
@@ -311,8 +298,7 @@ provides:
   DateTime::TimeZone::America::Noronha:
     file: lib/DateTime/TimeZone/America/Noronha.pm
   DateTime::TimeZone::America::North_Dakota::Center:
-    file: |-
-      lib/DateTime/TimeZone/America/North_Dakota/Center.pm
+    file: lib/DateTime/TimeZone/America/North_Dakota/Center.pm
   DateTime::TimeZone::America::Panama:
     file: lib/DateTime/TimeZone/America/Panama.pm
   DateTime::TimeZone::America::Pangnirtung:
@@ -796,4 +782,4 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.2607
+generated_by: Module::Build version 0.2608
