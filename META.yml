@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.21
+version: 0.22
 license: perl
 distribution_type: module
 requires:
