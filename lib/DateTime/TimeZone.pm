@@ -2,8 +2,8 @@ package DateTime::TimeZone;
 
 use strict;
 
-use vars qw( $VERSION $INFINITY $NEG_INFINITY );
-$VERSION = '0.11';
+use vars qw( $VERSION );
+$VERSION = '0.12';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -143,6 +143,7 @@ sub _span_for_datetime
         {
             my $err = 'Invalid local time for date';
             $err .= ' ' . $dt->iso8601 if $type eq 'utc';
+            $err .= " in time zone: " . $self->name;
             $err .= "\n";
 
             die $err;
@@ -171,6 +172,8 @@ sub _spans_binary_search
     my $i = int( $max / 2 );
     # special case for when there are only 2 spans
     $i++ if $max % 2 && $max != 3;
+
+    $i = 0 if @{ $self->{spans} } == 1;
 
     while (1)
     {
@@ -425,6 +428,10 @@ Given an offset as a number, this returns the offset as a string.
 
 Support for this module is provided via the datetime@perl.org email
 list.  See http://lists.perl.org/ for more details.
+
+Please submit bugs to the CPAN RT system at
+http://rt.cpan.org/NoAuth/ReportBug.html?Queue=datetime%3A%3Atimezone
+or via email at bug-datetime-timezone@rt.cpan.org.
 
 =head1 AUTHOR
 

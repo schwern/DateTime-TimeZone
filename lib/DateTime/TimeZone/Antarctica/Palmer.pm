@@ -741,17 +741,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => '',
-    'on' => 'Sun>=9',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '2000',
-    'in' => 'Mar',
-    'at' => '0:00',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'S',
     'on' => 'Sun>=9',
     'save' => '1:00',
@@ -761,6 +750,17 @@ my $rules = [
     'at' => '0:00',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'Sun>=9',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '2000',
+    'in' => 'Mar',
+    'at' => '0:00',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

@@ -37,7 +37,7 @@ my $spans =
     'local_start' => '60431529600'
   },
   {
-    'short_name' => 'IRT',
+    'short_name' => 'IRST',
     'utc_end' => '62382861000',
     'utc_start' => '61378288456',
     'local_end' => '62382873600',
@@ -55,7 +55,7 @@ my $spans =
     'local_start' => '62382875400'
   },
   {
-    'short_name' => 'IRST',
+    'short_name' => 'IRDT',
     'utc_end' => '62413441200',
     'utc_start' => '62394955200',
     'local_end' => '62413459200',
@@ -64,7 +64,7 @@ my $spans =
     'local_start' => '62394973200'
   },
   {
-    'short_name' => 'IRT',
+    'short_name' => 'IRST',
     'utc_end' => '62419665600',
     'utc_start' => '62413441200',
     'local_end' => '62419680000',
@@ -82,444 +82,453 @@ my $spans =
     'local_start' => '62419678200'
   },
   {
-    'short_name' => 'IRST',
-    'utc_end' => '62836803000',
+    'short_name' => 'IRDT',
+    'utc_end' => '62821164600',
     'utc_start' => '62426493000',
-    'local_end' => '62836819200',
+    'local_end' => '62821180800',
     'is_dst' => 1,
     'offset' => 16200,
     'local_start' => '62426509200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '62852873400',
-    'utc_start' => '62836803000',
-    'local_end' => '62852889600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '62836819200'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '62868342600',
-    'utc_start' => '62852873400',
-    'local_end' => '62868355200',
+    'utc_end' => '62836893000',
+    'utc_start' => '62821164600',
+    'local_end' => '62836905600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '62852886000'
+    'local_start' => '62821177200'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '62852787000',
+    'utc_start' => '62836893000',
+    'local_end' => '62852803200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '62836909200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '62884409400',
-    'utc_start' => '62868342600',
-    'local_end' => '62884425600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '62868358800'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '62899878600',
-    'utc_start' => '62884409400',
-    'local_end' => '62899891200',
+    'utc_end' => '62868429000',
+    'utc_start' => '62852787000',
+    'local_end' => '62868441600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '62884422000'
+    'local_start' => '62852799600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '62884323000',
+    'utc_start' => '62868429000',
+    'local_end' => '62884339200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '62868445200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '62915945400',
-    'utc_start' => '62899878600',
-    'local_end' => '62915961600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '62899894800'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '62994573000',
-    'utc_start' => '62915945400',
-    'local_end' => '62994585600',
+    'utc_end' => '62899965000',
+    'utc_start' => '62884323000',
+    'local_end' => '62899977600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '62915958000'
+    'local_start' => '62884335600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '62915859000',
+    'utc_start' => '62899965000',
+    'local_end' => '62915875200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '62899981200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63010639800',
-    'utc_start' => '62994573000',
-    'local_end' => '63010656000',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '62994589200'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63026109000',
-    'utc_start' => '63010639800',
-    'local_end' => '63026121600',
+    'utc_end' => '62994659400',
+    'utc_start' => '62915859000',
+    'local_end' => '62994672000',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63010652400'
+    'local_start' => '62915871600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63010553400',
+    'utc_start' => '62994659400',
+    'local_end' => '63010569600',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '62994675600'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63042175800',
-    'utc_start' => '63026109000',
-    'local_end' => '63042192000',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63026125200'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63120803400',
-    'utc_start' => '63042175800',
-    'local_end' => '63120816000',
+    'utc_end' => '63026195400',
+    'utc_start' => '63010553400',
+    'local_end' => '63026208000',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63042188400'
+    'local_start' => '63010566000'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63042089400',
+    'utc_start' => '63026195400',
+    'local_end' => '63042105600',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63026211600'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63136870200',
-    'utc_start' => '63120803400',
-    'local_end' => '63136886400',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63120819600'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63152339400',
-    'utc_start' => '63136870200',
-    'local_end' => '63152352000',
+    'utc_end' => '63120889800',
+    'utc_start' => '63042089400',
+    'local_end' => '63120902400',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63136882800'
+    'local_start' => '63042102000'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63136783800',
+    'utc_start' => '63120889800',
+    'local_end' => '63136800000',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63120906000'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63168406200',
-    'utc_start' => '63152339400',
-    'local_end' => '63168422400',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63152355600'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63247033800',
-    'utc_start' => '63168406200',
-    'local_end' => '63247046400',
+    'utc_end' => '63152425800',
+    'utc_start' => '63136783800',
+    'local_end' => '63152438400',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63168418800'
+    'local_start' => '63136796400'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63168319800',
+    'utc_start' => '63152425800',
+    'local_end' => '63168336000',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63152442000'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63263100600',
-    'utc_start' => '63247033800',
-    'local_end' => '63263116800',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63247050000'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63278569800',
-    'utc_start' => '63263100600',
-    'local_end' => '63278582400',
+    'utc_end' => '63247120200',
+    'utc_start' => '63168319800',
+    'local_end' => '63247132800',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63263113200'
+    'local_start' => '63168332400'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63263014200',
+    'utc_start' => '63247120200',
+    'local_end' => '63263030400',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63247136400'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63294636600',
-    'utc_start' => '63278569800',
-    'local_end' => '63294652800',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63278586000'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63373264200',
-    'utc_start' => '63294636600',
-    'local_end' => '63373276800',
+    'utc_end' => '63278656200',
+    'utc_start' => '63263014200',
+    'local_end' => '63278668800',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63294649200'
+    'local_start' => '63263026800'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63294550200',
+    'utc_start' => '63278656200',
+    'local_end' => '63294566400',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63278672400'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63389331000',
-    'utc_start' => '63373264200',
-    'local_end' => '63389347200',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63373280400'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63404800200',
-    'utc_start' => '63389331000',
-    'local_end' => '63404812800',
+    'utc_end' => '63373350600',
+    'utc_start' => '63294550200',
+    'local_end' => '63373363200',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63389343600'
+    'local_start' => '63294562800'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63389244600',
+    'utc_start' => '63373350600',
+    'local_end' => '63389260800',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63373366800'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63420867000',
-    'utc_start' => '63404800200',
-    'local_end' => '63420883200',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63404816400'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63499494600',
-    'utc_start' => '63420867000',
-    'local_end' => '63499507200',
+    'utc_end' => '63404886600',
+    'utc_start' => '63389244600',
+    'local_end' => '63404899200',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63420879600'
+    'local_start' => '63389257200'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63420780600',
+    'utc_start' => '63404886600',
+    'local_end' => '63420796800',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63404902800'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63515561400',
-    'utc_start' => '63499494600',
-    'local_end' => '63515577600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63499510800'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63531030600',
-    'utc_start' => '63515561400',
-    'local_end' => '63531043200',
+    'utc_end' => '63499581000',
+    'utc_start' => '63420780600',
+    'local_end' => '63499593600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63515574000'
+    'local_start' => '63420793200'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63515475000',
+    'utc_start' => '63499581000',
+    'local_end' => '63515491200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63499597200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63547097400',
-    'utc_start' => '63531030600',
-    'local_end' => '63547113600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63531046800'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63625725000',
-    'utc_start' => '63547097400',
-    'local_end' => '63625737600',
+    'utc_end' => '63531117000',
+    'utc_start' => '63515475000',
+    'local_end' => '63531129600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63547110000'
+    'local_start' => '63515487600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63547011000',
+    'utc_start' => '63531117000',
+    'local_end' => '63547027200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63531133200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63641791800',
-    'utc_start' => '63625725000',
-    'local_end' => '63641808000',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63625741200'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63657261000',
-    'utc_start' => '63641791800',
-    'local_end' => '63657273600',
+    'utc_end' => '63625811400',
+    'utc_start' => '63547011000',
+    'local_end' => '63625824000',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63641804400'
+    'local_start' => '63547023600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63641705400',
+    'utc_start' => '63625811400',
+    'local_end' => '63641721600',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63625827600'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63673327800',
-    'utc_start' => '63657261000',
-    'local_end' => '63673344000',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63657277200'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63751955400',
-    'utc_start' => '63673327800',
-    'local_end' => '63751968000',
+    'utc_end' => '63657347400',
+    'utc_start' => '63641705400',
+    'local_end' => '63657360000',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63673340400'
+    'local_start' => '63641718000'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63673241400',
+    'utc_start' => '63657347400',
+    'local_end' => '63673257600',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63657363600'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63768022200',
-    'utc_start' => '63751955400',
-    'local_end' => '63768038400',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63751971600'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63783491400',
-    'utc_start' => '63768022200',
-    'local_end' => '63783504000',
+    'utc_end' => '63752041800',
+    'utc_start' => '63673241400',
+    'local_end' => '63752054400',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63768034800'
+    'local_start' => '63673254000'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63767935800',
+    'utc_start' => '63752041800',
+    'local_end' => '63767952000',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63752058000'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63799558200',
-    'utc_start' => '63783491400',
-    'local_end' => '63799574400',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63783507600'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63846563400',
-    'utc_start' => '63799558200',
-    'local_end' => '63846576000',
+    'utc_end' => '63783577800',
+    'utc_start' => '63767935800',
+    'local_end' => '63783590400',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63799570800'
+    'local_start' => '63767948400'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63799471800',
+    'utc_start' => '63783577800',
+    'local_end' => '63799488000',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63783594000'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63862630200',
-    'utc_start' => '63846563400',
-    'local_end' => '63862646400',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63846579600'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63909721800',
-    'utc_start' => '63862630200',
-    'local_end' => '63909734400',
+    'utc_end' => '63846649800',
+    'utc_start' => '63799471800',
+    'local_end' => '63846662400',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63862642800'
+    'local_start' => '63799484400'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63862543800',
+    'utc_start' => '63846649800',
+    'local_end' => '63862560000',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63846666000'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63925788600',
-    'utc_start' => '63909721800',
-    'local_end' => '63925804800',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63909738000'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '63972793800',
-    'utc_start' => '63925788600',
-    'local_end' => '63972806400',
+    'utc_end' => '63909808200',
+    'utc_start' => '63862543800',
+    'local_end' => '63909820800',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63925801200'
+    'local_start' => '63862556400'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63925702200',
+    'utc_start' => '63909808200',
+    'local_end' => '63925718400',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63909824400'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '63988860600',
-    'utc_start' => '63972793800',
-    'local_end' => '63988876800',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '63972810000'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '64035952200',
-    'utc_start' => '63988860600',
-    'local_end' => '64035964800',
+    'utc_end' => '63972880200',
+    'utc_start' => '63925702200',
+    'local_end' => '63972892800',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '63988873200'
+    'local_start' => '63925714800'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '63988774200',
+    'utc_start' => '63972880200',
+    'local_end' => '63988790400',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '63972896400'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '64052019000',
-    'utc_start' => '64035952200',
-    'local_end' => '64052035200',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '64035968400'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '64099024200',
-    'utc_start' => '64052019000',
-    'local_end' => '64099036800',
+    'utc_end' => '64036038600',
+    'utc_start' => '63988774200',
+    'local_end' => '64036051200',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '64052031600'
+    'local_start' => '63988786800'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '64051932600',
+    'utc_start' => '64036038600',
+    'local_end' => '64051948800',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '64036054800'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '64115091000',
-    'utc_start' => '64099024200',
-    'local_end' => '64115107200',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '64099040400'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '64162182600',
-    'utc_start' => '64115091000',
-    'local_end' => '64162195200',
+    'utc_end' => '64099110600',
+    'utc_start' => '64051932600',
+    'local_end' => '64099123200',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '64115103600'
+    'local_start' => '64051945200'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '64115004600',
+    'utc_start' => '64099110600',
+    'local_end' => '64115020800',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '64099126800'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '64178249400',
-    'utc_start' => '64162182600',
-    'local_end' => '64178265600',
-    'is_dst' => 1,
-    'offset' => 16200,
-    'local_start' => '64162198800'
-  },
-  {
-    'short_name' => 'IRT',
-    'utc_end' => '64225254600',
-    'utc_start' => '64178249400',
-    'local_end' => '64225267200',
+    'utc_end' => '64162269000',
+    'utc_start' => '64115004600',
+    'local_end' => '64162281600',
     'is_dst' => 0,
     'offset' => 12600,
-    'local_start' => '64178262000'
+    'local_start' => '64115017200'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '64178163000',
+    'utc_start' => '64162269000',
+    'local_end' => '64178179200',
+    'is_dst' => 1,
+    'offset' => 16200,
+    'local_start' => '64162285200'
   },
   {
     'short_name' => 'IRST',
-    'utc_end' => '64241321400',
-    'utc_start' => '64225254600',
-    'local_end' => '64241337600',
+    'utc_end' => '64225341000',
+    'utc_start' => '64178163000',
+    'local_end' => '64225353600',
+    'is_dst' => 0,
+    'offset' => 12600,
+    'local_start' => '64178175600'
+  },
+  {
+    'short_name' => 'IRDT',
+    'utc_end' => '64241235000',
+    'utc_start' => '64225341000',
+    'local_end' => '64241251200',
     'is_dst' => 1,
     'offset' => 16200,
-    'local_start' => '64225270800'
+    'local_start' => '64225357200'
   },
   {
     'short_name' => 'IRT',
     'utc_end' => DateTime::TimeZone::INFINITY,
-    'utc_start' => '64241321400',
+    'utc_start' => '64241235000',
     'local_end' => DateTime::TimeZone::INFINITY,
     'offset' => 12600,
-    'local_start' => '64241308800'
+    'local_start' => '64241222400'
   }
 ]
 ;

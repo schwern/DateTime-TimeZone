@@ -20,9 +20,9 @@ my $spans =
 [
   {
     'short_name' => 'LMT',
-    'utc_end' => '58916809256',
+    'utc_end' => '58943247656',
     'utc_start' => DateTime::TimeZone::NEG_INFINITY,
-    'local_end' => '58916851200',
+    'local_end' => '58943289600',
     'is_dst' => 0,
     'offset' => 41944,
     'local_start' => DateTime::TimeZone::NEG_INFINITY
@@ -30,11 +30,11 @@ my $spans =
   {
     'short_name' => 'NZT',
     'utc_end' => '60807076200',
-    'utc_start' => '58916809256',
+    'utc_start' => '58943247656',
     'local_end' => '60807117600',
     'is_dst' => 0,
     'offset' => 41400,
-    'local_start' => '58916850656'
+    'local_start' => '58943289056'
   },
   {
     'short_name' => 'NZHDT',
@@ -948,17 +948,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'Sun>=15',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1990',
-    'in' => 'Mar',
-    'at' => '2:00s',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'D',
     'on' => 'Sun>=1',
     'save' => '1:00',
@@ -968,6 +957,17 @@ my $rules = [
     'at' => '2:00s',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'Sun>=15',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1990',
+    'in' => 'Mar',
+    'at' => '2:00s',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

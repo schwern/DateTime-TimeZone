@@ -83,9 +83,9 @@ my $spans =
   },
   {
     'short_name' => 'MST',
-    'utc_end' => '61321734060',
+    'utc_end' => '61323030060',
     'utc_start' => '61315164060',
-    'local_end' => '61321708860',
+    'local_end' => '61323004860',
     'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61315138860'
@@ -93,11 +93,11 @@ my $spans =
   {
     'short_name' => 'MT',
     'utc_end' => '61338841260',
-    'utc_start' => '61321734060',
+    'utc_start' => '61323030060',
     'local_end' => '61338816060',
     'is_dst' => 0,
     'offset' => -25200,
-    'local_start' => '61321708860'
+    'local_start' => '61323004860'
   },
   {
     'short_name' => 'MST',
@@ -128,9 +128,9 @@ my $spans =
   },
   {
     'short_name' => 'MST',
-    'utc_end' => '62072550000',
+    'utc_end' => '62079462000',
     'utc_start' => '62067024000',
-    'local_end' => '62072524800',
+    'local_end' => '62079436800',
     'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '62066998800'
@@ -147,17 +147,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'S',
-    'on' => 'lastSun',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1967',
-    'in' => 'Oct',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'D',
     'on' => 'Sun>=1',
     'save' => '1:00',
@@ -167,6 +156,17 @@ my $rules = [
     'at' => '2:00',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
+    'on' => 'lastSun',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1967',
+    'in' => 'Oct',
+    'at' => '2:00',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
@@ -178,7 +178,7 @@ my $last_observance = bless( {
   'offset' => -25200,
   'start' => bless( {
     'local_rd_secs' => 0,
-    'local_rd_days' => 718432,
+    'local_rd_days' => 718512,
     'language' => bless( {
       'month_numbers' => {},
       'am_pm' => [
@@ -236,15 +236,15 @@ my $last_observance = bless( {
     }, 'DateTime::Language::English' ),
     'tz' => bless( {}, 'DateTime::TimeZone::UTC' ),
     'utc_rd_secs' => 0,
-    'utc_rd_days' => 718432,
+    'utc_rd_days' => 718512,
     'local_c' => {
       'hour' => 0,
       'minute' => 0,
       'second' => 0,
-      'month' => 1,
-      'day_of_year' => 1,
-      'day_of_week' => 1,
-      'day' => 1,
+      'month' => 3,
+      'day_of_year' => 81,
+      'day_of_week' => 4,
+      'day' => 21,
       'year' => 1968
     }
   }, 'DateTime' )

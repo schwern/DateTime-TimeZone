@@ -182,6 +182,7 @@ qw(
   Antarctica/Mawson
   Antarctica/McMurdo
   Antarctica/Palmer
+  Antarctica/Rothera
   Antarctica/Syowa
   Antarctica/Vostok
   Asia/Aden
@@ -567,6 +568,7 @@ qw(
   Mawson
   McMurdo
   Palmer
+  Rothera
   Syowa
   Vostok
 ) ],
@@ -786,8 +788,8 @@ qw(
   'MST7MDT' => 'America/Denver',
   'Asia/Istanbul' => 'Europe/Istanbul',
   'Europe/Skopje' => 'Europe/Belgrade',
-  'Europe/Zagreb' => 'Europe/Belgrade',
   'Europe/Bratislava' => 'Europe/Prague',
+  'Europe/Zagreb' => 'Europe/Belgrade',
   'America/Kentucky/Louisville' => 'America/Louisville',
   'America/Indiana/Indianapolis' => 'America/Indianapolis',
   'EST' => 'America/Indianapolis',

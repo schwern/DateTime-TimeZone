@@ -913,6 +913,17 @@ sub _new_instance
 my $rules = [
   bless( {
     'letter' => 'S',
+    'on' => 'Fri>=15',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1999',
+    'in' => 'Apr',
+    'at' => '0:00',
+    'type' => undef,
+    'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'S',
     'on' => 'lastThu',
     'save' => '1:00',
     'to' => 'max',
@@ -921,6 +932,17 @@ my $rules = [
     'at' => '0:00s',
     'type' => undef,
     'offset' => 3600
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => '',
+    'on' => 'lastThu',
+    'save' => '0',
+    'to' => 'max',
+    'from' => '1999',
+    'in' => 'Sep',
+    'at' => '0:00s',
+    'type' => undef,
+    'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
     'letter' => 'D',
@@ -934,17 +956,6 @@ my $rules = [
     'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
   bless( {
-    'letter' => 'S',
-    'on' => 'Fri>=15',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1999',
-    'in' => 'Apr',
-    'at' => '0:00',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => '',
     'on' => 'Fri>=15',
     'save' => '0',
@@ -952,17 +963,6 @@ my $rules = [
     'from' => '1999',
     'in' => 'Oct',
     'at' => '0:00',
-    'type' => undef,
-    'offset' => 0
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'letter' => '',
-    'on' => 'lastThu',
-    'save' => '0',
-    'to' => 'max',
-    'from' => '1999',
-    'in' => 'Sep',
-    'at' => '0:00s',
     'type' => undef,
     'offset' => 0
   }, 'DateTime::TimeZone::OlsonDB::Rule' ),
