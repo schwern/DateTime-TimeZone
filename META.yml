@@ -1,18 +1,19 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.2503
+version: 0.2504
 license: perl
 distribution_type: module
 requires:
   Class::Singleton: 1.03
   Params::Validate: 0
+  Pod::Man: 1.14
 recommends: {}
 build_requires: {}
 conflicts: {}
 provides:
   DateTime::TimeZone:
-    file: lib/DateTime/TimeZoneCatalog.pm
-    version: 0.2503
+    file: lib/DateTime/TimeZone.pm
+    version: 0.2504
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -770,4 +771,4 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.20_02
+generated_by: Module::Build version 0.21

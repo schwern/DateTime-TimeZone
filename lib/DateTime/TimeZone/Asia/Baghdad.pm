@@ -679,24 +679,24 @@ my $rules = [
   bless( {
     'at' => '3:00s',
     'from' => '1991',
-    'in' => 'Oct',
-    'letter' => 'S',
-    'name' => 'Iraq',
-    'offset_from_std' => 0,
-    'on' => '1',
-    'save' => '0',
-    'to' => 'max',
-    'type' => undef
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'at' => '3:00s',
-    'from' => '1991',
     'in' => 'Apr',
     'letter' => 'D',
     'name' => 'Iraq',
     'offset_from_std' => 3600,
     'on' => '1',
     'save' => '1:00',
+    'to' => 'max',
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'at' => '3:00s',
+    'from' => '1991',
+    'in' => 'Oct',
+    'letter' => 'S',
+    'name' => 'Iraq',
+    'offset_from_std' => 0,
+    'on' => '1',
+    'save' => '0',
     'to' => 'max',
     'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
