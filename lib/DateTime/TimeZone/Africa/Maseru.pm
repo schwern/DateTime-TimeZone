@@ -23,6 +23,7 @@ my $spans =
     'utc_end' => '60026393400',
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '60026400000',
+    'is_dst' => 0,
     'offset' => 6600,
     'local_start' => '-inf'
   },
@@ -31,6 +32,7 @@ my $spans =
     'utc_end' => '61306156800',
     'utc_start' => '60026393400',
     'local_end' => '61306164000',
+    'is_dst' => 0,
     'offset' => 7200,
     'local_start' => '60026400600'
   },
@@ -39,6 +41,7 @@ my $spans =
     'utc_end' => '61321878000',
     'utc_start' => '61306156800',
     'local_end' => '61321888800',
+    'is_dst' => 0,
     'offset' => 10800,
     'local_start' => '61306167600'
   },

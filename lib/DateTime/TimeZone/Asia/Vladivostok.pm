@@ -23,6 +23,7 @@ my $spans =
     'utc_end' => '60648361936',
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '60648393600',
+    'is_dst' => 0,
     'offset' => 31664,
     'local_start' => '-inf'
   },
@@ -31,6 +32,7 @@ my $spans =
     'utc_end' => '60888121200',
     'utc_start' => '60648361936',
     'local_end' => '60888153600',
+    'is_dst' => 0,
     'offset' => 32400,
     'local_start' => '60648394336'
   },
@@ -39,6 +41,7 @@ my $spans =
     'utc_end' => '62490578400',
     'utc_start' => '60888121200',
     'local_end' => '62490614400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '60888157200'
   },
@@ -47,6 +50,7 @@ my $spans =
     'utc_end' => '62506386000',
     'utc_start' => '62490578400',
     'local_end' => '62506425600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62490618000'
   },
@@ -55,6 +59,7 @@ my $spans =
     'utc_end' => '62522114400',
     'utc_start' => '62506386000',
     'local_end' => '62522150400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62506422000'
   },
@@ -63,6 +68,7 @@ my $spans =
     'utc_end' => '62537922000',
     'utc_start' => '62522114400',
     'local_end' => '62537961600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62522154000'
   },
@@ -71,6 +77,7 @@ my $spans =
     'utc_end' => '62553650400',
     'utc_start' => '62537922000',
     'local_end' => '62553686400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62537958000'
   },
@@ -79,6 +86,7 @@ my $spans =
     'utc_end' => '62569458000',
     'utc_start' => '62553650400',
     'local_end' => '62569497600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62553690000'
   },
@@ -87,6 +95,7 @@ my $spans =
     'utc_end' => '62585272800',
     'utc_start' => '62569458000',
     'local_end' => '62585308800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62569494000'
   },
@@ -95,6 +104,7 @@ my $spans =
     'utc_end' => '62601001200',
     'utc_start' => '62585272800',
     'local_end' => '62601040800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62585312400'
   },
@@ -103,6 +113,7 @@ my $spans =
     'utc_end' => '62616729600',
     'utc_start' => '62601001200',
     'local_end' => '62616765600',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62601037200'
   },
@@ -111,6 +122,7 @@ my $spans =
     'utc_end' => '62632450800',
     'utc_start' => '62616729600',
     'local_end' => '62632490400',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62616769200'
   },
@@ -119,6 +131,7 @@ my $spans =
     'utc_end' => '62648179200',
     'utc_start' => '62632450800',
     'local_end' => '62648215200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62632486800'
   },
@@ -127,6 +140,7 @@ my $spans =
     'utc_end' => '62663900400',
     'utc_start' => '62648179200',
     'local_end' => '62663940000',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62648218800'
   },
@@ -135,6 +149,7 @@ my $spans =
     'utc_end' => '62679628800',
     'utc_start' => '62663900400',
     'local_end' => '62679664800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62663936400'
   },
@@ -143,6 +158,7 @@ my $spans =
     'utc_end' => '62695350000',
     'utc_start' => '62679628800',
     'local_end' => '62695389600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62679668400'
   },
@@ -151,6 +167,7 @@ my $spans =
     'utc_end' => '62711078400',
     'utc_start' => '62695350000',
     'local_end' => '62711114400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62695386000'
   },
@@ -159,6 +176,7 @@ my $spans =
     'utc_end' => '62726799600',
     'utc_start' => '62711078400',
     'local_end' => '62726839200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62711118000'
   },
@@ -167,6 +185,7 @@ my $spans =
     'utc_end' => '62742528000',
     'utc_start' => '62726799600',
     'local_end' => '62742564000',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62726835600'
   },
@@ -175,6 +194,7 @@ my $spans =
     'utc_end' => '62758249200',
     'utc_start' => '62742528000',
     'local_end' => '62758288800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62742567600'
   },
@@ -183,6 +203,7 @@ my $spans =
     'utc_end' => '62773977600',
     'utc_start' => '62758249200',
     'local_end' => '62774013600',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62758285200'
   },
@@ -191,6 +212,7 @@ my $spans =
     'utc_end' => '62790303600',
     'utc_start' => '62773977600',
     'local_end' => '62790343200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62774017200'
   },
@@ -199,6 +221,7 @@ my $spans =
     'utc_end' => '62806032000',
     'utc_start' => '62790303600',
     'local_end' => '62806068000',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62790339600'
   },
@@ -207,6 +230,7 @@ my $spans =
     'utc_end' => '62821760400',
     'utc_start' => '62806032000',
     'local_end' => '62821792800',
+    'is_dst' => 0,
     'offset' => 32400,
     'local_start' => '62806064400'
   },
@@ -215,6 +239,7 @@ my $spans =
     'utc_end' => '62831437200',
     'utc_start' => '62821760400',
     'local_end' => '62831469600',
+    'is_dst' => 0,
     'offset' => 32400,
     'local_start' => '62821792800'
   },
@@ -223,6 +248,7 @@ my $spans =
     'utc_end' => '62868931200',
     'utc_start' => '62831437200',
     'local_end' => '62868967200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62831473200'
   },
@@ -231,6 +257,7 @@ my $spans =
     'utc_end' => '62884652400',
     'utc_start' => '62868931200',
     'local_end' => '62884692000',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62868970800'
   },
@@ -239,6 +266,7 @@ my $spans =
     'utc_end' => '62900380800',
     'utc_start' => '62884652400',
     'local_end' => '62900416800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62884688400'
   },
@@ -247,6 +275,7 @@ my $spans =
     'utc_end' => '62916102000',
     'utc_start' => '62900380800',
     'local_end' => '62916141600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62900420400'
   },
@@ -255,6 +284,7 @@ my $spans =
     'utc_end' => '62931830400',
     'utc_start' => '62916102000',
     'local_end' => '62931866400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62916138000'
   },
@@ -263,6 +293,7 @@ my $spans =
     'utc_end' => '62963881200',
     'utc_start' => '62931830400',
     'local_end' => '62963920800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62931870000'
   },
@@ -271,6 +302,7 @@ my $spans =
     'utc_end' => '62982025200',
     'utc_start' => '62963881200',
     'local_end' => '62982064800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62963920800'
   },
@@ -279,6 +311,7 @@ my $spans =
     'utc_end' => '62995334400',
     'utc_start' => '62982025200',
     'local_end' => '62995370400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '62982061200'
   },
@@ -287,6 +320,7 @@ my $spans =
     'utc_end' => '63013474800',
     'utc_start' => '62995334400',
     'local_end' => '63013514400',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '62995374000'
   },
@@ -295,6 +329,7 @@ my $spans =
     'utc_end' => '63026784000',
     'utc_start' => '63013474800',
     'local_end' => '63026820000',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63013510800'
   },
@@ -303,6 +338,7 @@ my $spans =
     'utc_end' => '63044924400',
     'utc_start' => '63026784000',
     'local_end' => '63044964000',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63026823600'
   },
@@ -311,6 +347,7 @@ my $spans =
     'utc_end' => '63058233600',
     'utc_start' => '63044924400',
     'local_end' => '63058269600',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63044960400'
   },
@@ -319,6 +356,7 @@ my $spans =
     'utc_end' => '63076978800',
     'utc_start' => '63058233600',
     'local_end' => '63077018400',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63058273200'
   },
@@ -327,6 +365,7 @@ my $spans =
     'utc_end' => '63089683200',
     'utc_start' => '63076978800',
     'local_end' => '63089719200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63077014800'
   },
@@ -335,6 +374,7 @@ my $spans =
     'utc_end' => '63108428400',
     'utc_start' => '63089683200',
     'local_end' => '63108468000',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63089722800'
   },
@@ -343,6 +383,7 @@ my $spans =
     'utc_end' => '63121132800',
     'utc_start' => '63108428400',
     'local_end' => '63121168800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63108464400'
   },
@@ -351,6 +392,7 @@ my $spans =
     'utc_end' => '63139878000',
     'utc_start' => '63121132800',
     'local_end' => '63139917600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63121172400'
   },
@@ -359,6 +401,7 @@ my $spans =
     'utc_end' => '63153187200',
     'utc_start' => '63139878000',
     'local_end' => '63153223200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63139914000'
   },
@@ -367,6 +410,7 @@ my $spans =
     'utc_end' => '63171327600',
     'utc_start' => '63153187200',
     'local_end' => '63171367200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63153226800'
   },
@@ -375,6 +419,7 @@ my $spans =
     'utc_end' => '63184636800',
     'utc_start' => '63171327600',
     'local_end' => '63184672800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63171363600'
   },
@@ -383,6 +428,7 @@ my $spans =
     'utc_end' => '63202777200',
     'utc_start' => '63184636800',
     'local_end' => '63202816800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63184676400'
   },
@@ -391,6 +437,7 @@ my $spans =
     'utc_end' => '63216086400',
     'utc_start' => '63202777200',
     'local_end' => '63216122400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63202813200'
   },
@@ -399,6 +446,7 @@ my $spans =
     'utc_end' => '63234831600',
     'utc_start' => '63216086400',
     'local_end' => '63234871200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63216126000'
   },
@@ -407,6 +455,7 @@ my $spans =
     'utc_end' => '63247536000',
     'utc_start' => '63234831600',
     'local_end' => '63247572000',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63234867600'
   },
@@ -415,6 +464,7 @@ my $spans =
     'utc_end' => '63266281200',
     'utc_start' => '63247536000',
     'local_end' => '63266320800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63247575600'
   },
@@ -423,6 +473,7 @@ my $spans =
     'utc_end' => '63278985600',
     'utc_start' => '63266281200',
     'local_end' => '63279021600',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63266317200'
   },
@@ -431,6 +482,7 @@ my $spans =
     'utc_end' => '63297730800',
     'utc_start' => '63278985600',
     'local_end' => '63297770400',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63279025200'
   },
@@ -439,6 +491,7 @@ my $spans =
     'utc_end' => '63310435200',
     'utc_start' => '63297730800',
     'local_end' => '63310471200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63297766800'
   },
@@ -447,6 +500,7 @@ my $spans =
     'utc_end' => '63329180400',
     'utc_start' => '63310435200',
     'local_end' => '63329220000',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63310474800'
   },
@@ -455,6 +509,7 @@ my $spans =
     'utc_end' => '63342489600',
     'utc_start' => '63329180400',
     'local_end' => '63342525600',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63329216400'
   },
@@ -463,6 +518,7 @@ my $spans =
     'utc_end' => '63360630000',
     'utc_start' => '63342489600',
     'local_end' => '63360669600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63342529200'
   },
@@ -471,6 +527,7 @@ my $spans =
     'utc_end' => '63373939200',
     'utc_start' => '63360630000',
     'local_end' => '63373975200',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63360666000'
   },
@@ -479,6 +536,7 @@ my $spans =
     'utc_end' => '63392079600',
     'utc_start' => '63373939200',
     'local_end' => '63392119200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63373978800'
   },
@@ -487,6 +545,7 @@ my $spans =
     'utc_end' => '63405388800',
     'utc_start' => '63392079600',
     'local_end' => '63405424800',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63392115600'
   },
@@ -495,6 +554,7 @@ my $spans =
     'utc_end' => '63424134000',
     'utc_start' => '63405388800',
     'local_end' => '63424173600',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63405428400'
   },
@@ -503,6 +563,7 @@ my $spans =
     'utc_end' => '63436838400',
     'utc_start' => '63424134000',
     'local_end' => '63436874400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63424170000'
   },
@@ -511,6 +572,7 @@ my $spans =
     'utc_end' => '63455583600',
     'utc_start' => '63436838400',
     'local_end' => '63455623200',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63436878000'
   },
@@ -519,6 +581,7 @@ my $spans =
     'utc_end' => '63468288000',
     'utc_start' => '63455583600',
     'local_end' => '63468324000',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63455619600'
   },
@@ -527,6 +590,7 @@ my $spans =
     'utc_end' => '63487033200',
     'utc_start' => '63468288000',
     'local_end' => '63487072800',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63468327600'
   },
@@ -535,6 +599,7 @@ my $spans =
     'utc_end' => '63500342400',
     'utc_start' => '63487033200',
     'local_end' => '63500378400',
+    'is_dst' => 0,
     'offset' => 36000,
     'local_start' => '63487069200'
   },
@@ -543,6 +608,7 @@ my $spans =
     'utc_end' => '63518482800',
     'utc_start' => '63500342400',
     'local_end' => '63518522400',
+    'is_dst' => 1,
     'offset' => 39600,
     'local_start' => '63500382000'
   }

@@ -23,6 +23,7 @@ my $spans =
     'utc_end' => '61504519988',
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '61504531200',
+    'is_dst' => 0,
     'offset' => 11212,
     'local_start' => '-inf'
   },

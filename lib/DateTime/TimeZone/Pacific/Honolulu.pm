@@ -23,6 +23,7 @@ my $spans =
     'utc_end' => '59926775486',
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '59926737600',
+    'is_dst' => 0,
     'offset' => -37886,
     'local_start' => '-inf'
   },
@@ -31,6 +32,7 @@ my $spans =
     'utc_end' => '60978400200',
     'utc_start' => '59926775486',
     'local_end' => '60978362400',
+    'is_dst' => 0,
     'offset' => -37800,
     'local_start' => '59926737686'
   },
@@ -39,6 +41,7 @@ my $spans =
     'utc_end' => '60980211000',
     'utc_start' => '60978400200',
     'local_end' => '60980176800',
+    'is_dst' => 0,
     'offset' => -34200,
     'local_start' => '60978366000'
   },
@@ -47,6 +50,7 @@ my $spans =
     'utc_end' => '61255485000',
     'utc_start' => '60980211000',
     'local_end' => '61255447200',
+    'is_dst' => 0,
     'offset' => -37800,
     'local_start' => '60980173200'
   },
@@ -55,6 +59,7 @@ my $spans =
     'utc_end' => '61366321800',
     'utc_start' => '61255485000',
     'local_end' => '61366287600',
+    'is_dst' => 1,
     'offset' => -34200,
     'local_start' => '61255450800'
   },
@@ -63,6 +68,7 @@ my $spans =
     'utc_end' => '61370307000',
     'utc_start' => '61366321800',
     'local_end' => '61370272800',
+    'is_dst' => 1,
     'offset' => -34200,
     'local_start' => '61366287600'
   },
@@ -71,6 +77,7 @@ my $spans =
     'utc_end' => '61423533000',
     'utc_start' => '61370307000',
     'local_end' => '61423495200',
+    'is_dst' => 0,
     'offset' => -37800,
     'local_start' => '61370269200'
   }
@@ -84,17 +91,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'D',
-    'on' => 'Sun>=1',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1987',
-    'in' => 'Apr',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'S',
     'on' => 'lastSun',
     'save' => '0',
@@ -104,6 +100,17 @@ my $rules = [
     'at' => '2:00',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'D',
+    'on' => 'Sun>=1',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1987',
+    'in' => 'Apr',
+    'at' => '2:00',
+    'type' => undef,
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;

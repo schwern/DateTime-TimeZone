@@ -23,6 +23,7 @@ my $spans =
     'utc_end' => '60105481880',
     'utc_start' => $DateTime::TimeZone::NEG_INFINITY,
     'local_end' => '60105456000',
+    'is_dst' => 0,
     'offset' => -25880,
     'local_start' => '-inf'
   },
@@ -31,6 +32,7 @@ my $spans =
     'utc_end' => '60503619600',
     'utc_start' => '60105481880',
     'local_end' => '60503594400',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '60105456680'
   },
@@ -39,6 +41,7 @@ my $spans =
     'utc_end' => '60520896000',
     'utc_start' => '60503619600',
     'local_end' => '60520874400',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '60503598000'
   },
@@ -47,6 +50,7 @@ my $spans =
     'utc_end' => '61255472400',
     'utc_start' => '60520896000',
     'local_end' => '61255447200',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '60520870800'
   },
@@ -55,6 +59,7 @@ my $spans =
     'utc_end' => '61370294400',
     'utc_start' => '61255472400',
     'local_end' => '61370272800',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61255450800'
   },
@@ -63,6 +68,7 @@ my $spans =
     'utc_end' => '61388442000',
     'utc_start' => '61370294400',
     'local_end' => '61388416800',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61370269200'
   },
@@ -71,6 +77,7 @@ my $spans =
     'utc_end' => '61402957200',
     'utc_start' => '61388442000',
     'local_end' => '61402932000',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61388416800'
   },
@@ -79,6 +86,7 @@ my $spans =
     'utc_end' => '61419891600',
     'utc_start' => '61402957200',
     'local_end' => '61419866400',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61402932000'
   },
@@ -87,6 +95,7 @@ my $spans =
     'utc_end' => '61433193600',
     'utc_start' => '61419891600',
     'local_end' => '61433172000',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61419870000'
   },
@@ -95,6 +104,7 @@ my $spans =
     'utc_end' => '61451341200',
     'utc_start' => '61433193600',
     'local_end' => '61451316000',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61433168400'
   },
@@ -103,6 +113,7 @@ my $spans =
     'utc_end' => '61464643200',
     'utc_start' => '61451341200',
     'local_end' => '61464621600',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61451319600'
   },
@@ -111,6 +122,7 @@ my $spans =
     'utc_end' => '61482790800',
     'utc_start' => '61464643200',
     'local_end' => '61482765600',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61464618000'
   },
@@ -119,6 +131,7 @@ my $spans =
     'utc_end' => '61496092800',
     'utc_start' => '61482790800',
     'local_end' => '61496071200',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61482769200'
   },
@@ -127,6 +140,7 @@ my $spans =
     'utc_end' => '61504556400',
     'utc_start' => '61496092800',
     'local_end' => '61504531200',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61496067600'
   },
@@ -135,6 +149,7 @@ my $spans =
     'utc_end' => '61735597200',
     'utc_start' => '61504556400',
     'local_end' => '61735572000',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61504531200'
   },
@@ -143,6 +158,7 @@ my $spans =
     'utc_end' => '61751318400',
     'utc_start' => '61735597200',
     'local_end' => '61751296800',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61735575600'
   },
@@ -151,6 +167,7 @@ my $spans =
     'utc_end' => '61798496400',
     'utc_start' => '61751318400',
     'local_end' => '61798471200',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61751293200'
   },
@@ -159,6 +176,7 @@ my $spans =
     'utc_end' => '61814217600',
     'utc_start' => '61798496400',
     'local_end' => '61814196000',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61798474800'
   },
@@ -167,6 +185,7 @@ my $spans =
     'utc_end' => '61829946000',
     'utc_start' => '61814217600',
     'local_end' => '61829920800',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61814192400'
   },
@@ -175,6 +194,7 @@ my $spans =
     'utc_end' => '61843248000',
     'utc_start' => '61829946000',
     'local_end' => '61843226400',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61829924400'
   },
@@ -183,6 +203,7 @@ my $spans =
     'utc_end' => '61862000400',
     'utc_start' => '61843248000',
     'local_end' => '61861975200',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61843222800'
   },
@@ -191,6 +212,7 @@ my $spans =
     'utc_end' => '61874697600',
     'utc_start' => '61862000400',
     'local_end' => '61874676000',
+    'is_dst' => 1,
     'offset' => -21600,
     'local_start' => '61861978800'
   },
@@ -199,6 +221,7 @@ my $spans =
     'utc_end' => '62209155600',
     'utc_start' => '61874697600',
     'local_end' => '62209130400',
+    'is_dst' => 0,
     'offset' => -25200,
     'local_start' => '61874672400'
   }
@@ -212,17 +235,6 @@ sub _new_instance
 
 my $rules = [
   bless( {
-    'letter' => 'D',
-    'on' => 'Sun>=1',
-    'save' => '1:00',
-    'to' => 'max',
-    'from' => '1987',
-    'in' => 'Apr',
-    'at' => '2:00',
-    'type' => undef,
-    'offset' => 3600
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
     'letter' => 'S',
     'on' => 'lastSun',
     'save' => '0',
@@ -232,6 +244,17 @@ my $rules = [
     'at' => '2:00',
     'type' => undef,
     'offset' => 0
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'letter' => 'D',
+    'on' => 'Sun>=1',
+    'save' => '1:00',
+    'to' => 'max',
+    'from' => '1987',
+    'in' => 'Apr',
+    'at' => '2:00',
+    'type' => undef,
+    'offset' => 3600
   }, 'DateTime::TimeZone::OlsonDB::Rule' )
 ]
 ;
