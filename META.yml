@@ -1,19 +1,20 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.2506
+version: 0.2507
+author:
+  - |-
+    Dave Rolsky <autarch@urth.org>, inspired by Jesse Vincent's work on
+    Date::ICal::Timezone, and with help from the datetime@perl.org list.
+abstract: Time zone object base class and factory
 license: perl
-distribution_type: module
 requires:
   Class::Singleton: 1.03
-  Params::Validate: 0
+  Params::Validate: 0.72
   Pod::Man: 1.14
-recommends: {}
-build_requires: {}
-conflicts: {}
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.2506
+    version: 0.2507
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -771,4 +772,4 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.21
+generated_by: Module::Build version 0.23

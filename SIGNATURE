@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.35.
+signed via the Module::Signature module, version 0.38.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,15 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 f883229a3a206d4211757a32ab76a2172db9eea3 Build.PL
-SHA1 5a953b4560845ac67a242a678a62859a9bdd4e25 Changes
+SHA1 104c23c362443725dc2118be33558972870a52ff Build.PL
+SHA1 5caa3955298e1f0be6db87c0fd36c9c40e90e3a0 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 84f623e7b26120d6630d97beb030002b36647cfc MANIFEST
 SHA1 39c35ff3b7dd3858f91813c49b6112017a0be65c MANIFEST.base
-SHA1 1f3535f91fef460a7468db8a013bd144da3942ab META.yml
-SHA1 1c3b245e8b8966b346d731f7e3a758f79fd2a77b Makefile.PL
+SHA1 bb2f1e3f4504ed897c73c5bf0000f1427044e652 META.yml
+SHA1 7e9e2553e95913392d02f7841987ce8b9fb01d1d Makefile.PL
 SHA1 9f4a45b15ef67f41df953fc807ad63696a284076 README
-SHA1 77ebb836123a047684bd9874680b656b433a64b5 lib/DateTime/TimeZone.pm
+SHA1 c54e79969e0d111db6497a101e1cc04568536c46 lib/DateTime/TimeZone.pm
 SHA1 e77175c19caebb102a661cb318b0dd8552d9e3e1 lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 afe8bfc450bc61484b8332e26fcb992905071f8e lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 74e262507c4ba158a03d0281f388dee1baa81d56 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -352,7 +352,7 @@ SHA1 7666d17ff63079d6bccce504a0cb97754afeedc5 lib/DateTime/TimeZone/Indian/Maldi
 SHA1 98e32cc0f96dc24f1eb75e05bc926dbee03726ce lib/DateTime/TimeZone/Indian/Mauritius.pm
 SHA1 25a57f92d7a8b84423bff6087c918011647f6c7b lib/DateTime/TimeZone/Indian/Mayotte.pm
 SHA1 4c2c08360413b98ad46ee2265233650ff951740a lib/DateTime/TimeZone/Indian/Reunion.pm
-SHA1 d841bdda9e8d4c908ffbb278145a411544fab798 lib/DateTime/TimeZone/Local.pm
+SHA1 c2d6c925b1c1cdcc4ed4739fa700542840d142a3 lib/DateTime/TimeZone/Local.pm
 SHA1 1af8721dfa2c95d5f697bf88243e7a346bca5b73 lib/DateTime/TimeZone/OffsetOnly.pm
 SHA1 13f28456d7e56b05f7d32aa0f2d2658e28789fef lib/DateTime/TimeZone/OlsonDB.pm
 SHA1 cdca9811227204ead2c35bcaa30d708b4663e484 lib/DateTime/TimeZone/Pacific/Apia.pm
@@ -399,7 +399,7 @@ SHA1 7d268ad3e91d32f09c5c4128740a32e48ddb0b92 lib/DateTime/TimeZoneCatalog.pm
 SHA1 a06d73300ab82abbb3858334ccafdae0a97fd2bf t/01load.t
 SHA1 41a0b061416e6c6296740c2c5d3cff5b14a9bf8d t/02basic.t
 SHA1 e83c03fc0fe37d437e6cda5882caecbe1bb1cacb t/03link.t
-SHA1 a84cccb62fdcf1906a333f200143b71dffb2b2d4 t/04local.t
+SHA1 8339f668cc3094b0167b4d3f264d944e30373051 t/04local.t
 SHA1 3ca01df06a59dfec9e31986c8b0a9744f096dc4c t/05offset.t
 SHA1 f745afb79efb259309ca9adfdb1be713cb984f3a t/06no-dst.t
 SHA1 d77e88e474f9246ab611f6eba8e85ed558e497c5 t/07offset-only.t
@@ -407,13 +407,13 @@ SHA1 bf279eb227e514fa7940716a0aeb9564a1e29036 t/08name.t
 SHA1 b3bff4d1cd9d9f4a30f06ec4857a4ae5ea75b332 t/09changes.t
 SHA1 21614428d3676ed4041bacf960ba943de42c3909 t/10invalid.t
 SHA1 77232b92127c5f3069f8b6d349aa5ef49ca1b9d4 t/99-pod.t
-SHA1 fccce09170fa00943498efd477ccbf52d9df94f5 t/check_datetime_version.pl
+SHA1 9977ecbe5761e967b81080eee4f01d68b0fe3dd8 t/check_datetime_version.pl
 SHA1 7fca9f1c01431185d7a8b504b2e6b2b9e248f9dc tools/parse_olson
 SHA1 8186fa7356683cd5686c0405187a008ee1a74414 tools/tests_from_zdump
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.3 (GNU/Linux)
+Version: GnuPG v1.2.4 (GNU/Linux)
 
-iD8DBQE/3iep+4tbS/niBUoRAvwFAKC0d2/gq6EPfRuYXcKk+jxEJC/BZwCdH+Pu
-IcpbkR3DyOkKfGfXAiDO2e4=
-=bGo8
+iD8DBQFALleq+4tbS/niBUoRArXIAJwOlXKRxJ9ndb82EQ19ZzYVJ/+dHQCfRERu
+i15KG769vQGVinTHewQuv3U=
+=zlo0
 -----END PGP SIGNATURE-----
