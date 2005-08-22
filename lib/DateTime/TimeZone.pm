@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.36';
+$VERSION = '0.37';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -65,8 +65,12 @@ sub new
     $subclass =~ s{/}{::}g;
     my $real_class = "DateTime::TimeZone::$subclass";
 
+    die "The timezone '$p{name}' in an invalid name.\n"
+        unless $real_class =~ /^\w+(::\w+)*$/;
+
     unless ( $real_class->can('instance') )
     {
+
         eval "require $real_class";
 
         if ($@)
@@ -664,7 +668,7 @@ your module with Storable.
 =head2 Functions
 
 This class also contains several functions, none of which are
-exported.
+exported.  Calling these as class methods will also work.
 
 =over 4
 
@@ -727,8 +731,13 @@ or via email at bug-datetime-timezone@rt.cpan.org.
 
 =head1 AUTHOR
 
-Dave Rolsky <autarch@urth.org>, inspired by Jesse Vincent's work on
-Date::ICal::Timezone, and with help from the datetime@perl.org list.
+Dave Rolsky <autarch@urth.org>
+
+=head1 CREDITS
+
+This module was inspired by Jesse Vincent's work on
+Date::ICal::Timezone, and written with much help from the
+datetime@perl.org list.
 
 =head1 COPYRIGHT
 

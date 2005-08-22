@@ -1,3 +1,18 @@
+0.37     2005-08-22
+
+* Make sure that provided time zone names are valid, because
+DateTime::TimeZone uses them in an eval.  If you were passing
+user-provided data directly to DateTime::TimeZone->new, someone could
+give a string like "America/Chicago; system 'rm -rf /';", which would
+be bad.  Reported by Matthew Reilly.
+
+- Made it possible to call catalog-related functions as methods.
+
+- This release is based on version 2005i of the Olson database.  This
+include some major changes coming up in the US as a whole in 2007,
+along with other changes for just Indiana.
+
+
 0.36     2005-04-21
 
 - This release is based on version 2005i of the Olson database.

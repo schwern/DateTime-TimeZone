@@ -76,7 +76,6 @@ lib/DateTime/TimeZone/Africa/Nouakchott.pm
 lib/DateTime/TimeZone/Africa/Ouagadougou.pm
 lib/DateTime/TimeZone/Africa/Porto_Novo.pm
 lib/DateTime/TimeZone/Africa/Sao_Tome.pm
-lib/DateTime/TimeZone/Africa/Timbuktu.pm
 lib/DateTime/TimeZone/Africa/Tripoli.pm
 lib/DateTime/TimeZone/Africa/Tunis.pm
 lib/DateTime/TimeZone/Africa/Windhoek.pm
@@ -167,6 +166,7 @@ lib/DateTime/TimeZone/Indian/Maldives.pm
 lib/DateTime/TimeZone/Australia/Adelaide.pm
 lib/DateTime/TimeZone/Australia/Brisbane.pm
 lib/DateTime/TimeZone/Australia/Broken_Hill.pm
+lib/DateTime/TimeZone/Australia/Currie.pm
 lib/DateTime/TimeZone/Australia/Darwin.pm
 lib/DateTime/TimeZone/Australia/Hobart.pm
 lib/DateTime/TimeZone/Australia/Lindeman.pm
@@ -211,7 +211,6 @@ lib/DateTime/TimeZone/Pacific/Tongatapu.pm
 lib/DateTime/TimeZone/Pacific/Truk.pm
 lib/DateTime/TimeZone/Pacific/Wake.pm
 lib/DateTime/TimeZone/Pacific/Wallis.pm
-lib/DateTime/TimeZone/Pacific/Yap.pm
 lib/DateTime/TimeZone/Africa/Ceuta.pm
 lib/DateTime/TimeZone/America/Danmarkshavn.pm
 lib/DateTime/TimeZone/America/Godthab.pm
@@ -236,7 +235,6 @@ lib/DateTime/TimeZone/Atlantic/Reykjavik.pm
 lib/DateTime/TimeZone/Europe/Amsterdam.pm
 lib/DateTime/TimeZone/Europe/Andorra.pm
 lib/DateTime/TimeZone/Europe/Athens.pm
-lib/DateTime/TimeZone/Europe/Belfast.pm
 lib/DateTime/TimeZone/Europe/Belgrade.pm
 lib/DateTime/TimeZone/Europe/Berlin.pm
 lib/DateTime/TimeZone/Europe/Brussels.pm
@@ -288,6 +286,7 @@ lib/DateTime/TimeZone/America/Cancun.pm
 lib/DateTime/TimeZone/America/Cayman.pm
 lib/DateTime/TimeZone/America/Chicago.pm
 lib/DateTime/TimeZone/America/Chihuahua.pm
+lib/DateTime/TimeZone/America/Coral_Harbour.pm
 lib/DateTime/TimeZone/America/Costa_Rica.pm
 lib/DateTime/TimeZone/America/Dawson.pm
 lib/DateTime/TimeZone/America/Dawson_Creek.pm
@@ -305,17 +304,17 @@ lib/DateTime/TimeZone/America/Guatemala.pm
 lib/DateTime/TimeZone/America/Halifax.pm
 lib/DateTime/TimeZone/America/Havana.pm
 lib/DateTime/TimeZone/America/Hermosillo.pm
+lib/DateTime/TimeZone/America/Indiana/Indianapolis.pm
 lib/DateTime/TimeZone/America/Indiana/Knox.pm
 lib/DateTime/TimeZone/America/Indiana/Marengo.pm
 lib/DateTime/TimeZone/America/Indiana/Vevay.pm
-lib/DateTime/TimeZone/America/Indianapolis.pm
 lib/DateTime/TimeZone/America/Inuvik.pm
 lib/DateTime/TimeZone/America/Iqaluit.pm
 lib/DateTime/TimeZone/America/Jamaica.pm
 lib/DateTime/TimeZone/America/Juneau.pm
+lib/DateTime/TimeZone/America/Kentucky/Louisville.pm
 lib/DateTime/TimeZone/America/Kentucky/Monticello.pm
 lib/DateTime/TimeZone/America/Los_Angeles.pm
-lib/DateTime/TimeZone/America/Louisville.pm
 lib/DateTime/TimeZone/America/Managua.pm
 lib/DateTime/TimeZone/America/Martinique.pm
 lib/DateTime/TimeZone/America/Mazatlan.pm
@@ -361,7 +360,6 @@ lib/DateTime/TimeZone/Pacific/Honolulu.pm
 lib/DateTime/TimeZone/America/Araguaina.pm
 lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
 lib/DateTime/TimeZone/America/Argentina/Catamarca.pm
-lib/DateTime/TimeZone/America/Argentina/ComodRivadavia.pm
 lib/DateTime/TimeZone/America/Argentina/Cordoba.pm
 lib/DateTime/TimeZone/America/Argentina/Jujuy.pm
 lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
