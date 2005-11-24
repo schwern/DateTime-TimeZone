@@ -533,24 +533,24 @@ my $rules = [
   bless( {
     'at' => '2:00',
     'from' => '2002',
-    'in' => 'Apr',
-    'letter' => 'D',
-    'name' => 'Mexico',
-    'offset_from_std' => 3600,
-    'on' => 'Sun>=1',
-    'save' => '1:00',
-    'to' => 'max',
-    'type' => undef
-  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
-  bless( {
-    'at' => '2:00',
-    'from' => '2002',
     'in' => 'Oct',
     'letter' => 'S',
     'name' => 'Mexico',
     'offset_from_std' => 0,
     'on' => 'lastSun',
     'save' => '0',
+    'to' => 'max',
+    'type' => undef
+  }, 'DateTime::TimeZone::OlsonDB::Rule' ),
+  bless( {
+    'at' => '2:00',
+    'from' => '2002',
+    'in' => 'Apr',
+    'letter' => 'D',
+    'name' => 'Mexico',
+    'offset_from_std' => 3600,
+    'on' => 'Sun>=1',
+    'save' => '1:00',
     'to' => 'max',
     'type' => undef
   }, 'DateTime::TimeZone::OlsonDB::Rule' )

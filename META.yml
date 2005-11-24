@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.38
+version: 0.3801
 author:
   - Dave Rolsky <autarch@urth.org>
 abstract: Time zone object base class and factory
@@ -14,7 +14,7 @@ requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.38
+    version: 0.3801
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -111,8 +111,6 @@ provides:
     file: lib/DateTime/TimeZone/Africa/Porto_Novo.pm
   DateTime::TimeZone::Africa::Sao_Tome:
     file: lib/DateTime/TimeZone/Africa/Sao_Tome.pm
-  DateTime::TimeZone::Africa::Timbuktu:
-    file: lib/DateTime/TimeZone/Africa/Timbuktu.pm
   DateTime::TimeZone::Africa::Tripoli:
     file: lib/DateTime/TimeZone/Africa/Tripoli.pm
   DateTime::TimeZone::Africa::Tunis:
@@ -133,8 +131,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
   DateTime::TimeZone::America::Argentina::Catamarca:
     file: lib/DateTime/TimeZone/America/Argentina/Catamarca.pm
-  DateTime::TimeZone::America::Argentina::ComodRivadavia:
-    file: lib/DateTime/TimeZone/America/Argentina/ComodRivadavia.pm
   DateTime::TimeZone::America::Argentina::Cordoba:
     file: lib/DateTime/TimeZone/America/Argentina/Cordoba.pm
   DateTime::TimeZone::America::Argentina::Jujuy:
@@ -245,8 +241,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Indiana/Marengo.pm
   DateTime::TimeZone::America::Indiana::Vevay:
     file: lib/DateTime/TimeZone/America/Indiana/Vevay.pm
-  DateTime::TimeZone::America::Indianapolis:
-    file: lib/DateTime/TimeZone/America/Indianapolis.pm
   DateTime::TimeZone::America::Inuvik:
     file: lib/DateTime/TimeZone/America/Inuvik.pm
   DateTime::TimeZone::America::Iqaluit:
@@ -265,8 +259,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Lima.pm
   DateTime::TimeZone::America::Los_Angeles:
     file: lib/DateTime/TimeZone/America/Los_Angeles.pm
-  DateTime::TimeZone::America::Louisville:
-    file: lib/DateTime/TimeZone/America/Louisville.pm
   DateTime::TimeZone::America::Maceio:
     file: lib/DateTime/TimeZone/America/Maceio.pm
   DateTime::TimeZone::America::Managua:
@@ -589,8 +581,6 @@ provides:
     file: lib/DateTime/TimeZone/Europe/Andorra.pm
   DateTime::TimeZone::Europe::Athens:
     file: lib/DateTime/TimeZone/Europe/Athens.pm
-  DateTime::TimeZone::Europe::Belfast:
-    file: lib/DateTime/TimeZone/Europe/Belfast.pm
   DateTime::TimeZone::Europe::Belgrade:
     file: lib/DateTime/TimeZone/Europe/Belgrade.pm
   DateTime::TimeZone::Europe::Berlin:
@@ -785,9 +775,10 @@ provides:
     file: lib/DateTime/TimeZone/Pacific/Wake.pm
   DateTime::TimeZone::Pacific::Wallis:
     file: lib/DateTime/TimeZone/Pacific/Wallis.pm
-  DateTime::TimeZone::Pacific::Yap:
-    file: lib/DateTime/TimeZone/Pacific/Yap.pm
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
 generated_by: Module::Build version 0.2703
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
