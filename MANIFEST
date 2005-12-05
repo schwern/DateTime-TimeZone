@@ -7,6 +7,13 @@ MANIFEST
 MANIFEST.base
 META.yml
 README
+lib/DateTime/TimeZone.pm
+lib/DateTime/TimeZoneCatalog.pm
+lib/DateTime/TimeZone/Floating.pm
+lib/DateTime/TimeZone/Local.pm
+lib/DateTime/TimeZone/OffsetOnly.pm
+lib/DateTime/TimeZone/OlsonDB.pm
+lib/DateTime/TimeZone/UTC.pm
 t/01load.t
 t/02basic.t
 t/03link.t
@@ -27,13 +34,6 @@ t/check_datetime_version.pl
 tools/compile-all-zones
 tools/parse_olson
 tools/tests_from_zdump
-lib/DateTime/TimeZone.pm
-lib/DateTime/TimeZoneCatalog.pm
-lib/DateTime/TimeZone/Floating.pm
-lib/DateTime/TimeZone/Local.pm
-lib/DateTime/TimeZone/OffsetOnly.pm
-lib/DateTime/TimeZone/OlsonDB.pm
-lib/DateTime/TimeZone/UTC.pm
 lib/DateTime/TimeZone/Africa/Abidjan.pm
 lib/DateTime/TimeZone/Africa/Accra.pm
 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm

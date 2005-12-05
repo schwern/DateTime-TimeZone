@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.3801
+version: 0.39
 author:
   - Dave Rolsky <autarch@urth.org>
 abstract: Time zone object base class and factory
@@ -14,7 +14,7 @@ requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.3801
+    version: 0.39
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
