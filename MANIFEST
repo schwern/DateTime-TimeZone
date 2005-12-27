@@ -29,6 +29,7 @@ t/13short-name-has-slash.t
 t/14invalid-name.t
 t/15catalog.t
 t/16has-dst-changes.t
+t/17special-names.t
 t/99-pod.t
 t/check_datetime_version.pl
 tools/compile-all-zones
@@ -361,6 +362,13 @@ lib/DateTime/TimeZone/America/Winnipeg.pm
 lib/DateTime/TimeZone/America/Yakutat.pm
 lib/DateTime/TimeZone/America/Yellowknife.pm
 lib/DateTime/TimeZone/Atlantic/Bermuda.pm
+lib/DateTime/TimeZone/CST6CDT.pm
+lib/DateTime/TimeZone/EST.pm
+lib/DateTime/TimeZone/EST5EDT.pm
+lib/DateTime/TimeZone/HST.pm
+lib/DateTime/TimeZone/MST.pm
+lib/DateTime/TimeZone/MST7MDT.pm
+lib/DateTime/TimeZone/PST8PDT.pm
 lib/DateTime/TimeZone/Pacific/Honolulu.pm
 lib/DateTime/TimeZone/America/Araguaina.pm
 lib/DateTime/TimeZone/America/Argentina/Buenos_Aires.pm
