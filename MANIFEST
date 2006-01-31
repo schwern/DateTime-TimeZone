@@ -313,7 +313,9 @@ lib/DateTime/TimeZone/America/Hermosillo.pm
 lib/DateTime/TimeZone/America/Indiana/Indianapolis.pm
 lib/DateTime/TimeZone/America/Indiana/Knox.pm
 lib/DateTime/TimeZone/America/Indiana/Marengo.pm
+lib/DateTime/TimeZone/America/Indiana/Petersburg.pm
 lib/DateTime/TimeZone/America/Indiana/Vevay.pm
+lib/DateTime/TimeZone/America/Indiana/Vincennes.pm
 lib/DateTime/TimeZone/America/Inuvik.pm
 lib/DateTime/TimeZone/America/Iqaluit.pm
 lib/DateTime/TimeZone/America/Jamaica.pm
@@ -328,6 +330,7 @@ lib/DateTime/TimeZone/America/Menominee.pm
 lib/DateTime/TimeZone/America/Merida.pm
 lib/DateTime/TimeZone/America/Mexico_City.pm
 lib/DateTime/TimeZone/America/Miquelon.pm
+lib/DateTime/TimeZone/America/Moncton.pm
 lib/DateTime/TimeZone/America/Monterrey.pm
 lib/DateTime/TimeZone/America/Montreal.pm
 lib/DateTime/TimeZone/America/Montserrat.pm

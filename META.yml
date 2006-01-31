@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.40
+version: 0.41
 author:
   - Dave Rolsky <autarch@urth.org>
 abstract: Time zone object base class and factory
@@ -11,10 +11,12 @@ requires:
   Class::Singleton: 1.03
   Params::Validate: 0.72
   Pod::Man: 1.14
+build_requires:
+  Module::Build: 0
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.40
+    version: 0.41
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -239,8 +241,12 @@ provides:
     file: lib/DateTime/TimeZone/America/Indiana/Knox.pm
   DateTime::TimeZone::America::Indiana::Marengo:
     file: lib/DateTime/TimeZone/America/Indiana/Marengo.pm
+  DateTime::TimeZone::America::Indiana::Petersburg:
+    file: lib/DateTime/TimeZone/America/Indiana/Petersburg.pm
   DateTime::TimeZone::America::Indiana::Vevay:
     file: lib/DateTime/TimeZone/America/Indiana/Vevay.pm
+  DateTime::TimeZone::America::Indiana::Vincennes:
+    file: lib/DateTime/TimeZone/America/Indiana/Vincennes.pm
   DateTime::TimeZone::America::Inuvik:
     file: lib/DateTime/TimeZone/America/Inuvik.pm
   DateTime::TimeZone::America::Iqaluit:
@@ -277,6 +283,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Mexico_City.pm
   DateTime::TimeZone::America::Miquelon:
     file: lib/DateTime/TimeZone/America/Miquelon.pm
+  DateTime::TimeZone::America::Moncton:
+    file: lib/DateTime/TimeZone/America/Moncton.pm
   DateTime::TimeZone::America::Monterrey:
     file: lib/DateTime/TimeZone/America/Monterrey.pm
   DateTime::TimeZone::America::Montevideo:
