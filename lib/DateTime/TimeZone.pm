@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.42';
+$VERSION = '0.43';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -636,8 +636,8 @@ zone.
 
 =item * has_dst_changes
 
-Indicates whether or not this zone I<ever> has a change to and from
-DST.
+Indicates whether or not this zone has I<ever> had a change to and
+from DST, either in the past or future.
 
 =item * is_olson
 

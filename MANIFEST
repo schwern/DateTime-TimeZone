@@ -1,7 +1,6 @@
 Build.PL
 Changes
 LICENSE
-load-all
 Makefile.PL
 MANIFEST
 MANIFEST.base
@@ -339,6 +338,7 @@ lib/DateTime/TimeZone/America/New_York.pm
 lib/DateTime/TimeZone/America/Nipigon.pm
 lib/DateTime/TimeZone/America/Nome.pm
 lib/DateTime/TimeZone/America/North_Dakota/Center.pm
+lib/DateTime/TimeZone/America/North_Dakota/New_Salem.pm
 lib/DateTime/TimeZone/America/Panama.pm
 lib/DateTime/TimeZone/America/Pangnirtung.pm
 lib/DateTime/TimeZone/America/Phoenix.pm
