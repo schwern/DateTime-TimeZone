@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: DateTime-TimeZone
-version: 0.44
+version: 0.45
 author:
   - Dave Rolsky <autarch@urth.org>
 abstract: Time zone object base class and factory
