@@ -1,10 +1,8 @@
 Build.PL
 Changes
 LICENSE
-Makefile.PL
 MANIFEST
 MANIFEST.base
-META.yml
 README
 lib/DateTime/TimeZone.pm
 lib/DateTime/TimeZoneCatalog.pm
@@ -276,6 +274,7 @@ lib/DateTime/TimeZone/Europe/Uzhgorod.pm
 lib/DateTime/TimeZone/Europe/Vaduz.pm
 lib/DateTime/TimeZone/Europe/Vienna.pm
 lib/DateTime/TimeZone/Europe/Vilnius.pm
+lib/DateTime/TimeZone/Europe/Volgograd.pm
 lib/DateTime/TimeZone/Europe/Warsaw.pm
 lib/DateTime/TimeZone/Europe/Zaporozhye.pm
 lib/DateTime/TimeZone/Europe/Zurich.pm
@@ -283,15 +282,16 @@ lib/DateTime/TimeZone/America/Adak.pm
 lib/DateTime/TimeZone/America/Anchorage.pm
 lib/DateTime/TimeZone/America/Anguilla.pm
 lib/DateTime/TimeZone/America/Antigua.pm
+lib/DateTime/TimeZone/America/Atikokan.pm
 lib/DateTime/TimeZone/America/Barbados.pm
 lib/DateTime/TimeZone/America/Belize.pm
+lib/DateTime/TimeZone/America/Blanc_Sablon.pm
 lib/DateTime/TimeZone/America/Boise.pm
 lib/DateTime/TimeZone/America/Cambridge_Bay.pm
 lib/DateTime/TimeZone/America/Cancun.pm
 lib/DateTime/TimeZone/America/Cayman.pm
 lib/DateTime/TimeZone/America/Chicago.pm
 lib/DateTime/TimeZone/America/Chihuahua.pm
-lib/DateTime/TimeZone/America/Coral_Harbour.pm
 lib/DateTime/TimeZone/America/Costa_Rica.pm
 lib/DateTime/TimeZone/America/Dawson.pm
 lib/DateTime/TimeZone/America/Dawson_Creek.pm
@@ -416,4 +416,5 @@ lib/DateTime/TimeZone/Atlantic/South_Georgia.pm
 lib/DateTime/TimeZone/Atlantic/Stanley.pm
 lib/DateTime/TimeZone/Pacific/Easter.pm
 lib/DateTime/TimeZone/Pacific/Galapagos.pm
-SIGNATURE    Added here by Module::Build
+Makefile.PL
+META.yml

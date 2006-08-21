@@ -79,10 +79,12 @@ qw(
   America/Argentina/Ushuaia
   America/Aruba
   America/Asuncion
+  America/Atikokan
   America/Bahia
   America/Barbados
   America/Belem
   America/Belize
+  America/Blanc-Sablon
   America/Boa_Vista
   America/Bogota
   America/Boise
@@ -94,7 +96,6 @@ qw(
   America/Cayman
   America/Chicago
   America/Chihuahua
-  America/Coral_Harbour
   America/Costa_Rica
   America/Cuiaba
   America/Curacao
@@ -337,6 +338,7 @@ qw(
   Europe/Vaduz
   Europe/Vienna
   Europe/Vilnius
+  Europe/Volgograd
   Europe/Warsaw
   Europe/Zaporozhye
   Europe/Zurich
@@ -481,10 +483,12 @@ qw(
   Argentina/Ushuaia
   Aruba
   Asuncion
+  Atikokan
   Bahia
   Barbados
   Belem
   Belize
+  Blanc-Sablon
   Boa_Vista
   Bogota
   Boise
@@ -496,7 +500,6 @@ qw(
   Cayman
   Chicago
   Chihuahua
-  Coral_Harbour
   Costa_Rica
   Cuiaba
   Curacao
@@ -746,6 +749,7 @@ qw(
   Vaduz
   Vienna
   Vilnius
+  Volgograd
   Warsaw
   Zaporozhye
   Zurich
@@ -814,6 +818,7 @@ qw(
   'America/Atka' => 'America/Adak',
   'America/Buenos_Aires' => 'America/Argentina/Buenos_Aires',
   'America/Catamarca' => 'America/Argentina/Catamarca',
+  'America/Coral_Harbour' => 'America/Atikokan',
   'America/Cordoba' => 'America/Argentina/Cordoba',
   'America/Ensenada' => 'America/Tijuana',
   'America/Fort_Wayne' => 'America/Indiana/Indianapolis',
@@ -867,12 +872,17 @@ qw(
   'Cuba' => 'America/Havana',
   'Egypt' => 'Africa/Cairo',
   'Eire' => 'Europe/Dublin',
+  'Etc/GMT' => 'UTC',
   'Etc/GMT+0' => 'UTC',
   'Etc/UCT' => 'UTC',
+  'Etc/UTC' => 'UTC',
   'Etc/Universal' => 'UTC',
   'Etc/Zulu' => 'UTC',
   'Europe/Belfast' => 'Europe/London',
   'Europe/Bratislava' => 'Europe/Prague',
+  'Europe/Guernsey' => 'Europe/London',
+  'Europe/Isle_of_Man' => 'Europe/London',
+  'Europe/Jersey' => 'Europe/London',
   'Europe/Ljubljana' => 'Europe/Belgrade',
   'Europe/Mariehamn' => 'Europe/Helsinki',
   'Europe/Nicosia' => 'Asia/Nicosia',
@@ -885,14 +895,15 @@ qw(
   'GB' => 'Europe/London',
   'GB-Eire' => 'Europe/London',
   'GMT' => 'UTC',
-  'GMT+0' => 'Etc/GMT',
-  'GMT-0' => 'Etc/GMT',
+  'GMT+0' => 'UTC',
+  'GMT-0' => 'UTC',
   'GMT0' => 'UTC',
-  'Greenwich' => 'Etc/GMT',
+  'Greenwich' => 'UTC',
   'Hongkong' => 'Asia/Hong_Kong',
   'Iceland' => 'Atlantic/Reykjavik',
   'Iran' => 'Asia/Tehran',
   'Israel' => 'Asia/Jerusalem',
+  'JST-9' => 'Asia/Tokyo',
   'Jamaica' => 'America/Jamaica',
   'Japan' => 'Asia/Tokyo',
   'Kwajalein' => 'Pacific/Kwajalein',
@@ -912,7 +923,7 @@ qw(
   'ROK' => 'Asia/Seoul',
   'Singapore' => 'Asia/Singapore',
   'Turkey' => 'Europe/Istanbul',
-  'UCT' => 'Etc/UCT',
+  'UCT' => 'UTC',
   'US/Alaska' => 'America/Anchorage',
   'US/Aleutian' => 'America/Adak',
   'US/Arizona' => 'America/Phoenix',
@@ -926,9 +937,9 @@ qw(
   'US/Pacific' => 'America/Los_Angeles',
   'US/Pacific-New' => 'America/Los_Angeles',
   'US/Samoa' => 'Pacific/Pago_Pago',
-  'Universal' => 'Etc/UTC',
+  'Universal' => 'UTC',
   'W-SU' => 'Europe/Moscow',
-  'Zulu' => 'Etc/UTC'
+  'Zulu' => 'UTC'
 )
 
 ;

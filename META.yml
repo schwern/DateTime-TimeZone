@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.46
+version: 0.47
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -16,7 +16,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.46
+    version: 0.47
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -153,6 +153,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Aruba.pm
   DateTime::TimeZone::America::Asuncion:
     file: lib/DateTime/TimeZone/America/Asuncion.pm
+  DateTime::TimeZone::America::Atikokan:
+    file: lib/DateTime/TimeZone/America/Atikokan.pm
   DateTime::TimeZone::America::Bahia:
     file: lib/DateTime/TimeZone/America/Bahia.pm
   DateTime::TimeZone::America::Barbados:
@@ -161,6 +163,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Belem.pm
   DateTime::TimeZone::America::Belize:
     file: lib/DateTime/TimeZone/America/Belize.pm
+  DateTime::TimeZone::America::Blanc_Sablon:
+    file: lib/DateTime/TimeZone/America/Blanc_Sablon.pm
   DateTime::TimeZone::America::Boa_Vista:
     file: lib/DateTime/TimeZone/America/Boa_Vista.pm
   DateTime::TimeZone::America::Bogota:
@@ -183,8 +187,6 @@ provides:
     file: lib/DateTime/TimeZone/America/Chicago.pm
   DateTime::TimeZone::America::Chihuahua:
     file: lib/DateTime/TimeZone/America/Chihuahua.pm
-  DateTime::TimeZone::America::Coral_Harbour:
-    file: lib/DateTime/TimeZone/America/Coral_Harbour.pm
   DateTime::TimeZone::America::Costa_Rica:
     file: lib/DateTime/TimeZone/America/Costa_Rica.pm
   DateTime::TimeZone::America::Cuiaba:
@@ -669,6 +671,8 @@ provides:
     file: lib/DateTime/TimeZone/Europe/Vienna.pm
   DateTime::TimeZone::Europe::Vilnius:
     file: lib/DateTime/TimeZone/Europe/Vilnius.pm
+  DateTime::TimeZone::Europe::Volgograd:
+    file: lib/DateTime/TimeZone/Europe/Volgograd.pm
   DateTime::TimeZone::Europe::Warsaw:
     file: lib/DateTime/TimeZone/Europe/Warsaw.pm
   DateTime::TimeZone::Europe::Zaporozhye:
@@ -802,7 +806,7 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.28
+generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
