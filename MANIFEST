@@ -418,3 +418,4 @@ lib/DateTime/TimeZone/Pacific/Easter.pm
 lib/DateTime/TimeZone/Pacific/Galapagos.pm
 Makefile.PL
 META.yml
+SIGNATURE    Added here by Module::Build
