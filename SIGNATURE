@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 aea2476ee4e21f982485c877ee6e3c1d458e807e Build.PL
-SHA1 9a529b2be0c10962aac9883afa3f5c863b7f5e97 Changes
+SHA1 724d6b4d93897272ddf7071fd615ef896b064e1d Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 cd726505bd5166e4272f26db6286c3298aedfb6b MANIFEST
 SHA1 1588f606b2c9b15b1b0b100e29c88f3b9bb663cb MANIFEST.base
-SHA1 62174f8b3e3731f4bc40773aaf9dab74993c5052 META.yml
+SHA1 f9533712952ccc5eeec6d758978c1db245805415 META.yml
 SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
 SHA1 9f4a45b15ef67f41df953fc807ad63696a284076 README
-SHA1 8f6db2c926de4124a33d68e2e163b48302132ab0 lib/DateTime/TimeZone.pm
+SHA1 cd38ca166333c5f622ef8687ea9db71f0acfa02c lib/DateTime/TimeZone.pm
 SHA1 42f96ac275093fa8500fb721f358e547f8337686 lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 5eaa4efc011977a9838a6d3d6f9156cb0c7f03bb lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 1dcba638bc78dfeaea822812a07878af2776d962 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -354,7 +354,7 @@ SHA1 6d5ca7ab9eaa1c7f9cbfeef2532fadc1f2eb5626 lib/DateTime/TimeZone/Europe/Volgo
 SHA1 2729bc72354bb3d2a11b1cf71eec419afdd22b29 lib/DateTime/TimeZone/Europe/Warsaw.pm
 SHA1 437a46a84f660f9b085dfeb0fe05d4593958a391 lib/DateTime/TimeZone/Europe/Zaporozhye.pm
 SHA1 3f93482a916266593970d7afb2b3890d236fa7a9 lib/DateTime/TimeZone/Europe/Zurich.pm
-SHA1 a4362da3bd2278f9c150f619d0d23eacea64ac83 lib/DateTime/TimeZone/Floating.pm
+SHA1 44e30e6c70152736840d834c8470278de02b9a22 lib/DateTime/TimeZone/Floating.pm
 SHA1 54c46658b4c60a0ab49f1f5896f968b82c6e667a lib/DateTime/TimeZone/HST.pm
 SHA1 832b76faeaa417536ca547c8dbada17a8144fea3 lib/DateTime/TimeZone/Indian/Antananarivo.pm
 SHA1 1c60df8f180aa669548ffa0d7bfbeca84f35caa3 lib/DateTime/TimeZone/Indian/Chagos.pm
@@ -370,7 +370,7 @@ SHA1 78eb6fce18bb272b8199649adc0cbb7e247ba007 lib/DateTime/TimeZone/Indian/Reuni
 SHA1 9aeabee0255e0192d6afe503c8565f570a84479a lib/DateTime/TimeZone/Local.pm
 SHA1 8f83fbe188f8e790c540d610e669e6b76b193c2d lib/DateTime/TimeZone/MST.pm
 SHA1 f0f4371bcb0fde3cd19c2d9ed7eaf264712052a8 lib/DateTime/TimeZone/MST7MDT.pm
-SHA1 962d15a154454cd6c0ea61f25fa8a5eeeac33324 lib/DateTime/TimeZone/OffsetOnly.pm
+SHA1 6220fc6d62adb4e5642fadc0394a47853b0154dc lib/DateTime/TimeZone/OffsetOnly.pm
 SHA1 d57d45ea08b70627f651c04dea12a6dac28d375c lib/DateTime/TimeZone/OlsonDB.pm
 SHA1 4a14275cc86aeae759f31fb37284ef994afe2e79 lib/DateTime/TimeZone/PST8PDT.pm
 SHA1 f6ab920088b85b27f71089c0509a56e564b0cf52 lib/DateTime/TimeZone/Pacific/Apia.pm
@@ -423,7 +423,7 @@ SHA1 d77e88e474f9246ab611f6eba8e85ed558e497c5 t/07offset-only.t
 SHA1 bf279eb227e514fa7940716a0aeb9564a1e29036 t/08name.t
 SHA1 843ec9ae67e961cbbf295e3cdfcf5a1e28c5e546 t/09changes.t
 SHA1 748e9d68887ab48ce09aa42c4adc1390f1651f55 t/11valid-name.t
-SHA1 fdcea88e6ea5161c254d936d5286bc7a986ed6a2 t/12storable.t
+SHA1 d2ebf9defb4ed96c19bfee1f28f250888fa22bac t/12storable.t
 SHA1 a1c52bb1cefcc581eb34a3b68daaa61d5c39e1e4 t/13short-name-has-slash.t
 SHA1 a32669e70e7c6b3d8cd6fc70694c9a592aed441d t/14invalid-name.t
 SHA1 fc88b9d4b24980997ddcc20c1cb59a50dbb19724 t/15catalog.t
@@ -437,7 +437,7 @@ SHA1 823e01913d6dbbf637056420dec7c00038bf5c4f tools/tests_from_zdump
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.3 (GNU/Linux)
 
-iD8DBQFFO8tw3Or3ZzQuifMRAk8JAKCYnb75KUNHRE/TCR3Z2/++/yxONQCfddxP
-PmSo/YQEOYVEm/4MsyRnrV0=
-=o7IX
+iD8DBQFFPjo73Or3ZzQuifMRAtJ+AKDGtuNoBtiCVzv3AYI5e4gtq1uT8ACgjcYn
+HCrfUfLv6/2qdRC0vqhxulI=
+=DyVM
 -----END PGP SIGNATURE-----
