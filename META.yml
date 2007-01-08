@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.57
+version: 0.58
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -16,7 +16,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.57
+    version: 0.58
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -25,8 +25,8 @@ provides:
     file: lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
   DateTime::TimeZone::Africa::Algiers:
     file: lib/DateTime/TimeZone/Africa/Algiers.pm
-  DateTime::TimeZone::Africa::Asmera:
-    file: lib/DateTime/TimeZone/Africa/Asmera.pm
+  DateTime::TimeZone::Africa::Asmara:
+    file: lib/DateTime/TimeZone/Africa/Asmara.pm
   DateTime::TimeZone::Africa::Bamako:
     file: lib/DateTime/TimeZone/Africa/Bamako.pm
   DateTime::TimeZone::Africa::Bangui:
@@ -553,8 +553,8 @@ provides:
     file: lib/DateTime/TimeZone/Atlantic/Canary.pm
   DateTime::TimeZone::Atlantic::Cape_Verde:
     file: lib/DateTime/TimeZone/Atlantic/Cape_Verde.pm
-  DateTime::TimeZone::Atlantic::Faeroe:
-    file: lib/DateTime/TimeZone/Atlantic/Faeroe.pm
+  DateTime::TimeZone::Atlantic::Faroe:
+    file: lib/DateTime/TimeZone/Atlantic/Faroe.pm
   DateTime::TimeZone::Atlantic::Madeira:
     file: lib/DateTime/TimeZone/Atlantic/Madeira.pm
   DateTime::TimeZone::Atlantic::Reykjavik:
@@ -575,6 +575,8 @@ provides:
     file: lib/DateTime/TimeZone/Australia/Currie.pm
   DateTime::TimeZone::Australia::Darwin:
     file: lib/DateTime/TimeZone/Australia/Darwin.pm
+  DateTime::TimeZone::Australia::Eucla:
+    file: lib/DateTime/TimeZone/Australia/Eucla.pm
   DateTime::TimeZone::Australia::Hobart:
     file: lib/DateTime/TimeZone/Australia/Hobart.pm
   DateTime::TimeZone::Australia::Lindeman:
@@ -806,7 +808,7 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
-generated_by: Module::Build version 0.2801
+generated_by: Module::Build version 0.2806
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

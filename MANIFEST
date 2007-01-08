@@ -36,7 +36,7 @@ lib/DateTime/TimeZone/Africa/Abidjan.pm
 lib/DateTime/TimeZone/Africa/Accra.pm
 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
 lib/DateTime/TimeZone/Africa/Algiers.pm
-lib/DateTime/TimeZone/Africa/Asmera.pm
+lib/DateTime/TimeZone/Africa/Asmara.pm
 lib/DateTime/TimeZone/Africa/Bamako.pm
 lib/DateTime/TimeZone/Africa/Bangui.pm
 lib/DateTime/TimeZone/Africa/Banjul.pm
@@ -171,6 +171,7 @@ lib/DateTime/TimeZone/Australia/Brisbane.pm
 lib/DateTime/TimeZone/Australia/Broken_Hill.pm
 lib/DateTime/TimeZone/Australia/Currie.pm
 lib/DateTime/TimeZone/Australia/Darwin.pm
+lib/DateTime/TimeZone/Australia/Eucla.pm
 lib/DateTime/TimeZone/Australia/Hobart.pm
 lib/DateTime/TimeZone/Australia/Lindeman.pm
 lib/DateTime/TimeZone/Australia/Lord_Howe.pm
@@ -232,7 +233,7 @@ lib/DateTime/TimeZone/Asia/Yakutsk.pm
 lib/DateTime/TimeZone/Asia/Yekaterinburg.pm
 lib/DateTime/TimeZone/Atlantic/Azores.pm
 lib/DateTime/TimeZone/Atlantic/Canary.pm
-lib/DateTime/TimeZone/Atlantic/Faeroe.pm
+lib/DateTime/TimeZone/Atlantic/Faroe.pm
 lib/DateTime/TimeZone/Atlantic/Madeira.pm
 lib/DateTime/TimeZone/Atlantic/Reykjavik.pm
 lib/DateTime/TimeZone/Europe/Amsterdam.pm
