@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 aea2476ee4e21f982485c877ee6e3c1d458e807e Build.PL
-SHA1 60327ab4fa35d96f4832c813ba54e979abfc6255 Changes
+SHA1 caf603298956adaa5287b8c519d8567c6d9ddf1c Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 12f559eda27de5c3220d0a3bb48c7a5104ee5e9b MANIFEST
 SHA1 1588f606b2c9b15b1b0b100e29c88f3b9bb663cb MANIFEST.base
-SHA1 bb3453c4a7b1ed0c6be77e1f208284cead943a0a META.yml
+SHA1 4365a7e7d39b9f397b18aa1739a139c128f89d47 META.yml
 SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
 SHA1 9f4a45b15ef67f41df953fc807ad63696a284076 README
-SHA1 b5e558d23d29760a33ccd1bc4c04fae120b9f6b5 lib/DateTime/TimeZone.pm
+SHA1 ea000e78ade22fc32d31a70e3f1505195212f5c2 lib/DateTime/TimeZone.pm
 SHA1 9eeb8acbdaba2160f683ae9174b9b2ee73594153 lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 596a1a8f78672295746c195bb8f545ca493013c7 lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 640b257ebd6009fb33fc7e400b30fff8efa386c9 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -420,7 +420,7 @@ SHA1 8517a61c1753c7dcb2ae1361075d5bf856400480 lib/DateTime/TimeZoneCatalog.pm
 SHA1 a06d73300ab82abbb3858334ccafdae0a97fd2bf t/01load.t
 SHA1 796f530e99d952f144e70d19764157bab1154d20 t/02basic.t
 SHA1 c3c730c12f2b0dd70e89242c0612f879d263aa83 t/03link.t
-SHA1 aac371b6ff9abae75d682a89008828ef1bf6cb31 t/04local.t
+SHA1 fab58808850ce655ae64712b294c2a69a04d2bba t/04local.t
 SHA1 00edf6ae73104c7dcecab581bd16bc45475f579b t/05offset.t
 SHA1 f745afb79efb259309ca9adfdb1be713cb984f3a t/06no-dst.t
 SHA1 d77e88e474f9246ab611f6eba8e85ed558e497c5 t/07offset-only.t
@@ -441,7 +441,7 @@ SHA1 823e01913d6dbbf637056420dec7c00038bf5c4f tools/tests_from_zdump
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.3 (GNU/Linux)
 
-iD8DBQFF2HTw3Or3ZzQuifMRAt76AJ4hxDLC5DIQkIpSisfDC7tFNj3IcQCgm2mI
-cAnXoUMrjCIsede5Oy3BJfE=
-=E+iq
+iD8DBQFF2Hao3Or3ZzQuifMRAiXkAJwOpJyUte8F2FBtjJhI8jsCklc89wCfaq4X
+XaBDUwCk4DCrtOgkBQ4255Q=
+=20xz
 -----END PGP SIGNATURE-----
