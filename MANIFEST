@@ -117,6 +117,7 @@ lib/DateTime/TimeZone/America/Indiana/Marengo.pm
 lib/DateTime/TimeZone/America/Indiana/Petersburg.pm
 lib/DateTime/TimeZone/America/Indiana/Vevay.pm
 lib/DateTime/TimeZone/America/Indiana/Vincennes.pm
+lib/DateTime/TimeZone/America/Indiana/Winamac.pm
 lib/DateTime/TimeZone/America/Inuvik.pm
 lib/DateTime/TimeZone/America/Iqaluit.pm
 lib/DateTime/TimeZone/America/Jamaica.pm
