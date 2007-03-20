@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.62
+version: 0.63
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -16,7 +16,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.62
+    version: 0.63
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -335,6 +335,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Recife.pm
   DateTime::TimeZone::America::Regina:
     file: lib/DateTime/TimeZone/America/Regina.pm
+  DateTime::TimeZone::America::Resolute:
+    file: lib/DateTime/TimeZone/America/Resolute.pm
   DateTime::TimeZone::America::Rio_Branco:
     file: lib/DateTime/TimeZone/America/Rio_Branco.pm
   DateTime::TimeZone::America::Santiago:
