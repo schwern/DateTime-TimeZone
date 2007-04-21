@@ -3,7 +3,7 @@ package DateTime::TimeZone;
 use strict;
 
 use vars qw( $VERSION );
-$VERSION = '0.64';
+$VERSION = '0.65';
 
 use DateTime::TimeZoneCatalog;
 use DateTime::TimeZone::Floating;
@@ -92,7 +92,23 @@ sub new
         }
     }
 
-    return $real_class->instance( name => $p{name}, is_olson => 1 );
+    my $zone = $real_class->instance( name => $p{name}, is_olson => 1 );
+
+    if ( $zone->is_olson() )
+    {
+        my $object_version =
+            $zone->can('olson_version')
+            ? $zone->olson_version()
+            : 'unknown';
+        my $catalog_version = __PACKAGE__->catalog_olson_version();
+
+        if ( $object_version ne $catalog_version )
+        {
+            warn "Loaded $real_class, which is from an older version ($object_version) of the Olson database than this installation of DateTime::TimeZone ($catalog_version).\n";
+        }
+    }
+
+    return $zone;
 }
 
 sub _init
@@ -529,6 +545,13 @@ DateTime::TimeZone::America::Chicago class.
 If the name given is a "link" name in the Olson database, the object
 created may have a different name.  For example, there is a link from
 the old "EST5EDT" name to "America/New_York".
+
+When loading a time zone from the Olson database, the constructor
+checks the version of the loaded class to make sure it matches the
+version of the current DateTime::TimeZone installation. If they do not
+match it will issue a warning. This is useful because time zone names
+may fall out of use, but you may have an old module file installed for
+that time zone.
 
 There are also several special values that can be given as names.
 
