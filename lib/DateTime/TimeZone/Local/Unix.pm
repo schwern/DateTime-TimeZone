@@ -33,10 +33,8 @@ sub FromEtcLocaltime
 	# The _Readlink sub exists so the test suite can mock it.
 	$real_name = $class->_Readlink( $lt_file );
     }
-    else
-    {
-        $real_name = $class->_FindMatchingZoneinfoFile( $lt_file );
-    }
+
+    $real_name ||= $class->_FindMatchingZoneinfoFile( $lt_file );
 
     if ( defined $real_name )
     {
@@ -273,9 +271,10 @@ If this file is a symlink to an Olson database time zone file (usually
 in F</usr/share/zoneinfo>) then it uses the target file's path to
 determine the time zone name.
 
-If this file is a copy of a zoneinfo file, it looks for a file that
-matches this file in F</usr/share/zoneinfo>. If it finds one, it uses
-that file's path to determine the time zone name.
+If reading the symlink fails for some reason, or if this file is not a
+symlink, it looks for a file that matches this file in
+F</usr/share/zoneinfo>. If it finds one, it uses that file's path to
+determine the time zone name.
 
 =item * F</etc/timezone>
 
