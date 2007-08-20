@@ -318,6 +318,7 @@ lib/DateTime/TimeZone/America/Indiana/Indianapolis.pm
 lib/DateTime/TimeZone/America/Indiana/Knox.pm
 lib/DateTime/TimeZone/America/Indiana/Marengo.pm
 lib/DateTime/TimeZone/America/Indiana/Petersburg.pm
+lib/DateTime/TimeZone/America/Indiana/Tell_City.pm
 lib/DateTime/TimeZone/America/Indiana/Vevay.pm
 lib/DateTime/TimeZone/America/Indiana/Vincennes.pm
 lib/DateTime/TimeZone/America/Indiana/Winamac.pm
