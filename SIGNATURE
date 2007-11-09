@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 0a45d7f5a25df2003b34e697e9a3b9daa69d9d8e Build.PL
-SHA1 c796a821f2a01e1f3380879ef79592adc6115a73 Changes
+SHA1 a0de3fd0139895f891538ff51763478d6677675e Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 1d9e8b00a8a4235287331a08ba8376c4cca31193 MANIFEST
 SHA1 134cac907d38e4189f2d3d98a66ee6606392a0a2 MANIFEST.base
-SHA1 0dd889cac1681068718d56c7ca56ff649c1cac51 META.yml
+SHA1 c9e4e0a2aeb89a5f152c70382ee45d56bdb57260 META.yml
 SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
 SHA1 9f4a45b15ef67f41df953fc807ad63696a284076 README
-SHA1 e67138d99ab81335db812a8770271e57443935f8 lib/DateTime/TimeZone.pm
+SHA1 ea6b5f65670417b2adc949ac07705c13f3314dc4 lib/DateTime/TimeZone.pm
 SHA1 87a2ff4e93c20325d0483a29b0a83b15e1cc009f lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 7d04058af5d50a003092ddd6d3bf0b7eb04b57d4 lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 b1b3faeea7d0c86ae2071576bdee9b888f3fa2a9 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -374,7 +374,7 @@ SHA1 7917794eb246b3ed5af59a42d988079b4a4c5bb6 lib/DateTime/TimeZone/Indian/Reuni
 SHA1 87415558e12824c8456b2a93e69e57f6b5c40a76 lib/DateTime/TimeZone/Local.pm
 SHA1 64c6b8aca2266fd284356fe2597e7d1e44954bae lib/DateTime/TimeZone/Local/Unix.pm
 SHA1 57e8a96b4ecccbc9ec472b40d425b0cfd39048fe lib/DateTime/TimeZone/Local/VMS.pm
-SHA1 c4f6e6e1924314a21a10d314db821282c52ec4a4 lib/DateTime/TimeZone/Local/Win32.pm
+SHA1 c1bc7ef1eef68453b769edac725a6b5ec51f40f1 lib/DateTime/TimeZone/Local/Win32.pm
 SHA1 2f197e5e190422283849c443becf444825faa317 lib/DateTime/TimeZone/MST.pm
 SHA1 4985d5f7e46e1e4613ae9dd8277eea628da6a653 lib/DateTime/TimeZone/MST7MDT.pm
 SHA1 a46d6feee2c98f5463c2227c6883959c257ec33f lib/DateTime/TimeZone/OffsetOnly.pm
@@ -423,7 +423,7 @@ SHA1 548510d4788b58c5ef74fb870da6fd40b0cef9f3 lib/DateTime/TimeZoneCatalog.pm
 SHA1 a06d73300ab82abbb3858334ccafdae0a97fd2bf t/01load.t
 SHA1 796f530e99d952f144e70d19764157bab1154d20 t/02basic.t
 SHA1 c3c730c12f2b0dd70e89242c0612f879d263aa83 t/03link.t
-SHA1 17de9eaa754c755d9732e79f066d98d951534fca t/04local.t
+SHA1 fd5a7d042c2a930872630775e65f5548b5986159 t/04local.t
 SHA1 fe774642dc81a0a82139265d15ac13d1deffd7c5 t/05offset.t
 SHA1 f745afb79efb259309ca9adfdb1be713cb984f3a t/06no-dst.t
 SHA1 d77e88e474f9246ab611f6eba8e85ed558e497c5 t/07offset-only.t
@@ -445,7 +445,7 @@ SHA1 a554455e033b131acf5788fb486288d3e5007cd3 tools/tests_from_zdump
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFHM02N3Or3ZzQuifMRAtSBAJ909XJpAd6jNRYwmuq7MPIVgThb4gCgrZ33
-ElBvXxtFjF09ud56qvEw1Zo=
-=16x+
+iD8DBQFHNMcq3Or3ZzQuifMRAi7RAKCt/i6JnbaHFbnx9LSe/kXjemI4dQCfVVIm
+aWPG0FsTFqjheQt7PWlwe2E=
+=Ab4Z
 -----END PGP SIGNATURE-----
