@@ -1,11 +1,6 @@
 Build.PL
 Changes
-LICENSE
-MANIFEST
-MANIFEST.base
-README
 lib/DateTime/TimeZone.pm
-lib/DateTime/TimeZoneCatalog.pm
 lib/DateTime/TimeZone/Floating.pm
 lib/DateTime/TimeZone/Local.pm
 lib/DateTime/TimeZone/Local/Unix.pm
@@ -14,6 +9,13 @@ lib/DateTime/TimeZone/Local/Win32.pm
 lib/DateTime/TimeZone/OffsetOnly.pm
 lib/DateTime/TimeZone/OlsonDB.pm
 lib/DateTime/TimeZone/UTC.pm
+lib/DateTime/TimeZoneCatalog.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.base
+META.yml
+README
 t/01load.t
 t/02basic.t
 t/03link.t
@@ -31,11 +33,12 @@ t/15catalog.t
 t/16has-dst-changes.t
 t/17special-names.t
 t/18olson-version-check.t
-t/pod.t
 t/check_datetime_version.pl
+t/pod.t
 tools/compile-all-zones
 tools/parse_olson
 tools/tests_from_zdump
+tools/tz-num-to-date
 lib/DateTime/TimeZone/Africa/Abidjan.pm
 lib/DateTime/TimeZone/Africa/Accra.pm
 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -424,6 +427,4 @@ lib/DateTime/TimeZone/Atlantic/South_Georgia.pm
 lib/DateTime/TimeZone/Atlantic/Stanley.pm
 lib/DateTime/TimeZone/Pacific/Easter.pm
 lib/DateTime/TimeZone/Pacific/Galapagos.pm
-Makefile.PL
-META.yml
 SIGNATURE    Added here by Module::Build
