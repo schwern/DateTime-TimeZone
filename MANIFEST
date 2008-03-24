@@ -121,7 +121,6 @@ lib/DateTime/TimeZone/Asia/Bangkok.pm
 lib/DateTime/TimeZone/Asia/Beirut.pm
 lib/DateTime/TimeZone/Asia/Bishkek.pm
 lib/DateTime/TimeZone/Asia/Brunei.pm
-lib/DateTime/TimeZone/Asia/Calcutta.pm
 lib/DateTime/TimeZone/Asia/Choibalsan.pm
 lib/DateTime/TimeZone/Asia/Chongqing.pm
 lib/DateTime/TimeZone/Asia/Colombo.pm
@@ -132,6 +131,7 @@ lib/DateTime/TimeZone/Asia/Dubai.pm
 lib/DateTime/TimeZone/Asia/Dushanbe.pm
 lib/DateTime/TimeZone/Asia/Gaza.pm
 lib/DateTime/TimeZone/Asia/Harbin.pm
+lib/DateTime/TimeZone/Asia/Ho_Chi_Minh.pm
 lib/DateTime/TimeZone/Asia/Hong_Kong.pm
 lib/DateTime/TimeZone/Asia/Hovd.pm
 lib/DateTime/TimeZone/Asia/Jakarta.pm
@@ -141,6 +141,7 @@ lib/DateTime/TimeZone/Asia/Kabul.pm
 lib/DateTime/TimeZone/Asia/Karachi.pm
 lib/DateTime/TimeZone/Asia/Kashgar.pm
 lib/DateTime/TimeZone/Asia/Katmandu.pm
+lib/DateTime/TimeZone/Asia/Kolkata.pm
 lib/DateTime/TimeZone/Asia/Kuala_Lumpur.pm
 lib/DateTime/TimeZone/Asia/Kuching.pm
 lib/DateTime/TimeZone/Asia/Kuwait.pm
@@ -157,7 +158,6 @@ lib/DateTime/TimeZone/Asia/Qatar.pm
 lib/DateTime/TimeZone/Asia/Qyzylorda.pm
 lib/DateTime/TimeZone/Asia/Rangoon.pm
 lib/DateTime/TimeZone/Asia/Riyadh.pm
-lib/DateTime/TimeZone/Asia/Saigon.pm
 lib/DateTime/TimeZone/Asia/Samarkand.pm
 lib/DateTime/TimeZone/Asia/Seoul.pm
 lib/DateTime/TimeZone/Asia/Shanghai.pm
@@ -394,6 +394,7 @@ lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
 lib/DateTime/TimeZone/America/Argentina/Mendoza.pm
 lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
 lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
+lib/DateTime/TimeZone/America/Argentina/San_Luis.pm
 lib/DateTime/TimeZone/America/Argentina/Tucuman.pm
 lib/DateTime/TimeZone/America/Argentina/Ushuaia.pm
 lib/DateTime/TimeZone/America/Aruba.pm

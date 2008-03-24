@@ -75,6 +75,7 @@ qw(
   America/Argentina/Mendoza
   America/Argentina/Rio_Gallegos
   America/Argentina/San_Juan
+  America/Argentina/San_Luis
   America/Argentina/Tucuman
   America/Argentina/Ushuaia
   America/Aruba
@@ -217,7 +218,6 @@ qw(
   Asia/Beirut
   Asia/Bishkek
   Asia/Brunei
-  Asia/Calcutta
   Asia/Choibalsan
   Asia/Chongqing
   Asia/Colombo
@@ -228,6 +228,7 @@ qw(
   Asia/Dushanbe
   Asia/Gaza
   Asia/Harbin
+  Asia/Ho_Chi_Minh
   Asia/Hong_Kong
   Asia/Hovd
   Asia/Irkutsk
@@ -239,6 +240,7 @@ qw(
   Asia/Karachi
   Asia/Kashgar
   Asia/Katmandu
+  Asia/Kolkata
   Asia/Krasnoyarsk
   Asia/Kuala_Lumpur
   Asia/Kuching
@@ -259,7 +261,6 @@ qw(
   Asia/Qyzylorda
   Asia/Rangoon
   Asia/Riyadh
-  Asia/Saigon
   Asia/Sakhalin
   Asia/Samarkand
   Asia/Seoul
@@ -483,6 +484,7 @@ qw(
     Argentina/Mendoza
     Argentina/Rio_Gallegos
     Argentina/San_Juan
+    Argentina/San_Luis
     Argentina/Tucuman
     Argentina/Ushuaia
     Aruba
@@ -629,7 +631,6 @@ qw(
     Beirut
     Bishkek
     Brunei
-    Calcutta
     Choibalsan
     Chongqing
     Colombo
@@ -640,6 +641,7 @@ qw(
     Dushanbe
     Gaza
     Harbin
+    Ho_Chi_Minh
     Hong_Kong
     Hovd
     Irkutsk
@@ -651,6 +653,7 @@ qw(
     Karachi
     Kashgar
     Katmandu
+    Kolkata
     Krasnoyarsk
     Kuala_Lumpur
     Kuching
@@ -671,7 +674,6 @@ qw(
     Qyzylorda
     Rangoon
     Riyadh
-    Saigon
     Sakhalin
     Samarkand
     Seoul
@@ -862,6 +864,7 @@ qw(
   'ar' => [ qw(
     America/Argentina/Buenos_Aires
     America/Argentina/Cordoba
+    America/Argentina/San_Luis
     America/Argentina/Jujuy
     America/Argentina/Tucuman
     America/Argentina/Catamarca
@@ -1210,7 +1213,7 @@ qw(
     Europe/Isle_of_Man
 ) ],
   'in' => [ qw(
-    Asia/Calcutta
+    Asia/Kolkata
 ) ],
   'io' => [ qw(
     Indian/Chagos
@@ -1683,7 +1686,7 @@ qw(
     America/St_Thomas
 ) ],
   'vn' => [ qw(
-    Asia/Saigon
+    Asia/Ho_Chi_Minh
 ) ],
   'vu' => [ qw(
     Pacific/Efate
@@ -1739,10 +1742,12 @@ qw(
   'Antarctica/South_Pole' => 'Antarctica/McMurdo',
   'Arctic/Longyearbyen' => 'Europe/Oslo',
   'Asia/Ashkhabad' => 'Asia/Ashgabat',
+  'Asia/Calcutta' => 'Asia/Kolkata',
   'Asia/Chungking' => 'Asia/Chongqing',
   'Asia/Dacca' => 'Asia/Dhaka',
   'Asia/Istanbul' => 'Europe/Istanbul',
   'Asia/Macao' => 'Asia/Macau',
+  'Asia/Saigon' => 'Asia/Ho_Chi_Minh',
   'Asia/Tel_Aviv' => 'Asia/Jerusalem',
   'Asia/Thimbu' => 'Asia/Thimphu',
   'Asia/Ujung_Pandang' => 'Asia/Makassar',
@@ -1851,7 +1856,7 @@ qw(
 
 ;
 
-sub catalog_olson_version { '2008a' }
+sub catalog_olson_version { '2008b' }
 
 
 1;

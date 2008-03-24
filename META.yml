@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.73
+version: 0.74
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -17,7 +17,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.73
+    version: 0.74
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -146,6 +146,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
   DateTime::TimeZone::America::Argentina::San_Juan:
     file: lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
+  DateTime::TimeZone::America::Argentina::San_Luis:
+    file: lib/DateTime/TimeZone/America/Argentina/San_Luis.pm
   DateTime::TimeZone::America::Argentina::Tucuman:
     file: lib/DateTime/TimeZone/America/Argentina/Tucuman.pm
   DateTime::TimeZone::America::Argentina::Ushuaia:
@@ -430,8 +432,6 @@ provides:
     file: lib/DateTime/TimeZone/Asia/Bishkek.pm
   DateTime::TimeZone::Asia::Brunei:
     file: lib/DateTime/TimeZone/Asia/Brunei.pm
-  DateTime::TimeZone::Asia::Calcutta:
-    file: lib/DateTime/TimeZone/Asia/Calcutta.pm
   DateTime::TimeZone::Asia::Choibalsan:
     file: lib/DateTime/TimeZone/Asia/Choibalsan.pm
   DateTime::TimeZone::Asia::Chongqing:
@@ -452,6 +452,8 @@ provides:
     file: lib/DateTime/TimeZone/Asia/Gaza.pm
   DateTime::TimeZone::Asia::Harbin:
     file: lib/DateTime/TimeZone/Asia/Harbin.pm
+  DateTime::TimeZone::Asia::Ho_Chi_Minh:
+    file: lib/DateTime/TimeZone/Asia/Ho_Chi_Minh.pm
   DateTime::TimeZone::Asia::Hong_Kong:
     file: lib/DateTime/TimeZone/Asia/Hong_Kong.pm
   DateTime::TimeZone::Asia::Hovd:
@@ -474,6 +476,8 @@ provides:
     file: lib/DateTime/TimeZone/Asia/Kashgar.pm
   DateTime::TimeZone::Asia::Katmandu:
     file: lib/DateTime/TimeZone/Asia/Katmandu.pm
+  DateTime::TimeZone::Asia::Kolkata:
+    file: lib/DateTime/TimeZone/Asia/Kolkata.pm
   DateTime::TimeZone::Asia::Krasnoyarsk:
     file: lib/DateTime/TimeZone/Asia/Krasnoyarsk.pm
   DateTime::TimeZone::Asia::Kuala_Lumpur:
@@ -514,8 +518,6 @@ provides:
     file: lib/DateTime/TimeZone/Asia/Rangoon.pm
   DateTime::TimeZone::Asia::Riyadh:
     file: lib/DateTime/TimeZone/Asia/Riyadh.pm
-  DateTime::TimeZone::Asia::Saigon:
-    file: lib/DateTime/TimeZone/Asia/Saigon.pm
   DateTime::TimeZone::Asia::Sakhalin:
     file: lib/DateTime/TimeZone/Asia/Sakhalin.pm
   DateTime::TimeZone::Asia::Samarkand:
