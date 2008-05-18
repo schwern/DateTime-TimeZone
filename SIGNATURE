@@ -14,15 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d591024ed095761954525280812743e979491c88 Build.PL
-SHA1 e90b596022a4acc01eb2ffb71ea2915cc2460521 Changes
+SHA1 70eae1cda35e78e6d2bc4a7350e1a121e3b41514 Build.PL
+SHA1 22320bfa9b7d4edce404d3260281682bbfc63b74 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 d666509cd23818e1545123793ddc4fdec060118a MANIFEST
 SHA1 dbb53119d9e0d0ecbc817fbc85eee07f830f68cb MANIFEST.base
-SHA1 9abce1e35be3dd922118bbef348a06234e9df9ce META.yml
+SHA1 be1464b322358cc6370df41c59fddff6c4ba15d6 META.yml
 SHA1 700b0291401aeba5bd66e62d6190d889d03b0094 Makefile.PL
 SHA1 6df9782858b0bd9a291c91db1a2178691414ea4f README
-SHA1 aa73383a4708c20af9e73840fdfdba8f49d3cea7 lib/DateTime/TimeZone.pm
+SHA1 032272d3368fb1d55958d1c4a515cbfe52c82a57 lib/DateTime/TimeZone.pm
 SHA1 746aae5326bbd3efb6dd56e47c8db27916a666bb lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 81afdbe3b31ddf6ae6595452b3ffb8e15a8d9922 lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 5b21e7c99dbf242d1a0d8881699921d5702c9794 lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -375,7 +375,7 @@ SHA1 f1f1d03775021cf6569ba6c91bcf14a1e14daca9 lib/DateTime/TimeZone/Indian/Reuni
 SHA1 13e54a05078e59a2052782de859eda6e6714e7d8 lib/DateTime/TimeZone/Local.pm
 SHA1 64c6b8aca2266fd284356fe2597e7d1e44954bae lib/DateTime/TimeZone/Local/Unix.pm
 SHA1 d0a9474f5291a722eda64dc40cd65012397f0f9a lib/DateTime/TimeZone/Local/VMS.pm
-SHA1 1ad2a3b24a256ca91036793325f116988c896b96 lib/DateTime/TimeZone/Local/Win32.pm
+SHA1 fee485b017fae572762845b45b4950b5e8ac7c9f lib/DateTime/TimeZone/Local/Win32.pm
 SHA1 b9ef67b08e2c5f6b4c141a59395e672106de1779 lib/DateTime/TimeZone/MST.pm
 SHA1 6bf8778499ec38e58f14dfa0252cfcb6e2a692ef lib/DateTime/TimeZone/MST7MDT.pm
 SHA1 a46d6feee2c98f5463c2227c6883959c257ec33f lib/DateTime/TimeZone/OffsetOnly.pm
@@ -448,7 +448,7 @@ SHA1 f62d4ec3ffa8343185453b7fff610cee8ded2b4e tools/update-from-latest-olson
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFIErWV3Or3ZzQuifMRAjWJAJ90ARXtlmMxkXyHETB5sL0s3sRFWgCgh7f/
-7Ih1YhFhLjoOauhS8kjRKd8=
-=s3JC
+iD8DBQFIMKOI3Or3ZzQuifMRAhBqAKDTjL1T/v1+yyb5ZNJ6Ju5FZHgKxgCgjzdf
+OqV35tmsyi8+6ccVVylHelc=
+=N8E9
 -----END PGP SIGNATURE-----
