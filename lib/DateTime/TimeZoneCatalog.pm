@@ -174,6 +174,7 @@ qw(
   America/Regina
   America/Resolute
   America/Rio_Branco
+  America/Santarem
   America/Santiago
   America/Santo_Domingo
   America/Sao_Paulo
@@ -583,6 +584,7 @@ qw(
     Regina
     Resolute
     Rio_Branco
+    Santarem
     Santiago
     Santo_Domingo
     Sao_Paulo
@@ -953,6 +955,7 @@ qw(
     America/Sao_Paulo
     America/Campo_Grande
     America/Cuiaba
+    America/Santarem
     America/Porto_Velho
     America/Boa_Vista
     America/Manaus
@@ -1856,7 +1859,7 @@ qw(
 
 ;
 
-sub catalog_olson_version { '2008c' }
+sub catalog_olson_version { '2008d' }
 
 
 1;
