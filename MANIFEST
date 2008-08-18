@@ -9,7 +9,7 @@ lib/DateTime/TimeZone/Local/Win32.pm
 lib/DateTime/TimeZone/OffsetOnly.pm
 lib/DateTime/TimeZone/OlsonDB.pm
 lib/DateTime/TimeZone/UTC.pm
-lib/DateTime/TimeZoneCatalog.pm
+lib/DateTime/TimeZone/Catalog.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
@@ -245,6 +245,8 @@ lib/DateTime/TimeZone/Atlantic/Canary.pm
 lib/DateTime/TimeZone/Atlantic/Faroe.pm
 lib/DateTime/TimeZone/Atlantic/Madeira.pm
 lib/DateTime/TimeZone/Atlantic/Reykjavik.pm
+lib/DateTime/TimeZone/CET.pm
+lib/DateTime/TimeZone/EET.pm
 lib/DateTime/TimeZone/Europe/Amsterdam.pm
 lib/DateTime/TimeZone/Europe/Andorra.pm
 lib/DateTime/TimeZone/Europe/Athens.pm
@@ -288,6 +290,8 @@ lib/DateTime/TimeZone/Europe/Volgograd.pm
 lib/DateTime/TimeZone/Europe/Warsaw.pm
 lib/DateTime/TimeZone/Europe/Zaporozhye.pm
 lib/DateTime/TimeZone/Europe/Zurich.pm
+lib/DateTime/TimeZone/MET.pm
+lib/DateTime/TimeZone/WET.pm
 lib/DateTime/TimeZone/America/Adak.pm
 lib/DateTime/TimeZone/America/Anchorage.pm
 lib/DateTime/TimeZone/America/Anguilla.pm

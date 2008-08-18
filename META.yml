@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.79
+version: 0.7901
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -17,7 +17,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.79
+    version: 0.7901
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -600,8 +600,14 @@ provides:
     file: lib/DateTime/TimeZone/Australia/Perth.pm
   DateTime::TimeZone::Australia::Sydney:
     file: lib/DateTime/TimeZone/Australia/Sydney.pm
+  DateTime::TimeZone::CET:
+    file: lib/DateTime/TimeZone/CET.pm
   DateTime::TimeZone::CST6CDT:
     file: lib/DateTime/TimeZone/CST6CDT.pm
+  DateTime::TimeZone::Catalog:
+    file: lib/DateTime/TimeZone/Catalog.pm
+  DateTime::TimeZone::EET:
+    file: lib/DateTime/TimeZone/EET.pm
   DateTime::TimeZone::EST:
     file: lib/DateTime/TimeZone/EST.pm
   DateTime::TimeZone::EST5EDT:
@@ -728,6 +734,8 @@ provides:
     file: lib/DateTime/TimeZone/Local/VMS.pm
   DateTime::TimeZone::Local::Win32:
     file: lib/DateTime/TimeZone/Local/Win32.pm
+  DateTime::TimeZone::MET:
+    file: lib/DateTime/TimeZone/MET.pm
   DateTime::TimeZone::MST:
     file: lib/DateTime/TimeZone/MST.pm
   DateTime::TimeZone::MST7MDT:
@@ -826,6 +834,8 @@ provides:
   DateTime::TimeZone::UTC:
     file: lib/DateTime/TimeZone/UTC.pm
     version: 0.01
+  DateTime::TimeZone::WET:
+    file: lib/DateTime/TimeZone/WET.pm
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
