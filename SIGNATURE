@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 70eae1cda35e78e6d2bc4a7350e1a121e3b41514 Build.PL
-SHA1 8919d74703218d1d79bd474e4ead4bc6848827a1 Changes
+SHA1 6e69165e528a8e5163e7d1b1a88781dbf7ce94c1 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 c0044994139795ff0766c821b62a030acb618883 MANIFEST
 SHA1 af49d036fde645e861813a71e1e5a0c97bf700d7 MANIFEST.base
-SHA1 89ed7c8042a63bc955e877f8e9f582671f24cf73 META.yml
+SHA1 35b2178c8e04303fdd53d3e015bf1c0cbdf17367 META.yml
 SHA1 700b0291401aeba5bd66e62d6190d889d03b0094 Makefile.PL
 SHA1 e4694970a778ae39d3a85ff094a8ddc8d392ac62 README
-SHA1 4ba55c4086367b3b01f930a31af66ab610035940 lib/DateTime/TimeZone.pm
+SHA1 1619b5092a065a987a8f36c9b671f1e978c0f952 lib/DateTime/TimeZone.pm
 SHA1 fbab8d12e98680a663be9df26e5385ffdb70cfbe lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 99bf7b5c2a3903f595297dc108e9f40f2a118f27 lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 d423f67a253db8c3ef2a144b54d36a80f7d0ab1b lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -439,7 +439,7 @@ SHA1 0f14e880a6285d1bdfcefb0b7affd9f1fa708043 t/11valid-name.t
 SHA1 f0e7dba34d98e45052d808867b5bd20535a58765 t/12storable.t
 SHA1 a5df3f1879c8d458dbc47a69e9178d5d4ddc4865 t/13short-name-has-slash.t
 SHA1 4c06a9c1da856060a32e35feda9c65c088b9cac2 t/14invalid-name.t
-SHA1 3ea61963084e81fb4a85abc2a6095560311193c1 t/15catalog.t
+SHA1 7ffd124d980d7fa3ea5f3d9dd04bc1d699ded943 t/15catalog.t
 SHA1 be4608774ac4873c8fe336fba9bf042f8f3f0f1e t/16has-dst-changes.t
 SHA1 75e6360ad13e9045e9a621207cb88cf5ceef8d50 t/17special-names.t
 SHA1 b11f715fe6e1d1a5053810df75bf1465b9323786 t/18olson-version-check.t
@@ -447,14 +447,14 @@ SHA1 5f07e66d63c98d79f2c6549163f151e44dd2799e t/19local-win32.t
 SHA1 9977ecbe5761e967b81080eee4f01d68b0fe3dd8 t/check_datetime_version.pl
 SHA1 564582c8a86d3be77e0468a539beeb1dd222b556 t/pod.t
 SHA1 a181d094260510279cad4d4cc5f837e704d1c712 tools/compile-all-zones
-SHA1 1939986fe4973924c250ce62ff0e825ad069d93e tools/parse_olson
+SHA1 003d09e89744d4d2a3d2a695e7ff73b35b25b5ff tools/parse_olson
 SHA1 a095fc27f8ed0e8ab157d96b3a7f7498a0a7df48 tools/tests_from_zdump
 SHA1 e2e6e0ee6bf48075291f0e587a01c547bc385015 tools/tz-num-to-date
 SHA1 f62d4ec3ffa8343185453b7fff610cee8ded2b4e tools/update-from-latest-olson
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFIqcIr3Or3ZzQuifMRAv52AJ40HF1z/OuQ6HaBxRQ+eUb8TV5hLACg51Pa
-JVBc2/jm9Xlh45SzsAdsyXE=
-=WhyG
+iD8DBQFIqhga3Or3ZzQuifMRAhU0AKDFTgNd4pL/lkqOzSnj/Cu5Wfjf9wCdGqcb
+8VLDrsMVhdhQj92vG4s8cLY=
+=gK/E
 -----END PGP SIGNATURE-----

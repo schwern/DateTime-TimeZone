@@ -5,7 +5,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.7901';
+our $VERSION = '0.7902';
 
 use DateTime::TimeZone::Catalog;
 use DateTime::TimeZone::Floating;
@@ -515,7 +515,7 @@ sub offset_as_string
            );
 }
 
-# These methods all operate on data contained in the DateTime/TimeZoneCatalog.pm file.
+# These methods all operate on data contained in the DateTime/TimeZone/Catalog.pm file.
 
 sub all_names
 {
