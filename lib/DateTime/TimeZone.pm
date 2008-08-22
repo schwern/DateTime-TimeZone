@@ -5,7 +5,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.7902';
+our $VERSION = '0.7903';
 
 use DateTime::TimeZone::Catalog;
 use DateTime::TimeZone::Floating;
@@ -555,7 +555,7 @@ sub countries
 
 sub names_in_country
 {
-    shift if $_[0]->isa('DateTime::TimeZone::Catalog');
+    shift if $_[0]->isa('DateTime::TimeZone');
 
     return unless exists $DateTime::TimeZone::Catalog::ZONES_BY_COUNTRY{ lc $_[0] };
 
