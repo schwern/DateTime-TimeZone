@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 70eae1cda35e78e6d2bc4a7350e1a121e3b41514 Build.PL
-SHA1 c26e0a99f781e986b74b9ab35d652cbc3f094b90 Changes
+SHA1 5e7779fd8f77a4e142c81570bf134a1abf79abd3 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 c0044994139795ff0766c821b62a030acb618883 MANIFEST
 SHA1 af49d036fde645e861813a71e1e5a0c97bf700d7 MANIFEST.base
-SHA1 cd600ffbaacaa1dd7a419be76e2619d74d9ef500 META.yml
+SHA1 a34c676e1eb7bf363d778988154fde05e3a9f518 META.yml
 SHA1 700b0291401aeba5bd66e62d6190d889d03b0094 Makefile.PL
 SHA1 e4694970a778ae39d3a85ff094a8ddc8d392ac62 README
-SHA1 e5098abcf07aa6c2ea2cd5e02311e8ac5bdad2cc lib/DateTime/TimeZone.pm
+SHA1 6bba7dfde4f076e181f8e8adb6a3e6dfc885943f lib/DateTime/TimeZone.pm
 SHA1 fbab8d12e98680a663be9df26e5385ffdb70cfbe lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 99bf7b5c2a3903f595297dc108e9f40f2a118f27 lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 d423f67a253db8c3ef2a144b54d36a80f7d0ab1b lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -379,7 +379,7 @@ SHA1 ba98ba892e64690b33fcc667261a767ddba56113 lib/DateTime/TimeZone/Indian/Reuni
 SHA1 a5e1ce44777c73ad79bb0292b44f1093589b2065 lib/DateTime/TimeZone/Local.pm
 SHA1 361425d768e1a290172d4680c4561f761584c8e9 lib/DateTime/TimeZone/Local/Unix.pm
 SHA1 3d907073971ae89f4079cc343177ca9c56174591 lib/DateTime/TimeZone/Local/VMS.pm
-SHA1 1e8ba008840610c904db1254d7f164809df53974 lib/DateTime/TimeZone/Local/Win32.pm
+SHA1 ee1576ad283218c91f31a71c7e8e391e4f6beec2 lib/DateTime/TimeZone/Local/Win32.pm
 SHA1 bd7c64e7379377f51c7652463cf8391068d1fb68 lib/DateTime/TimeZone/MET.pm
 SHA1 d447a00e7c9496ef2343cd7ea2e8b589cddaeb1d lib/DateTime/TimeZone/MST.pm
 SHA1 5bba56b63c43afc1be35bff8f0805f050bda433c lib/DateTime/TimeZone/MST7MDT.pm
@@ -454,7 +454,7 @@ SHA1 f62d4ec3ffa8343185453b7fff610cee8ded2b4e tools/update-from-latest-olson
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFIrwxc3Or3ZzQuifMRAvYlAJwLa+Lbqm5WccH7hyzm1mVij3NzlACdHy7d
-N/ScPmxFcmTCcR82LBEKu20=
-=4UZ+
+iD8DBQFIuV5d3Or3ZzQuifMRAgMkAJ9gBgiqJhGE6QWmYq969NRtQqiDXQCdGAf9
+lJjcjJqcL9wTxR7kxdsly40=
+=snKt
 -----END PGP SIGNATURE-----
