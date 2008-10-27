@@ -58,34 +58,17 @@ USAGE
     If the "name" parameter is "local", then the module attempts to
     determine the local time zone for the system.
 
-    First it checks $ENV for keys named "TZ", "SYS$TIMEZONE_RULE",
-    "SYS$TIMEZONE_NAME", "UCX$TZ", or "TCPIP$TZC" (the last 4 are for VMS).
-    If this is defined, and it is not the string "local", then it is treated
-    as any other valid name (including "floating"), and the constructor
-    tries to create a time zone based on that name.
+    The method for finding the local zone varies by operating system. See
+    the appropriate module for details of how we check for the local time
+    zone.
 
-    Next, it checks for the existence of a symlink at /etc/localtime. It
-    follows this link to the real file and figures out what the file's name
-    is. It then tries to turn this name into a valid time zone. For example,
-    if this file is linked to /usr/share/zoneinfo/US/Central, it will end up
-    trying "US/Central", which will then be converted to "America/Chicago"
-    internally.
+    *   DateTime::TimeZone::Local::Unix
 
-    Some systems just copy the relevant file to /etc/localtime instead of
-    making a symlink. In this case, we look in /usr/share/zoneinfo for a
-    file that has the same size and content as /etc/localtime to determine
-    the local time zone.
+    *   DateTime::TimeZone::Local::Win32
 
-    Then it checks for a file called /etc/timezone or /etc/TIMEZONE. If one
-    of these exists, it is read and it tries to create a time zone with the
-    name contained in the file.
+    *   DateTime::TimeZone::Local::VMS
 
-    Finally, it checks for a file called /etc/sysconfig/clock. If this file
-    exists, it looks for a line inside the file matching
-    "/^(?:TIME)?ZONE="([^"]+)"/". If this line exists, it tries the value as
-    a time zone name.
-
-    If none of these methods work, it gives up and dies.
+    If a local time zone is not found, then an exception will be thrown.
 
   $tz->offset_for_datetime( $dt )
     Given a "DateTime" object, this method returns the offset in seconds for

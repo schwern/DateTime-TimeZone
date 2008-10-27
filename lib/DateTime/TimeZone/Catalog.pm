@@ -76,6 +76,7 @@ qw(
   America/Argentina/La_Rioja
   America/Argentina/Mendoza
   America/Argentina/Rio_Gallegos
+  America/Argentina/Salta
   America/Argentina/San_Juan
   America/Argentina/San_Luis
   America/Argentina/Tucuman
@@ -490,6 +491,7 @@ qw(
     Argentina/La_Rioja
     Argentina/Mendoza
     Argentina/Rio_Gallegos
+    Argentina/Salta
     Argentina/San_Juan
     Argentina/San_Luis
     Argentina/Tucuman
@@ -872,13 +874,14 @@ qw(
   'ar' => [ qw(
     America/Argentina/Buenos_Aires
     America/Argentina/Cordoba
-    America/Argentina/San_Luis
+    America/Argentina/Salta
     America/Argentina/Jujuy
     America/Argentina/Tucuman
     America/Argentina/Catamarca
     America/Argentina/La_Rioja
     America/Argentina/San_Juan
     America/Argentina/Mendoza
+    America/Argentina/San_Luis
     America/Argentina/Rio_Gallegos
     America/Argentina/Ushuaia
 ) ],
@@ -1650,13 +1653,13 @@ qw(
     America/Kentucky/Monticello
     America/Indiana/Indianapolis
     America/Indiana/Vincennes
-    America/Indiana/Knox
     America/Indiana/Winamac
     America/Indiana/Marengo
+    America/Indiana/Petersburg
     America/Indiana/Vevay
     America/Chicago
     America/Indiana/Tell_City
-    America/Indiana/Petersburg
+    America/Indiana/Knox
     America/Menominee
     America/North_Dakota/Center
     America/North_Dakota/New_Salem
@@ -1865,7 +1868,7 @@ qw(
 
 ;
 
-sub OlsonVersion { '2008h' }
+sub OlsonVersion { '2008i' }
 
 
 1;
@@ -2046,6 +2049,7 @@ so that applications can easily present a list of timezones.
   America/Argentina/La_Rioja
   America/Argentina/Mendoza
   America/Argentina/Rio_Gallegos
+  America/Argentina/Salta
   America/Argentina/San_Juan
   America/Argentina/San_Luis
   America/Argentina/Tucuman

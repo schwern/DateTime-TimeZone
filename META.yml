@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.82
+version: 0.83
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -17,7 +17,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.82
+    version: 0.83
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -144,6 +144,8 @@ provides:
     file: lib/DateTime/TimeZone/America/Argentina/Mendoza.pm
   DateTime::TimeZone::America::Argentina::Rio_Gallegos:
     file: lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
+  DateTime::TimeZone::America::Argentina::Salta:
+    file: lib/DateTime/TimeZone/America/Argentina/Salta.pm
   DateTime::TimeZone::America::Argentina::San_Juan:
     file: lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
   DateTime::TimeZone::America::Argentina::San_Luis:
@@ -836,7 +838,7 @@ provides:
     version: 0.01
   DateTime::TimeZone::WET:
     file: lib/DateTime/TimeZone/WET.pm
-generated_by: Module::Build version 0.2808
+generated_by: Module::Build version 0.3
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

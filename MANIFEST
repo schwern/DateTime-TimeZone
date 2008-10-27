@@ -398,6 +398,7 @@ lib/DateTime/TimeZone/America/Argentina/Jujuy.pm
 lib/DateTime/TimeZone/America/Argentina/La_Rioja.pm
 lib/DateTime/TimeZone/America/Argentina/Mendoza.pm
 lib/DateTime/TimeZone/America/Argentina/Rio_Gallegos.pm
+lib/DateTime/TimeZone/America/Argentina/Salta.pm
 lib/DateTime/TimeZone/America/Argentina/San_Juan.pm
 lib/DateTime/TimeZone/America/Argentina/San_Luis.pm
 lib/DateTime/TimeZone/America/Argentina/Tucuman.pm
@@ -435,4 +436,3 @@ lib/DateTime/TimeZone/Atlantic/South_Georgia.pm
 lib/DateTime/TimeZone/Atlantic/Stanley.pm
 lib/DateTime/TimeZone/Pacific/Easter.pm
 lib/DateTime/TimeZone/Pacific/Galapagos.pm
-SIGNATURE    Added here by Module::Build
