@@ -436,3 +436,4 @@ lib/DateTime/TimeZone/Atlantic/South_Georgia.pm
 lib/DateTime/TimeZone/Atlantic/Stanley.pm
 lib/DateTime/TimeZone/Pacific/Easter.pm
 lib/DateTime/TimeZone/Pacific/Galapagos.pm
+SIGNATURE    Added here by Module::Build
