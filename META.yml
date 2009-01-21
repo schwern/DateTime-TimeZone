@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.8301
+version: 0.84
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -17,7 +17,7 @@ build_requires:
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.8301
+    version: 0.84
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -478,8 +478,8 @@ provides:
     file: lib/DateTime/TimeZone/Asia/Karachi.pm
   DateTime::TimeZone::Asia::Kashgar:
     file: lib/DateTime/TimeZone/Asia/Kashgar.pm
-  DateTime::TimeZone::Asia::Katmandu:
-    file: lib/DateTime/TimeZone/Asia/Katmandu.pm
+  DateTime::TimeZone::Asia::Kathmandu:
+    file: lib/DateTime/TimeZone/Asia/Kathmandu.pm
   DateTime::TimeZone::Asia::Kolkata:
     file: lib/DateTime/TimeZone/Asia/Kolkata.pm
   DateTime::TimeZone::Asia::Krasnoyarsk:
@@ -838,7 +838,7 @@ provides:
     version: 0.01
   DateTime::TimeZone::WET:
     file: lib/DateTime/TimeZone/WET.pm
-generated_by: Module::Build version 0.3
+generated_by: Module::Build version 0.31012
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

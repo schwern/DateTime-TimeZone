@@ -141,7 +141,7 @@ lib/DateTime/TimeZone/Asia/Jerusalem.pm
 lib/DateTime/TimeZone/Asia/Kabul.pm
 lib/DateTime/TimeZone/Asia/Karachi.pm
 lib/DateTime/TimeZone/Asia/Kashgar.pm
-lib/DateTime/TimeZone/Asia/Katmandu.pm
+lib/DateTime/TimeZone/Asia/Kathmandu.pm
 lib/DateTime/TimeZone/Asia/Kolkata.pm
 lib/DateTime/TimeZone/Asia/Kuala_Lumpur.pm
 lib/DateTime/TimeZone/Asia/Kuching.pm

@@ -243,7 +243,7 @@ qw(
   Asia/Kamchatka
   Asia/Karachi
   Asia/Kashgar
-  Asia/Katmandu
+  Asia/Kathmandu
   Asia/Kolkata
   Asia/Krasnoyarsk
   Asia/Kuala_Lumpur
@@ -662,7 +662,7 @@ qw(
     Kamchatka
     Karachi
     Kashgar
-    Katmandu
+    Kathmandu
     Kolkata
     Krasnoyarsk
     Kuala_Lumpur
@@ -1431,7 +1431,7 @@ qw(
     Europe/Oslo
 ) ],
   'np' => [ qw(
-    Asia/Katmandu
+    Asia/Kathmandu
 ) ],
   'nr' => [ qw(
     Pacific/Nauru
@@ -1758,6 +1758,7 @@ qw(
   'Asia/Chungking' => 'Asia/Chongqing',
   'Asia/Dacca' => 'Asia/Dhaka',
   'Asia/Istanbul' => 'Europe/Istanbul',
+  'Asia/Katmandu' => 'Asia/Kathmandu',
   'Asia/Macao' => 'Asia/Macau',
   'Asia/Saigon' => 'Asia/Ho_Chi_Minh',
   'Asia/Tel_Aviv' => 'Asia/Jerusalem',
@@ -1868,7 +1869,7 @@ qw(
 
 ;
 
-sub OlsonVersion { '2008i' }
+sub OlsonVersion { '2009a' }
 
 
 1;
@@ -2130,7 +2131,7 @@ so that applications can easily present a list of timezones.
   Asia/Kabul
   Asia/Karachi
   Asia/Kashgar
-  Asia/Katmandu
+  Asia/Kathmandu
   Asia/Kolkata
   Asia/Kuala_Lumpur
   Asia/Kuching
