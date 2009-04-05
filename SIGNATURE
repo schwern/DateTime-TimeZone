@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 742c6ec3e23e108b37d6ad3d2f86688cfa9b69cc Build.PL
-SHA1 6fb3ab4252284a6ca073f679b040947c780e4855 Changes
+SHA1 7584194c4f3edfa0904ced94ff6a49acd0e34176 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
-SHA1 5d456bfe9e79581048d4475929ee5a42e6f23a8e MANIFEST
+SHA1 1092aac4b548306b0aaada520b4809956d9b4c56 MANIFEST
 SHA1 af49d036fde645e861813a71e1e5a0c97bf700d7 MANIFEST.base
-SHA1 54c401844ffadd3ea9eac43797ae2ac2711610c0 META.yml
+SHA1 81f8ee2f79c9fd8989382db26a277340f579eb7d META.yml
 SHA1 ede797974d9fc294762b34b7c925a2bf5b602dc4 Makefile.PL
 SHA1 6085e9ddf20ebd16e417f8255d12f3a001fe91fb README
-SHA1 816db960d742334ed0e650dba65cddf50b1a51f9 lib/DateTime/TimeZone.pm
+SHA1 cb38bdf961f466afac15a380ec5c13aef2798f43 lib/DateTime/TimeZone.pm
 SHA1 75e012031dd5a38e85b60904a4be753bb55efe18 lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 ec03f90b417e934b4fe367d878b632aa8cb5494e lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 0aa94591029dcbd768def2db0e7c9e7bc7662add lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -377,7 +377,7 @@ SHA1 ff2a5601f65f74da3bd40d16723deac5566b3db0 lib/DateTime/TimeZone/Indian/Maldi
 SHA1 bb8a13e7c1cff271b45c6afa656f06f63cf14ed3 lib/DateTime/TimeZone/Indian/Mauritius.pm
 SHA1 63772082c40548c2f1d7e3c9f0e6cba94f8a281f lib/DateTime/TimeZone/Indian/Mayotte.pm
 SHA1 be662957c0427bf153a3be234747b3078b839e00 lib/DateTime/TimeZone/Indian/Reunion.pm
-SHA1 f488f3f10773df8a6fe373dd60a1955ffcdb41ef lib/DateTime/TimeZone/Local.pm
+SHA1 3e5b5725bcf5787435691e362f1f1f5422365948 lib/DateTime/TimeZone/Local.pm
 SHA1 29dd7db1ab1d89b11532414cbef0aa862b96502f lib/DateTime/TimeZone/Local/Unix.pm
 SHA1 3d907073971ae89f4079cc343177ca9c56174591 lib/DateTime/TimeZone/Local/VMS.pm
 SHA1 8879d08d13ab9b0a368a80cbbeccaf5ac16a9752 lib/DateTime/TimeZone/Local/Win32.pm
@@ -445,6 +445,7 @@ SHA1 be4608774ac4873c8fe336fba9bf042f8f3f0f1e t/16has-dst-changes.t
 SHA1 75e6360ad13e9045e9a621207cb88cf5ceef8d50 t/17special-names.t
 SHA1 b11f715fe6e1d1a5053810df75bf1465b9323786 t/18olson-version-check.t
 SHA1 1baca9d0cdff7f64d5d89f1742c23a631abb21ad t/19local-win32.t
+SHA1 9ac9a42b4471ea4c2443a0378c5671232e398271 t/20local-subclass.t
 SHA1 9977ecbe5761e967b81080eee4f01d68b0fe3dd8 t/check_datetime_version.pl
 SHA1 564582c8a86d3be77e0468a539beeb1dd222b556 t/pod.t
 SHA1 a181d094260510279cad4d4cc5f837e704d1c712 tools/compile-all-zones
@@ -455,7 +456,7 @@ SHA1 f62d4ec3ffa8343185453b7fff610cee8ded2b4e tools/update-from-latest-olson
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEARECAAYFAknHrUEACgkQ3Or3ZzQuifMO6gCg79ft17E0HUkQ5gQRJSEHvNlQ
-dtoAoN1LTW5eHptC4d3ZTbrMc0wvrK9Y
-=2zbu
+iEYEARECAAYFAknY1/gACgkQ3Or3ZzQuifP0tACfZYSYjwbEqml3CsIumUoTZ4n4
+OAsAoNt5J7wPKM63+WKzqoeNTHkTPPkJ
+=E5HX
 -----END PGP SIGNATURE-----
