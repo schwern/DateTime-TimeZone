@@ -23,7 +23,6 @@ USAGE
     This class has the following methods:
 
   DateTime::TimeZone->new( name => $tz_name )
-
     Given a valid time zone name, this method returns a new time zone
     blessed into the appropriate subclass. Subclasses are named for the
     given time zone, so that the time zone "America/Chicago" is the
@@ -66,17 +65,16 @@ USAGE
     * DateTime::TimeZone::Local::Unix
     * DateTime::TimeZone::Local::Win32
     * DateTime::TimeZone::Local::VMS
+
     If a local time zone is not found, then an exception will be thrown.
 
   $tz->offset_for_datetime( $dt )
-
     Given a `DateTime' object, this method returns the offset in seconds for
     the given datetime. This takes into account historical time zone
     information, as well as Daylight Saving Time. The offset is determined
     by looking at the object's UTC Rata Die days and seconds.
 
   $tz->offset_for_local_datetime( $dt )
-
     Given a `DateTime' object, this method returns the offset in seconds for
     the given datetime. Unlike the previous method, this method uses the
     local time's Rata Die days and seconds. This should only be done when
@@ -84,12 +82,10 @@ USAGE
     ambiguous due to Daylight Saving Time rules.
 
   $tz->name
-
     Returns the name of the time zone. If this value is passed to the
     `new()' method, it is guaranteed to create the same object.
 
   $tz->short_name_for_datetime( $dt )
-
     Given a `DateTime' object, this method returns the "short name" for the
     current observance and rule this datetime is in. These are names like
     "EST", "GMT", etc.
@@ -101,54 +97,44 @@ USAGE
     both -0500 and +1000/+1100.
 
   $tz->is_floating
-
     Returns a boolean indicating whether or not this object represents a
     floating time zone, as defined by RFC 2445.
 
   $tz->is_utc
-
     Indicates whether or not this object represents the UTC (GMT) time zone.
 
   $tz->has_dst_changes
-
     Indicates whether or not this zone has *ever* had a change to and from
     DST, either in the past or future.
 
   $tz->is_olson
-
     Returns true if the time zone is a named time zone from the Olson
     database.
 
   $tz->category
-
     Returns the part of the time zone name before the first slash. For
     example, the "America/Chicago" time zone would return "America".
 
   DateTime::TimeZone->is_valid_name($name)
-
     Given a string, this method returns a boolean value indicating whether
     or not the string is a valid time zone name. If you are using
     `DateTime::TimeZone::Alias', any aliases you've created will be valid.
 
   DateTime::TimeZone->all_names
-
     This returns a pre-sorted list of all the time zone names. This list
     does not include link names. In scalar context, it returns an array
     reference, while in list context it returns an array.
 
   DateTime::TimeZone->categories
-
     This returns a list of all time zone categories. In scalar context, it
     returns an array reference, while in list context it returns an array.
 
   DateTime::TimeZone->links
-
     This returns a hash of all time zone links, where the keys are the old,
     deprecated names, and the values are the new names. In scalar context,
     it returns a hash reference, while in list context it returns a hash.
 
   DateTime::TimeZone->names_in_category( $category )
-
     Given a valid category, this method returns a list of the names in that
     category, without the category portion. So the list for the "America"
     category would include the strings "Chicago", "Kentucky/Monticello", and
@@ -159,7 +145,6 @@ USAGE
     that this order will be the best to use for most UIs.
 
   DateTime::TimeZone->countries()
-
     Returns a sorted list of all the valid country codes (in lower-case)
     which can be passed to `names_in_country()'. In scalar context, it
     returns an array reference, while in list context it returns an array.
@@ -168,14 +153,12 @@ USAGE
     `Locale::Country' to do so.
 
   DateTime::TimeZone->names_in_country( $country_code )
-
     Given a two-letter ISO3166 country code, this method returns a list of
     time zones used in that country. The country code may be of any case. In
     scalar context, it returns an array reference, while in list context it
     returns an array.
 
   DateTime::TimeZone->offset_as_seconds( $offset )
-
     Given an offset as a string, this returns the number of seconds
     represented by the offset as a positive or negative number. Returns
     `undef' if $offset is not in the range `-99:59:59' to `+99:59:59'.
@@ -189,12 +172,10 @@ USAGE
     each element of the offset must be separated by a colon (:).
 
   DateTime::TimeZone->offset_as_string( $offset )
-
     Given an offset as a number, this returns the offset as a string.
     Returns `undef' if $offset is not in the range `-359999' to `359999'.
 
   Storable Hooks
-
     This module provides freeze and thaw hooks for `Storable' so that the
     huge data structures for Olson time zones are not actually stored in the
     serialized structure.
