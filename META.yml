@@ -1,23 +1,25 @@
 ---
 name: DateTime-TimeZone
-version: 0.91
+version: 0.93
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
+build_requires:
+  Module::Build: 0
 requires:
   Class::Singleton: 1.03
   Cwd: 3
   Params::Validate: 0.72
   Pod::Man: 1.14
-build_requires:
-  Module::Build: 0
+configure_requires:
+  Module::Build: 0.34
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.91
+    version: 0.93
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -748,13 +750,13 @@ provides:
   DateTime::TimeZone::OlsonDB:
     file: lib/DateTime/TimeZone/OlsonDB.pm
   DateTime::TimeZone::OlsonDB::Change:
-    file: lib/DateTime/TimeZone/OlsonDB.pm
+    file: lib/DateTime/TimeZone/OlsonDB/Change.pm
   DateTime::TimeZone::OlsonDB::Observance:
-    file: lib/DateTime/TimeZone/OlsonDB.pm
+    file: lib/DateTime/TimeZone/OlsonDB/Observance.pm
   DateTime::TimeZone::OlsonDB::Rule:
-    file: lib/DateTime/TimeZone/OlsonDB.pm
+    file: lib/DateTime/TimeZone/OlsonDB/Rule.pm
   DateTime::TimeZone::OlsonDB::Zone:
-    file: lib/DateTime/TimeZone/OlsonDB.pm
+    file: lib/DateTime/TimeZone/OlsonDB/Zone.pm
   DateTime::TimeZone::PST8PDT:
     file: lib/DateTime/TimeZone/PST8PDT.pm
   DateTime::TimeZone::Pacific::Apia:
@@ -838,7 +840,7 @@ provides:
     version: 0.01
   DateTime::TimeZone::WET:
     file: lib/DateTime/TimeZone/WET.pm
-generated_by: Module::Build version 0.32
+generated_by: Module::Build version 0.34
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
