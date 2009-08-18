@@ -54,6 +54,7 @@ sub FromEtcLocaltime
             my $tz;
             {
                 local $@;
+                local $SIG{__DIE__};
                 $tz = eval { DateTime::TimeZone->new( name => $name ) };
             }
 
@@ -88,10 +89,10 @@ sub _FindMatchingZoneinfoFile
 
     my $real_name;
     local $@;
+    local $SIG{__DIE__};
     local $_;
     eval
     {
-        local $SIG{__DIE__};
         File::Find::find
             ( { wanted =>
                 sub
@@ -146,6 +147,7 @@ sub FromEtcTimezone
     return unless $class->_IsValidName($name);
 
     local $@;
+    local $SIG{__DIE__};
     return eval { DateTime::TimeZone->new( name => $name ) };
 }
 
@@ -176,6 +178,7 @@ sub FromEtcTIMEZONE
     return unless $class->_IsValidName($name);
 
     local $@;
+    local $SIG{__DIE__};
     return eval { DateTime::TimeZone->new( name => $name ) };
 }
 
@@ -191,6 +194,7 @@ sub FromEtcSysconfigClock
     return unless $class->_IsValidName($name);
 
     local $@;
+    local $SIG{__DIE__};
     return eval { DateTime::TimeZone->new( name => $name ) };
 }
 
@@ -222,6 +226,7 @@ sub FromEtcDefaultInit
     return unless $class->_IsValidName($name);
 
     local $@;
+    local $SIG{__DIE__};
     return eval { DateTime::TimeZone->new( name => $name ) };
 }
 

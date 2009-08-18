@@ -51,6 +51,7 @@ sub TimeZone
         return $subclass if $subclass->can('Methods');
 
         local $@;
+        local $SIG{__DIE__};
         eval "use $subclass";
         if ( my $e = $@ )
         {
@@ -59,7 +60,8 @@ sub TimeZone
                 $subclass = $class . '::' . 'Unix';
 
                 eval "use $subclass";
-                die $@ if $@;
+                my $e2 = $@;
+                die $e2 if $e2;
             }
             else
             {
@@ -82,6 +84,7 @@ sub FromEnv
 	    my $tz;
             {
                 local $@;
+                local $SIG{__DIE__};
                 $tz = eval { DateTime::TimeZone->new( name => $ENV{$var} ) };
             }
             return $tz if $tz;
