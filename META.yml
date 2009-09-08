@@ -1,6 +1,6 @@
 ---
 name: DateTime-TimeZone
-version: 0.96
+version: 0.97
 author:
   - 'Dave Rolsky <autarch@urth.org>'
 abstract: Time zone object base class and factory
@@ -15,11 +15,11 @@ requires:
   Params::Validate: 0.72
   Pod::Man: 1.14
 configure_requires:
-  Module::Build: 0.34
+  Module::Build: 0.340201
 provides:
   DateTime::TimeZone:
     file: lib/DateTime/TimeZone.pm
-    version: 0.96
+    version: 0.97
   DateTime::TimeZone::Africa::Abidjan:
     file: lib/DateTime/TimeZone/Africa/Abidjan.pm
   DateTime::TimeZone::Africa::Accra:
@@ -840,7 +840,7 @@ provides:
     version: 0.01
   DateTime::TimeZone::WET:
     file: lib/DateTime/TimeZone/WET.pm
-generated_by: Module::Build version 0.34
+generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
