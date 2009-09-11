@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 742c6ec3e23e108b37d6ad3d2f86688cfa9b69cc Build.PL
-SHA1 fa56c7fa5633d02b9aaf8f919768ba3a118f4d8d Changes
+SHA1 463317fb6a4f93abda63d3814f6b67baffcddd97 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 ad06c29b5f960aa2e26a64b823897fda8b0e3a0e MANIFEST
 SHA1 862b6f94721125ebc18e28e5ceef11f5be359ccf MANIFEST.base
-SHA1 90333b675247044882d8976cedb81e09ebb59085 META.yml
+SHA1 e905c36242c7f98bf66096af5dd5d5ad29196263 META.yml
 SHA1 63556f5758e925d85bdfe9d12256d8f5cc74ca64 Makefile.PL
 SHA1 b1c80f73c6cafc9ce1f14d5d1d52fe60dc198a50 README
-SHA1 360ca4c8e627acd574bfe6cddea37e3e3205f382 lib/DateTime/TimeZone.pm
+SHA1 738e7bbc2696616bbab25df99029ec329b894a00 lib/DateTime/TimeZone.pm
 SHA1 2d8e4b31fecf8c50dba66aaee0ceb3320d99b1bc lib/DateTime/TimeZone/Africa/Abidjan.pm
 SHA1 1a34f2e7d7bad354a438158f8606e06b7adea10b lib/DateTime/TimeZone/Africa/Accra.pm
 SHA1 93ba0a93f500cfda7c068262f09384717948b9dc lib/DateTime/TimeZone/Africa/Addis_Ababa.pm
@@ -380,7 +380,7 @@ SHA1 7eacc8b37baf6818d05c81d8fa7c3f7144c918e9 lib/DateTime/TimeZone/Indian/Reuni
 SHA1 e8412a0b1ed6373f72fd89925a977c767f8cf74d lib/DateTime/TimeZone/Local.pm
 SHA1 71dfbb45772c9839746140a721015bb3e90eeaa2 lib/DateTime/TimeZone/Local/Unix.pm
 SHA1 3d907073971ae89f4079cc343177ca9c56174591 lib/DateTime/TimeZone/Local/VMS.pm
-SHA1 63b1f25c26d76f976507e8a85514d93daf6e0d66 lib/DateTime/TimeZone/Local/Win32.pm
+SHA1 2f1737d4999e0abe0bcb58f8a1601427290e0177 lib/DateTime/TimeZone/Local/Win32.pm
 SHA1 68638abfe758f2659d3e0cce623be68cc2fb9be1 lib/DateTime/TimeZone/MET.pm
 SHA1 941752927f8483dc50876e7bcb36de244687d016 lib/DateTime/TimeZone/MST.pm
 SHA1 5ce84be913b6031aa5a4eaa51de4e87e408d5b89 lib/DateTime/TimeZone/MST7MDT.pm
@@ -460,7 +460,7 @@ SHA1 f62d4ec3ffa8343185453b7fff610cee8ded2b4e tools/update-from-latest-olson
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEARECAAYFAkqmbegACgkQIgMCsV8qvRLCIgCeMWM1WbhiOZ5oBh9SMuNSnyuY
-aOUAn3iBpPK1RFP36TcdKyB+gFkG6XPT
-=W3OD
+iEYEARECAAYFAkqqx8EACgkQIgMCsV8qvRKN8gCbBv0KeHxufkXPd0h/OphACb3P
+dqcAnRNK2tZdLZUbE/igVBG4ye5NaVa8
+=qWYS
 -----END PGP SIGNATURE-----
