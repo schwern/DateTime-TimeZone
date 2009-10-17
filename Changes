@@ -1,3 +1,10 @@
+1.00    2009-10-17
+
+- This release adds a patch from Debian (http://bugs.debian.org/551195) for
+  Argentina. Argentina's idiotic government decided to change their DST rules
+  with two days notice. Pointer to patch from Gregor Herrman. Fixes RT #50590.
+
+
 0.99    2009-09-28
 
 - This release is based on version 2009n of the Olson database. This
