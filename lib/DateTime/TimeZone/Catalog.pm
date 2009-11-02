@@ -255,6 +255,7 @@ qw(
   Asia/Manila
   Asia/Muscat
   Asia/Nicosia
+  Asia/Novokuznetsk
   Asia/Novosibirsk
   Asia/Omsk
   Asia/Oral
@@ -674,6 +675,7 @@ qw(
     Manila
     Muscat
     Nicosia
+    Novokuznetsk
     Novosibirsk
     Omsk
     Oral
@@ -1512,6 +1514,7 @@ qw(
     Asia/Yekaterinburg
     Asia/Omsk
     Asia/Novosibirsk
+    Asia/Novokuznetsk
     Asia/Krasnoyarsk
     Asia/Irkutsk
     Asia/Yakutsk
@@ -1869,7 +1872,7 @@ qw(
 
 ;
 
-sub OlsonVersion { '2009o+argentina-patch' }
+sub OlsonVersion { '2009q' }
 
 
 1;
@@ -2168,6 +2171,7 @@ so that applications can easily present a list of timezones.
   Asia/Kamchatka
   Asia/Krasnoyarsk
   Asia/Magadan
+  Asia/Novokuznetsk
   Asia/Novosibirsk
   Asia/Omsk
   Asia/Sakhalin

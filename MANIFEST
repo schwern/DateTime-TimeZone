@@ -239,6 +239,7 @@ lib/DateTime/TimeZone/Asia/Irkutsk.pm
 lib/DateTime/TimeZone/Asia/Kamchatka.pm
 lib/DateTime/TimeZone/Asia/Krasnoyarsk.pm
 lib/DateTime/TimeZone/Asia/Magadan.pm
+lib/DateTime/TimeZone/Asia/Novokuznetsk.pm
 lib/DateTime/TimeZone/Asia/Novosibirsk.pm
 lib/DateTime/TimeZone/Asia/Omsk.pm
 lib/DateTime/TimeZone/Asia/Sakhalin.pm
